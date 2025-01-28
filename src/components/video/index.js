@@ -3,16 +3,16 @@ import Image from "next/image";
 
 const Video = () => {
   return (
-    <div class="video-area">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-5">
-            <div class="video-info wow fadeInUp" data-wow-delay=".25s">
-              <div class="site-heading mb-0">
-                <span class="site-title-tagline">
-                  <i class="far fa-house-chimney-heart"></i>Latest Video
+    <div className="video-area">
+      <div className="container">
+        <div className="row align-items-center">
+          <div className="col-lg-5">
+            <div className="video-info wow fadeInUp" data-wow-delay=".25s">
+              <div className="site-heading mb-0">
+                <span className="site-title-tagline">
+                  <i className="far fa-house-chimney-heart"></i>Latest Video
                 </span>
-                <h2 class="site-title">
+                <h2 className="site-title">
                   Making The Best <span>Impression</span> On Your Old Age
                 </h2>
                 <p>
@@ -22,22 +22,26 @@ const Video = () => {
                   believable.
                 </p>
               </div>
-              <a href="contact.html" class="theme-btn mt-30">
-                Learn More <i class="fas fa-arrow-right"></i>
+              <a href="contact.html" className="theme-btn mt-30">
+                Learn More <i className="fas fa-arrow-right"></i>
               </a>
             </div>
           </div>
-          <div class="col-lg-7">
+          <div className="col-lg-7">
             <div
-              class="video-content wow fadeInRight"
+              className="video-content wow fadeInRight"
               data-wow-delay=".25s"
-              style="background-image: url(assets/img/video/01.jpg)"
+              style={{
+                backgroundImage: "url('assets/img/video/01.jpg')",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
             >
               <Link
-                class="play-btn popup-youtube"
+                className="play-btn popup-youtube"
                 href="https://www.youtube.com/watch?v=ckHzmP1evNU"
               >
-                <i class="fas fa-play"></i>
+                <i className="fas fa-play"></i>
               </Link>
             </div>
           </div>

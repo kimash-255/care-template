@@ -1,20 +1,42 @@
+import "@/styles/globals.css";
+import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { fas } from "@fortawesome/free-solid-svg-icons";
+import { far } from "@fortawesome/free-regular-svg-icons";
+import { fab } from "@fortawesome/free-brands-svg-icons";
+import { config } from "@fortawesome/fontawesome-svg-core";
+import "@fortawesome/fontawesome-svg-core/styles.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Head from "next/head";
 
-// Client-only render flag
+// Prevent auto-adding the CSS from FontAwesome
+config.autoAddCss = false;
+
+// Add icons to the library
+library.add(fas, far, fab);
+
 export default function App({ Component, pageProps }) {
-  const [isClient, setIsClient] = useState(false);
+  // Set up a state to track whether the app is hydrated (running on the client)
+  const [isHydrated, setIsHydrated] = useState(false);
 
   useEffect(() => {
-    setIsClient(true); // Update once the component has mounted
+    // Set isHydrated to true after the component has mounted
+    setIsHydrated(true);
   }, []);
-
-  if (!isClient) {
-    return null; // Prevent rendering before the component is mounted
-  }
 
   return (
     <>
-      <Component {...pageProps} />
+      <Head>
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+        />
+      </Head>
+      {/* Render content directly, avoid showing a loader */}
+      {isHydrated ? <Component {...pageProps} /> : null}
     </>
   );
 }

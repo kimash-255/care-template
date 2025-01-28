@@ -3,25 +3,30 @@ import Link from "next/link";
 
 const Hero = () => {
   return (
-    <div class="hero-section">
-      <div class="hero-slider owl-carousel">
+    <div className="hero-section">
+      <div className="hero-slider owl-carousel">
         <div
-          class="hero-single"
-          style="background-image: url(/assets/img/hero/slider-1.jpg)"
+          className="hero-single"
+          style={{
+            backgroundImage: "url(/assets/img/hero/slider-1.jpg)",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
         >
-          <div class="container">
-            <div class="row align-items-center">
-              <div class="col-md-12 col-lg-6">
-                <div class="hero-content">
+          <div className="container">
+            <div className="row align-items-center">
+              <div className="col-md-12 col-lg-6">
+                <div className="hero-content">
                   <h6
-                    class="hero-sub-title"
+                    className="hero-sub-title"
                     data-animation="fadeInUp"
                     data-delay=".25s"
                   >
-                    <i class="far fa-house-chimney-heart"></i> Best Elderly Care
+                    <i className="far fa-house-chimney-heart"></i> Best Elderly
+                    Care
                   </h6>
                   <h1
-                    class="hero-title"
+                    className="hero-title"
                     data-animation="fadeInRight"
                     data-delay=".50s"
                   >
@@ -33,15 +38,15 @@ const Hero = () => {
                     injected humour.
                   </p>
                   <div
-                    class="hero-btn"
+                    className="hero-btn"
                     data-animation="fadeInUp"
                     data-delay="1s"
                   >
-                    <Link href="/about" class="theme-btn">
-                      About More<i class="fas fa-arrow-right"></i>
+                    <Link href="/about" className="theme-btn">
+                      About More<i className="fas fa-arrow-right"></i>
                     </Link>
-                    <Link href="/contact" class="theme-btn2">
-                      Learn More<i class="fas fa-arrow-right"></i>
+                    <Link href="/contact" className="theme-btn2">
+                      Learn More<i className="fas fa-arrow-right"></i>
                     </Link>
                   </div>
                 </div>
@@ -50,22 +55,27 @@ const Hero = () => {
           </div>
         </div>
         <div
-          class="hero-single"
-          style="background-image: url(assets/img/hero/slider-2.jpg)"
+          className="hero-single"
+          style={{
+            backgroundImage: "url(/assets/img/hero/slider-2.jpg)",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
         >
-          <div class="container">
-            <div class="row align-items-center">
-              <div class="col-md-12 col-lg-6">
-                <div class="hero-content">
+          <div className="container">
+            <div className="row align-items-center">
+              <div className="col-md-12 col-lg-6">
+                <div className="hero-content">
                   <h6
-                    class="hero-sub-title"
+                    className="hero-sub-title"
                     data-animation="fadeInUp"
                     data-delay=".25s"
                   >
-                    <i class="far fa-house-chimney-heart"></i> Best Elderly Care
+                    <i className="far fa-house-chimney-heart"></i> Best Elderly
+                    Care
                   </h6>
                   <h1
-                    class="hero-title"
+                    className="hero-title"
                     data-animation="fadeInRight"
                     data-delay=".50s"
                   >
@@ -77,15 +87,15 @@ const Hero = () => {
                     injected humour.
                   </p>
                   <div
-                    class="hero-btn"
+                    className="hero-btn"
                     data-animation="fadeInUp"
                     data-delay="1s"
                   >
-                    <Link href="/about" class="theme-btn">
-                      About More<i class="fas fa-arrow-right"></i>
+                    <Link href="/about" className="theme-btn">
+                      About More<i className="fas fa-arrow-right"></i>
                     </Link>
-                    <Link href="/contact" class="theme-btn2">
-                      Learn More<i class="fas fa-arrow-right"></i>
+                    <Link href="/contact" className="theme-btn2">
+                      Learn More<i className="fas fa-arrow-right"></i>
                     </Link>
                   </div>
                 </div>
@@ -94,22 +104,27 @@ const Hero = () => {
           </div>
         </div>
         <div
-          class="hero-single"
-          style="background-image: url(/assets/img/hero/slider-3.jpg)"
+          className="hero-single"
+          style={{
+            backgroundImage: "url(/assets/img/hero/slider-3.jpg)",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
         >
-          <div class="container">
-            <div class="row align-items-center">
-              <div class="col-md-12 col-lg-6">
-                <div class="hero-content">
+          <div className="container">
+            <div className="row align-items-center">
+              <div className="col-md-12 col-lg-6">
+                <div className="hero-content">
                   <h6
-                    class="hero-sub-title"
+                    className="hero-sub-title"
                     data-animation="fadeInUp"
                     data-delay=".25s"
                   >
-                    <i class="far fa-house-chimney-heart"></i> Best Elderly Care
+                    <i className="far fa-house-chimney-heart"></i> Best Elderly
+                    Care
                   </h6>
                   <h1
-                    class="hero-title"
+                    className="hero-title"
                     data-animation="fadeInRight"
                     data-delay=".50s"
                   >
@@ -121,15 +136,15 @@ const Hero = () => {
                     injected humour.
                   </p>
                   <div
-                    class="hero-btn"
+                    className="hero-btn"
                     data-animation="fadeInUp"
                     data-delay="1s"
                   >
-                    <Link href="about.html" class="theme-btn">
-                      About More<i class="fas fa-arrow-right"></i>
+                    <Link href="/about" className="theme-btn">
+                      About More<i className="fas fa-arrow-right"></i>
                     </Link>
-                    <Link href="contact.html" class="theme-btn2">
-                      Learn More<i class="fas fa-arrow-right"></i>
+                    <Link href="/contact" className="theme-btn2">
+                      Learn More<i className="fas fa-arrow-right"></i>
                     </Link>
                   </div>
                 </div>
@@ -141,4 +156,5 @@ const Hero = () => {
     </div>
   );
 };
+
 export default Hero;

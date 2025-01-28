@@ -1,15 +1,15 @@
 import React from "react";
-import Header from "@/components/header";
-import Footer from "@/components/footer";
+import Footer from "../footer";
+import Header from "../header";
 
 const Layout = ({ children }) => {
   return (
     <div>
       {/* Header Component */}
-      <Header></Header>
+      <Header />
 
       {/* Main Content */}
-      {/* <main>{children}</main> */}
+      <main>{children}</main>
 
       {/* Optional: You can add a footer here later */}
       <Footer />
