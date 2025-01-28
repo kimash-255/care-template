@@ -12,14 +12,8 @@ const Header = () => {
               <div class="header-top-list">
                 <ul>
                   <li>
-                    <Link href="/cdn-cgi/l/email-protection#375e59515877524f565a475b521954585a">
-                      <i class="far fa-envelopes"></i>
-                      <span
-                        class="__cf_email__"
-                        data-cfemail="640d0a020b24011c05091408014a070b09"
-                      >
-                        [email&#160;protected]
-                      </span>
+                    <Link href="mailto:example@email.com">
+                      <i className="far fa-envelope"></i> example@email.com
                     </Link>
                   </li>
                   <li>
@@ -36,44 +30,6 @@ const Header = () => {
               </div>
             </div>
             <div class="header-top-right">
-              <div class="header-top-list">
-                <Link href="/login">
-                  <i class="far fa-sign-in"></i> Login
-                </Link>
-              </div>
-              <div class="header-top-lang">
-                <div class="dropdown">
-                  <Link
-                    href="#"
-                    class="top-lang dropdown-toggle"
-                    data-bs-toggle="dropdown"
-                  >
-                    <i class="fal fa-globe"></i> Eng
-                  </Link>
-                  <ul class="dropdown-menu dropdown-menu-end">
-                    <li>
-                      <Link class="dropdown-item" href="#">
-                        English
-                      </Link>
-                    </li>
-                    <li>
-                      <Link class="dropdown-item" href="#">
-                        German
-                      </Link>
-                    </li>
-                    <li>
-                      <Link class="dropdown-item" href="#">
-                        Russian
-                      </Link>
-                    </li>
-                    <li>
-                      <Link class="dropdown-item" href="#">
-                        Spanish
-                      </Link>
-                    </li>
-                  </ul>
-                </div>
-              </div>
               <div class="header-top-social">
                 <span>Follow Us: </span>
                 <Link href="#">
@@ -100,7 +56,11 @@ const Header = () => {
         <nav class="navbar navbar-expand-lg">
           <div class="container position-relative">
             <Link class="navbar-brand" href="/">
-              <img src="assets/img/logo/logo.png" alt="logo" />
+              <img
+                src="assets/img/logo/logo.png"
+                alt="logo"
+                class="h-12 w-auto max-w-[300px]"
+              />
             </Link>
             <div class="mobile-menu-right">
               <div class="mobile-menu-btn">
@@ -144,33 +104,12 @@ const Header = () => {
                   <i class="far fa-xmark"></i>
                 </button>
               </div>
-              <div class="offcanvas-body gap-xl-4">
-                <ul class="navbar-nav justify-content-end flex-grow-1">
+              <div class="offcanvas-body gap-x-4">
+                <ul class="navbar-nav justify-center flex-grow-1">
                   <li class="nav-item dropdown">
-                    <Link
-                      class="nav-link dropdown-toggle active"
-                      href="#"
-                      data-bs-toggle="dropdown"
-                    >
+                    <Link className="nav-link  " href="/">
                       Home
                     </Link>
-                    <ul class="dropdown-menu fade-down">
-                      <li>
-                        <Link class="dropdown-item" href="/">
-                          Home Demo 01
-                        </Link>
-                      </li>
-                      <li>
-                        <Link class="dropdown-item" href="/2">
-                          Home Demo 02
-                        </Link>
-                      </li>
-                      <li>
-                        <Link class="dropdown-item" href="/3">
-                          Home Demo 03
-                        </Link>
-                      </li>
-                    </ul>
                   </li>
                   <li class="nav-item">
                     <Link class="nav-link" href="/about">
@@ -178,251 +117,11 @@ const Header = () => {
                     </Link>
                   </li>
                   <li class="nav-item dropdown">
-                    <Link
-                      class="nav-link dropdown-toggle"
-                      href="#"
-                      data-bs-toggle="dropdown"
-                    >
+                    <Link class="nav-link " href="/services">
                       Services
                     </Link>
-                    <ul class="dropdown-menu fade-down">
-                      <li>
-                        <Link class="dropdown-item" href="/service">
-                          Services One
-                        </Link>
-                      </li>
-                      <li>
-                        <Link class="dropdown-item" href="/service-2">
-                          Services Two
-                        </Link>
-                      </li>
-                      <li>
-                        <Link class="dropdown-item" href="/service-single">
-                          Service Single
-                        </Link>
-                      </li>
-                    </ul>
                   </li>
-                  <li class="nav-item dropdown">
-                    <Link
-                      class="nav-link dropdown-toggle"
-                      href="#"
-                      data-bs-toggle="dropdown"
-                    >
-                      Pages
-                    </Link>
-                    <ul class="dropdown-menu fade-down">
-                      <li>
-                        <Link class="dropdown-item" href="/about">
-                          About Us
-                        </Link>
-                      </li>
-                      <li>
-                        <Link class="dropdown-item" href="/team">
-                          Our Team
-                        </Link>
-                      </li>
-                      <li>
-                        <Link class="dropdown-item" href="/pricing">
-                          Pricing Plan
-                        </Link>
-                      </li>
-                      <li class="dropdown-submenu">
-                        <Link class="dropdown-item dropdown-toggle" href="#">
-                          Events
-                        </Link>
-                        <ul class="dropdown-menu">
-                          <li>
-                            <Link class="dropdown-item" href="/event">
-                              Events
-                            </Link>
-                          </li>
-                          <li>
-                            <Link class="dropdown-item" href="/event-single">
-                              Event Single
-                            </Link>
-                          </li>
-                        </ul>
-                      </li>
-                      <li class="dropdown-submenu">
-                        <Link class="dropdown-item dropdown-toggle" href="#">
-                          Donations
-                        </Link>
-                        <ul class="dropdown-menu">
-                          <li>
-                            <Link class="dropdown-item" href="/donation">
-                              Donations
-                            </Link>
-                          </li>
-                          <li>
-                            <Link class="dropdown-item" href="/donation-single">
-                              Donation Single
-                            </Link>
-                          </li>
-                          <li>
-                            <Link class="dropdown-item" href="/donation-form">
-                              Donation Form
-                            </Link>
-                          </li>
-                        </ul>
-                      </li>
-                      <li class="dropdown-submenu">
-                        <Link class="dropdown-item dropdown-toggle" href="#">
-                          Volunteer
-                        </Link>
-                        <ul class="dropdown-menu">
-                          <li>
-                            <Link class="dropdown-item" href="/volunteer">
-                              Volunteer
-                            </Link>
-                          </li>
-                          <li>
-                            <Link
-                              class="dropdown-item"
-                              href="/volunteer-single"
-                            >
-                              Volunteer Single
-                            </Link>
-                          </li>
-                          <li>
-                            <Link
-                              class="dropdown-item"
-                              href="/become-volunteer"
-                            >
-                              Become A Volunteer
-                            </Link>
-                          </li>
-                        </ul>
-                      </li>
-                      <li class="dropdown-submenu">
-                        <Link class="dropdown-item dropdown-toggle" href="#">
-                          Living Options
-                        </Link>
-                        <ul class="dropdown-menu">
-                          <li>
-                            <Link class="dropdown-item" href="/living-option">
-                              Living Options
-                            </Link>
-                          </li>
-                          <li>
-                            <Link
-                              class="dropdown-item"
-                              href="/living-option-single"
-                            >
-                              Living Options Single
-                            </Link>
-                          </li>
-                        </ul>
-                      </li>
-                      <li class="dropdown-submenu">
-                        <Link class="dropdown-item dropdown-toggle" href="#">
-                          Stories
-                        </Link>
-                        <ul class="dropdown-menu">
-                          <li>
-                            <Link class="dropdown-item" href="/stories">
-                              Stories
-                            </Link>
-                          </li>
-                          <li>
-                            <Link class="dropdown-item" href="/stories-single">
-                              Stories Single
-                            </Link>
-                          </li>
-                        </ul>
-                      </li>
-                      <li class="dropdown-submenu">
-                        <Link class="dropdown-item dropdown-toggle" href="#">
-                          Authentication
-                        </Link>
-                        <ul class="dropdown-menu">
-                          <li>
-                            <Link class="dropdown-item" href="/login">
-                              Login
-                            </Link>
-                          </li>
-                          <li>
-                            <Link class="dropdown-item" href="/register">
-                              Register
-                            </Link>
-                          </li>
-                          <li>
-                            <Link class="dropdown-item" href="/forgot-password">
-                              Forgot Password
-                            </Link>
-                          </li>
-                        </ul>
-                      </li>
-                      <li class="dropdown-submenu">
-                        <Link class="dropdown-item dropdown-toggle" href="#">
-                          Extra Pages
-                        </Link>
-                        <ul class="dropdown-menu">
-                          <li>
-                            <Link class="dropdown-item" href="/coming-soon">
-                              Coming Soon
-                            </Link>
-                          </li>
-                          <li>
-                            <Link class="dropdown-item" href="/terms">
-                              Terms Of Service
-                            </Link>
-                          </li>
-                          <li>
-                            <Link class="dropdown-item" href="/privacy">
-                              Privacy Policy
-                            </Link>
-                          </li>
-                        </ul>
-                      </li>
-                      <li>
-                        <Link class="dropdown-item" href="/gallery">
-                          Gallery
-                        </Link>
-                      </li>
-                      <li>
-                        <Link class="dropdown-item" href="/faq">
-                          Faq
-                        </Link>
-                      </li>
-                      <li>
-                        <Link class="dropdown-item" href="/testimonial">
-                          Testimonials
-                        </Link>
-                      </li>
-                      <li>
-                        <Link class="dropdown-item" href="404.html">
-                          404 Error
-                        </Link>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <Link
-                      class="nav-link dropdown-toggle"
-                      href="#"
-                      data-bs-toggle="dropdown"
-                    >
-                      Portfolio
-                    </Link>
-                    <ul class="dropdown-menu fade-down">
-                      <li>
-                        <Link class="dropdown-item" href="/portfolio">
-                          Portfolio One
-                        </Link>
-                      </li>
-                      <li>
-                        <Link class="dropdown-item" href="/portfolio-2">
-                          Portfolio Two
-                        </Link>
-                      </li>
-                      <li>
-                        <Link class="dropdown-item" href="/portfolio-single">
-                          Portfolio Single
-                        </Link>
-                      </li>
-                    </ul>
-                  </li>
+
                   <li class="nav-item dropdown">
                     <Link
                       class="nav-link dropdown-toggle"
