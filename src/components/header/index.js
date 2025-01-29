@@ -57,7 +57,7 @@ const Header = () => {
           <div class="container position-relative">
             <Link class="navbar-brand" href="/">
               <img
-                src="assets/img/logo/logo.png"
+                src="/assets/img/logo/logo.png"
                 alt="logo"
                 class="h-12 w-auto max-w-[300px]"
               />
@@ -67,6 +67,7 @@ const Header = () => {
                 <button type="button" class="nav-right-link search-box-outer">
                   <i class="far fa-search"></i>
                 </button>
+                /
               </div>
               <button
                 class="navbar-toggler"

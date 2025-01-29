@@ -198,14 +198,14 @@ const MainBlog = () => {
                   </Link>
                 </li>
                 <li className="page-item">
-                  <a className="page-link" href="#">
+                  <Link className="page-link" href="#">
                     2
-                  </a>
+                  </Link>
                 </li>
                 <li className="page-item">
-                  <a className="page-link" href="#">
+                  <Link className="page-link" href="#">
                     3
-                  </a>
+                  </Link>
                 </li>
                 <li className="page-item">
                   <Link className="page-link" href="#" aria-label="Next">
