@@ -66,11 +66,11 @@ const MainAbout = () => {
                   </h2>
                 </div>
                 <p class="about-text">
-                  There are many variations of passages of Lorem Ipsum
-                  available, but the majority have suffered alteration in some
-                  form, by injected humour randomised words which donot look
-                  even.Many desktop publishing packages and web page editors now
-                  use as their default model text.
+                  By combining professionalism with care, we deliver unmatched
+                  support for seniors. Many senior care providers focus on
+                  general solutions, which don’t truly address unique needs. Our
+                  approach is personalized, ensuring every individual receives
+                  the attention they deserve.
                 </p>
                 <div class="about-content">
                   <div class="row g-3">
