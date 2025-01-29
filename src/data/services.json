@@ -1,0 +1,132 @@
+[
+  {
+    "slug": "daily-assistance",
+    "title": "Daily Assistance",
+    "description": "Daily assistance with bathing, grooming, dressing, toileting, and walking.",
+    "image": "/assets/img/service/single.jpg",
+    "brochure": "/resources/BROCHURE.pdf",
+    "workProcess": [
+      "Initial assessment and planning",
+      "Customized care routines",
+      "Continuous monitoring and support"
+    ],
+    "whyChooseUs": "We provide compassionate care tailored to individual needs, ensuring dignity and respect for every client."
+  },
+  {
+    "slug": "escorts-assistance",
+    "title": "Escorts and Assistance",
+    "description": "Escorts and assistance with walking and transfers.",
+    "image": "/assets/img/service/single.jpg",
+    "brochure": "/resources/BROCHURE.pdf",
+    "workProcess": [
+      "Careful planning for mobility support",
+      "Safe transfers and escorts",
+      "Ongoing assessment for improvements"
+    ],
+    "whyChooseUs": "Our team ensures safe and reliable assistance for enhanced mobility and independence."
+  },
+  {
+    "slug": "medication-management",
+    "title": "Medication Assistance",
+    "description": "Medication assistance and management.",
+    "image": "/assets/img/service/single.jpg",
+    "brochure": "/resources/BROCHURE.pdf",
+    "workProcess": [
+      "Organizing medications",
+      "Timely reminders and administration",
+      "Coordination with healthcare providers"
+    ],
+    "whyChooseUs": "We ensure accuracy and consistency in medication routines, promoting better health outcomes."
+  },
+  {
+    "slug": "continence-care",
+    "title": "Continence Care",
+    "description": "Continence care and management.",
+    "image": "/assets/img/service/single.jpg",
+    "brochure": "/resources/BROCHURE.pdf",
+    "workProcess": [
+      "Assessment of individual needs",
+      "Personalized continence plans",
+      "Dignified and discreet care"
+    ],
+    "whyChooseUs": "Our caregivers provide respectful support to maintain hygiene and comfort."
+  },
+  {
+    "slug": "behavior-management",
+    "title": "Behavior Management",
+    "description": "Behavior management, including reminders and redirection.",
+    "image": "/assets/img/service/single.jpg",
+    "brochure": "/resources/BROCHURE.pdf",
+    "workProcess": [
+      "Understanding behavioral triggers",
+      "Implementing effective redirection",
+      "Encouraging positive behaviors"
+    ],
+    "whyChooseUs": "We focus on understanding each client to provide the most effective and compassionate care."
+  },
+  {
+    "slug": "delicious-meals",
+    "title": "Delicious Meals",
+    "description": "A variety of delicious meals and snacks, with dining assistance and special diets.",
+    "image": "/assets/img/service/single.jpg",
+    "brochure": "/resources/BROCHURE.pdf",
+    "workProcess": [
+      "Meal planning based on dietary needs",
+      "Freshly prepared meals and snacks",
+      "Assistance with dining and nutrition"
+    ],
+    "whyChooseUs": "Our meal services promote health and enjoyment, accommodating all dietary requirements."
+  },
+  {
+    "slug": "housekeeping-laundry",
+    "title": "Housekeeping & Laundry",
+    "description": "Housekeeping and laundry services.",
+    "image": "/assets/img/service/single.jpg",
+    "brochure": "/resources/BROCHURE.pdf",
+    "workProcess": [
+      "Regular cleaning routines",
+      "Laundry and linen services",
+      "Maintaining a clean and safe environment"
+    ],
+    "whyChooseUs": "Our housekeeping services ensure a clean and comfortable living space."
+  },
+  {
+    "slug": "social-activities",
+    "title": "Social Activities",
+    "description": "Social and recreational activities.",
+    "image": "/assets/img/service/single.jpg",
+    "brochure": "/resources/BROCHURE.pdf",
+    "workProcess": [
+      "Planning engaging activities",
+      "Fostering social connections",
+      "Encouraging participation and joy"
+    ],
+    "whyChooseUs": "We promote an active and fulfilling lifestyle through engaging social programs."
+  },
+  {
+    "slug": "health-promotion",
+    "title": "Health Promotion",
+    "description": "Health promotion and exercise programs.",
+    "image": "/assets/img/service/single.jpg",
+    "brochure": "/resources/BROCHURE.pdf",
+    "workProcess": [
+      "Designing personalized exercise plans",
+      "Guided physical activities",
+      "Promoting overall wellness"
+    ],
+    "whyChooseUs": "Our programs focus on improving physical and mental health through targeted activities."
+  },
+  {
+    "slug": "physical-therapist-care",
+    "title": "Physical Therapist Care",
+    "description": "Our caregivers follow Physical Therapist's discharge orders to ensure ongoing care.",
+    "image": "/assets/img/service/single.jpg",
+    "brochure": "/resources/BROCHURE.pdf",
+    "workProcess": [
+      "Collaborating with therapists",
+      "Implementing discharge plans",
+      "Providing continued support and care"
+    ],
+    "whyChooseUs": "We work closely with healthcare professionals to ensure seamless ongoing care."
+  }
+]

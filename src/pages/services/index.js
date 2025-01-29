@@ -10,12 +10,12 @@ const ServicePage = () => {
         style={{ backgroundImage: `url('assets/img/breadcrumb/01.jpg')` }}
       >
         <div class="container">
-          <h2 class="breadcrumb-title">Service Two</h2>
+          <h2 class="breadcrumb-title">Service </h2>
           <ul class="breadcrumb-menu">
             <li>
-              <a href="index.html">Home</a>
+              <Link href="/">Home</Link>
             </li>
-            <li class="active">Service Two</li>
+            <li class="active">Service </li>
           </ul>
         </div>
       </div>
