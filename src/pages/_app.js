@@ -1,5 +1,4 @@
 import "@/styles/globals.css";
-import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fas } from "@fortawesome/free-solid-svg-icons";
@@ -10,6 +9,7 @@ import "@fortawesome/fontawesome-svg-core/styles.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Head from "next/head";
+import Link from "next/link";
 
 // Prevent auto-adding the CSS from FontAwesome
 config.autoAddCss = false;
@@ -24,6 +24,30 @@ export default function App({ Component, pageProps }) {
   useEffect(() => {
     // Set isHydrated to true after the component has mounted
     setIsHydrated(true);
+
+    // Scroll-to-top button functionality
+    const scrollTopBtn = document.getElementById("scroll-top");
+    const handleScroll = () => {
+      if (window.scrollY > 300) {
+        scrollTopBtn.style.display = "block";
+      } else {
+        scrollTopBtn.style.display = "none";
+      }
+    };
+
+    const scrollToTop = () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    };
+
+    // Event listeners
+    window.addEventListener("scroll", handleScroll);
+    scrollTopBtn.addEventListener("click", scrollToTop);
+
+    // Cleanup
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      scrollTopBtn.removeEventListener("click", scrollToTop);
+    };
   }, []);
 
   return (
@@ -35,8 +59,14 @@ export default function App({ Component, pageProps }) {
           content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
         />
       </Head>
+
       {/* Render content directly, avoid showing a loader */}
       {isHydrated ? <Component {...pageProps} /> : null}
+
+      {/* Scroll to top button */}
+      <Link href="#" id="scroll-top">
+        <i className="far fa-arrow-up"></i>
+      </Link>
     </>
   );
 }
