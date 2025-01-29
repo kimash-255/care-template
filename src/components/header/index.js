@@ -1,7 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 
 const Header = () => {
+  const [isHidden, setHidden] = useState(false);
   return (
     <header class="header">
       {/* <!-- header top --> */}
@@ -70,6 +72,7 @@ const Header = () => {
                 /
               </div>
               <button
+                onClick={() => setHidden(true)}
                 class="navbar-toggler"
                 type="button"
                 data-bs-toggle="offcanvas"
@@ -83,7 +86,7 @@ const Header = () => {
               </button>
             </div>
             <div
-              class="offcanvas offcanvas-start"
+              class={`offcanvas offcanvas-start ${isHidden ? "show" : ""}`}
               tabindex="-1"
               id="offcanvasNavbar"
               aria-labelledby="offcanvasNavbarLabel"
@@ -98,6 +101,7 @@ const Header = () => {
                 </Link>
                 <button
                   type="button"
+                  onClick={() => setHidden(false)}
                   class="btn-close"
                   data-bs-dismiss="offcanvas"
                   aria-label="Close"
@@ -106,7 +110,10 @@ const Header = () => {
                 </button>
               </div>
               <div class="offcanvas-body gap-x-4">
-                <ul class="navbar-nav justify-center flex-grow-1">
+                <ul
+                  onClick={() => setHidden(false)}
+                  class="navbar-nav justify-center flex-grow-1"
+                >
                   <li class="nav-item dropdown">
                     <Link className="nav-link  " href="/">
                       Home
