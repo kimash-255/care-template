@@ -91,7 +91,7 @@ Table of contents
 :root {
   --body-font: 'Roboto', sans-serif;
   --heading-font: 'Ubuntu', sans-serif;
-  --theme-color: #FF7A7C;
+  --theme-color: #FD6602;
   --theme-color2: #00ADB8;
   --theme-bg-light: #F6F6F6;
   --theme-color-light: rgba(255, 122, 124, .1);
@@ -103,7 +103,7 @@ Table of contents
   --color-skyblue: #00BFFF;
   --color-yellow: #FBA707;
   --color-gray: #ECECEC;
-  --color-red: #F05454;
+  --color-red: #FD6602;
   --box-shadow: 0 0 40px 5px rgb(0 0 0 / 5%);
   --box-shadow2: 0 0 15px rgba(0, 0, 0, 0.17);
   --transition: all .5s ease-in-out;
