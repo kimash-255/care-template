@@ -132,24 +132,12 @@ const Header = () => {
 
                   <li class="nav-item dropdown">
                     <Link
-                      class="nav-link dropdown-toggle"
-                      href="#"
+                      class="nav-link "
+                      href="/blog"
                       data-bs-toggle="dropdown"
                     >
                       Blog
                     </Link>
-                    <ul class="dropdown-menu fade-down">
-                      <li>
-                        <Link class="dropdown-item" href="/blog">
-                          Blog
-                        </Link>
-                      </li>
-                      <li>
-                        <Link class="dropdown-item" href="/blog-single">
-                          Blog Single
-                        </Link>
-                      </li>
-                    </ul>
                   </li>
                   <li class="nav-item">
                     <Link class="nav-link" href="/contact">
