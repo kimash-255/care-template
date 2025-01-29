@@ -38,7 +38,7 @@ const HomeAbout = () => {
                   <i class="far fa-house-chimney-heart"></i> About Us
                 </span>
                 <h2 class="site-title">
-                  We Are The Best and Expert <span>For Senior</span> Care
+                  We Are The Best and Expert For Senior Care
                 </h2>
               </div>
               <p class="about-text">

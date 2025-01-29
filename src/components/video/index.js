@@ -13,7 +13,7 @@ const Video = () => {
                   <i className="far fa-house-chimney-heart"></i>Latest Video
                 </span>
                 <h2 className="site-title">
-                  Making The Best <span>Impression</span> On Your Old Age
+                  Making The Best Impression On Your Old Age
                 </h2>
                 <p>
                   There are many variations of passages of Lorem Ipsum available

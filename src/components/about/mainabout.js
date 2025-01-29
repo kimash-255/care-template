@@ -62,7 +62,7 @@ const MainAbout = () => {
                     <i class="far fa-house-chimney-heart"></i> About Us
                   </span>
                   <h2 class="site-title">
-                    We Are The Best and Expert <span>For Senior</span> Care
+                    We Are The Best and Expert For SeniorCare
                   </h2>
                 </div>
                 <p class="about-text">
@@ -203,9 +203,7 @@ const MainAbout = () => {
                 <span class="site-title-tagline">
                   <i class="far fa-house-chimney-heart"></i> Our Volunteers
                 </span>
-                <h2 class="site-title">
-                  Meet With Our Awesome <span>Volunteers</span>
-                </h2>
+                <h2 class="site-title">Meet With Our Awesome Volunteers</h2>
               </div>
             </div>
           </div>
@@ -366,7 +364,7 @@ const MainAbout = () => {
                     <i class="far fa-house-chimney-heart"></i> Our Skills
                   </span>
                   <h2 class="site-title">
-                    We Offers You Best <span>Senior Care</span> Services
+                    We Offers You Best Senior Care Services
                   </h2>
                   <p class="skill-text">
                     There are many variations of passages of Lorem Ipsum

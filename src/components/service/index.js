@@ -17,7 +17,7 @@ const HomeService = () => {
                 <i className="far fa-house-chimney-heart"></i>Our Services
               </span>
               <h2 className="site-title">
-                We Believe Everyone Deserves <span>Our Quality Care</span>
+                We Believe Everyone Deserves Our Quality Care
               </h2>
             </div>
           </div>

@@ -15,7 +15,7 @@ const Choose = () => {
                 <i class="far fa-house-chimney-heart"></i> Why Choose Us
               </span>
               <h2 class="site-title">
-                Trusted And Experience <span>Senior Care </span> Provider
+                Trusted And Experience Senior Care Provider
               </h2>
             </div>
           </div>
