@@ -1,4 +1,5 @@
 import { Html, Head, Main, NextScript } from "next/document";
+import Link from "next/link";
 
 export default function Document() {
   return (
@@ -29,6 +30,11 @@ export default function Document() {
       </Head>
       <body className="antialiased">
         <Main />
+
+        <Link href="#" id="scroll-top">
+          <i class="far fa-arrow-up"></i>
+        </Link>
+
         <NextScript />
         {/* Scripts */}
         {/* <script
