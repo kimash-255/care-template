@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import blogData from "@/data/blog.json"; // Import the blog data
 
 const MainBlog = () => {
   return (
@@ -40,146 +41,58 @@ const MainBlog = () => {
             </div>
           </div>
           <div className="row g-4">
-            <div className="col-md-6 col-lg-4">
-              <div className="blog-item wow fadeInUp" data-wow-delay=".25s">
-                <div className="blog-item-img">
-                  <img src="/assets/img/blog/01.jpg" alt="Thumb" />
-                  <div className="blog-date">
-                    <strong>20</strong>
-                    <span>Dec</span>
+            {/* Map through the blog data */}
+            {blogData.map((blog) => (
+              <div key={blog.id} className="col-md-6 col-lg-4">
+                <div className="blog-item wow fadeInUp" data-wow-delay=".25s">
+                  <div className="blog-item-img">
+                    <Image
+                      src={blog.image}
+                      alt={blog.title}
+                      width={500}
+                      height={300}
+                    />
+                    <div className="blog-date">
+                      <strong>{blog.date.day}</strong>
+                      <span>{blog.date.month}</span>
+                    </div>
                   </div>
-                </div>
-                <div className="blog-item-info">
-                  <div className="blog-item-meta">
-                    <ul>
-                      <li>
-                        <Link href="#">
-                          <i className="far fa-user-circle"></i> By Alicia Davis
-                        </Link>
-                      </li>
-                      <li>
-                        <Link href="#">
-                          <i className="far fa-comments"></i> 2.5k Comments
-                        </Link>
-                      </li>
-                    </ul>
-                  </div>
-                  <h4 className="blog-title">
+                  <div className="blog-item-info">
+                    <div className="blog-item-meta">
+                      <ul>
+                        <li>
+                          <Link href="#">
+                            <i className="far fa-user-circle"></i> By{" "}
+                            {blog.author}
+                          </Link>
+                        </li>
+                        <li>
+                          <Link href="#">
+                            <i className="far fa-comments"></i> {blog.comments}
+                          </Link>
+                        </li>
+                      </ul>
+                    </div>
+                    <h4 className="blog-title">
+                      <Link href={`/blog/[slug]`} as={`/blog/${blog.slug}`}>
+                        {blog.title}
+                      </Link>
+                    </h4>
+                    <p>
+                      It is a long established fact that a reader will majority
+                      have suffered distracted readable.
+                    </p>
                     <Link
-                      href="/blog/[slug]"
-                      as="/blog/there-are-many-variations-of-passages-orem-available"
+                      className="theme-btn"
+                      href={`/blog/[slug]`}
+                      as={`/blog/${blog.slug}`}
                     >
-                      There are many variations of passages orem available.
+                      Read More<i className="fas fa-arrow-right"></i>
                     </Link>
-                  </h4>
-                  <p>
-                    It is a long established fact that a reader will majority
-                    have suffered distracted readable.
-                  </p>
-                  <Link
-                    className="theme-btn"
-                    href="/blog/[slug]"
-                    as="/blog/there-are-many-variations-of-passages-orem-available"
-                  >
-                    Read More<i className="fas fa-arrow-right"></i>
-                  </Link>
+                  </div>
                 </div>
               </div>
-            </div>
-
-            <div className="col-md-6 col-lg-4">
-              <div className="blog-item wow fadeInUp" data-wow-delay=".50s">
-                <div className="blog-item-img">
-                  <img src="/assets/img/blog/02.jpg" alt="Thumb" />
-                  <div className="blog-date">
-                    <strong>25</strong>
-                    <span>Dec</span>
-                  </div>
-                </div>
-                <div className="blog-item-info">
-                  <div className="blog-item-meta">
-                    <ul>
-                      <li>
-                        <Link href="#">
-                          <i className="far fa-user-circle"></i> By Alicia Davis
-                        </Link>
-                      </li>
-                      <li>
-                        <Link href="#">
-                          <i className="far fa-comments"></i> 1.2k Comments
-                        </Link>
-                      </li>
-                    </ul>
-                  </div>
-                  <h4 className="blog-title">
-                    <Link
-                      href="/blog/[slug]"
-                      as="/blog/generator-internet-repeat-tend-word-chunk-necessary"
-                    >
-                      Generator internet repeat tend word chunk necessary.
-                    </Link>
-                  </h4>
-                  <p>
-                    It is a long established fact that a reader will majority
-                    have suffered distracted readable.
-                  </p>
-                  <Link
-                    className="theme-btn"
-                    href="/blog/[slug]"
-                    as="/blog/generator-internet-repeat-tend-word-chunk-necessary"
-                  >
-                    Read More<i className="fas fa-arrow-right"></i>
-                  </Link>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-md-6 col-lg-4">
-              <div className="blog-item wow fadeInUp" data-wow-delay=".75s">
-                <div className="blog-item-img">
-                  <img src="/assets/img/blog/03.jpg" alt="Thumb" />
-                  <div className="blog-date">
-                    <strong>28</strong>
-                    <span>Dec</span>
-                  </div>
-                </div>
-                <div className="blog-item-info">
-                  <div className="blog-item-meta">
-                    <ul>
-                      <li>
-                        <Link href="#">
-                          <i className="far fa-user-circle"></i> By Alicia Davis
-                        </Link>
-                      </li>
-                      <li>
-                        <Link href="#">
-                          <i className="far fa-comments"></i> 2.8k Comments
-                        </Link>
-                      </li>
-                    </ul>
-                  </div>
-                  <h4 className="blog-title">
-                    <Link
-                      href="/blog/[slug]"
-                      as="/blog/survived-only-five-centuries-but-also-the-leap-into"
-                    >
-                      Survived only five centuries but also the leap into.
-                    </Link>
-                  </h4>
-                  <p>
-                    It is a long established fact that a reader will majority
-                    have suffered distracted readable.
-                  </p>
-                  <Link
-                    className="theme-btn"
-                    href="/blog/[slug]"
-                    as="/blog/survived-only-five-centuries-but-also-the-leap-into"
-                  >
-                    Read More<i className="fas fa-arrow-right"></i>
-                  </Link>
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
           {/* <!-- pagination --> */}
           <div className="pagination-area">
@@ -224,4 +137,5 @@ const MainBlog = () => {
     </main>
   );
 };
+
 export default MainBlog;

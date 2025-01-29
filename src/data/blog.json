@@ -34,5 +34,41 @@
     "comments": "2.8k Comments",
     "title": "Survived only five centuries but also the leap into.",
     "slug": "survived-only-five-centuries-but-also-the-leap-into"
+  },
+  {
+    "id": 4,
+    "image": "/assets/img/blog/01.jpg",
+    "date": {
+      "day": 5,
+      "month": "Jan"
+    },
+    "author": "John Doe",
+    "comments": "3.1k Comments",
+    "title": "Exploring the depth of web development technologies.",
+    "slug": "exploring-the-depth-of-web-development-technologies"
+  },
+  {
+    "id": 5,
+    "image": "/assets/img/blog/02.jpg",
+    "date": {
+      "day": 15,
+      "month": "Jan"
+    },
+    "author": "Jane Smith",
+    "comments": "1.9k Comments",
+    "title": "Why CSS frameworks matter in modern web design.",
+    "slug": "why-css-frameworks-matter-in-modern-web-design"
+  },
+  {
+    "id": 6,
+    "image": "/assets/img/blog/02.jpg",
+    "date": {
+      "day": 15,
+      "month": "Jan"
+    },
+    "author": "Jane Smith",
+    "comments": "1.9k Comments",
+    "title": "Why CSS frameworks matter in modern web design.",
+    "slug": "why-css-frameworks-matter-in-modern-web-design"
   }
 ]
