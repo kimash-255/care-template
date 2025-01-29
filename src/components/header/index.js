@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-
+import servicesData from "@/data/services.json";
 const Header = () => {
   const [isHidden, setHidden] = useState(false);
   return (
@@ -125,21 +125,24 @@ const Header = () => {
                       About
                     </Link>
                   </li>
-                  <li class="nav-item dropdown">
-                    <Link class="nav-link " href="/services">
+                  <li className="nav-item dropdown">
+                    <Link className="nav-link dropdown-toggle" href="/services">
                       Services
                     </Link>
+                    <ul className="dropdown-menu">
+                      {servicesData.map((service) => (
+                        <li key={service.slug}>
+                          <Link
+                            className="dropdown-item"
+                            href={`/services/${service.slug}`}
+                          >
+                            {service.title}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
                   </li>
 
-                  <li class="nav-item dropdown">
-                    <Link
-                      class="nav-link "
-                      href="/blog"
-                      data-bs-toggle="dropdown"
-                    >
-                      Blog
-                    </Link>
-                  </li>
                   <li class="nav-item">
                     <Link class="nav-link" href="/contact">
                       Contact
