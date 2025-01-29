@@ -4,7 +4,7 @@ import Link from "next/link";
 const Hero = () => {
   return (
     <div className="hero-section">
-      <div className="hero-slider ">
+      <div className="hero-slider owl-carousel">
         <div
           className="hero-single"
           style={{
