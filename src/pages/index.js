@@ -24,16 +24,16 @@ const Home = () => {
       <HomeAbout />
       <Counter />
       <HomeService />
+      <Cta />
       <Choose />
       {/* <Pricing /> */}
       <Video />
-      <Gallery />
-      <Donation />
-      <Team />
-      <Cta />
-      <Event />
+      {/* <Gallery /> */}
+      {/* <Donation /> */}
+      {/* <Team /> */}
+      {/* <Event /> */}
       {/* <Testimonial /> */}
-      <Blog />
+      {/* <Blog /> */}
       {/* <Partner /> */}
     </Layout>
   );

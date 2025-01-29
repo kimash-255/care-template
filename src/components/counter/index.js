@@ -1,81 +1,103 @@
-import Link from "next/link";
 import Image from "next/image";
 
 const Counter = () => {
   return (
-    <div class="counter-area">
-      <div class="counter-wrap rounded-0">
-        <div class="container">
-          <div class="row g-4">
-            <div class="col-lg-3 col-sm-6">
-              <div class="counter-box">
-                <div class="icon">
-                  <img src="/assets/img/icon/senior-care.svg" alt="" />
+    <div className="counter-area">
+      <div className="counter-wrap rounded-0">
+        <div className="container">
+          <div className="row g-4">
+            <div className="col-lg-3 col-sm-6">
+              <div className="counter-box">
+                <div className="icon">
+                  <Image
+                    src="/assets/img/icon/senior-care.svg"
+                    alt="Elderly Care"
+                    width={50}
+                    height={50}
+                  />
                 </div>
                 <div>
                   <span
-                    class="counter"
+                    className="counter"
                     data-count="+"
-                    data-to="6560"
+                    data-to="1200"
                     data-speed="3000"
                   >
-                    6560
+                    1200
                   </span>
-                  <h6 class="title">+ Projects Done</h6>
+                  <h6 className="title">Elderly Cared For</h6>
                 </div>
               </div>
             </div>
-            <div class="col-lg-3 col-sm-6">
-              <div class="counter-box">
-                <div class="icon">
-                  <img src="/assets/img/icon/happy.svg" alt="" />
+
+            <div className="col-lg-3 col-sm-6">
+              <div className="counter-box">
+                <div className="icon">
+                  <Image
+                    src="/assets/img/icon/happy.svg"
+                    alt="Happy Residents"
+                    width={50}
+                    height={50}
+                  />
                 </div>
                 <div>
                   <span
-                    class="counter"
+                    className="counter"
                     data-count="+"
-                    data-to="7320"
+                    data-to="98"
                     data-speed="3000"
                   >
-                    7320
+                    98%
                   </span>
-                  <h6 class="title">+ Happy Clients</h6>
+                  <h6 className="title">Resident Satisfaction</h6>
                 </div>
               </div>
             </div>
-            <div class="col-lg-3 col-sm-6">
-              <div class="counter-box">
-                <div class="icon">
-                  <img src="/assets/img/icon/volunteer.svg" alt="" />
+
+            <div className="col-lg-3 col-sm-6">
+              <div className="counter-box">
+                <div className="icon">
+                  <Image
+                    src="/assets/img/icon/volunteer.svg"
+                    alt="Dedicated Staff"
+                    width={50}
+                    height={50}
+                  />
                 </div>
                 <div>
                   <span
-                    class="counter"
+                    className="counter"
                     data-count="+"
-                    data-to="1500"
+                    data-to="250"
                     data-speed="3000"
                   >
-                    1500
+                    250
                   </span>
-                  <h6 class="title">+ Our Volunteer</h6>
+                  <h6 className="title">Dedicated Caregivers</h6>
                 </div>
               </div>
             </div>
-            <div class="col-lg-3 col-sm-6">
-              <div class="counter-box">
-                <div class="icon">
-                  <img src="/assets/img/icon/award.svg" alt="" />
+
+            <div className="col-lg-3 col-sm-6">
+              <div className="counter-box">
+                <div className="icon">
+                  <Image
+                    src="/assets/img/icon/award.svg"
+                    alt="Awards Won"
+                    width={50}
+                    height={50}
+                  />
                 </div>
                 <div>
                   <span
-                    class="counter"
+                    className="counter"
                     data-count="+"
-                    data-to="50"
+                    data-to="15"
                     data-speed="3000"
                   >
-                    50
+                    15
                   </span>
-                  <h6 class="title">+ Win Awards</h6>
+                  <h6 className="title">Awards for Excellence</h6>
                 </div>
               </div>
             </div>
@@ -85,4 +107,5 @@ const Counter = () => {
     </div>
   );
 };
+
 export default Counter;
