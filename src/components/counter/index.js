@@ -68,10 +68,10 @@ const Counter = () => {
                   <span
                     className="counter"
                     data-count="+"
-                    data-to="250"
+                    data-to="10"
                     data-speed="3000"
                   >
-                    250
+                    10
                   </span>
                   <h6 className="title">Dedicated Caregivers</h6>
                 </div>
