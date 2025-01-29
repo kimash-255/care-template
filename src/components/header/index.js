@@ -14,13 +14,14 @@ const Header = () => {
               <div class="header-top-list">
                 <ul>
                   <li>
-                    <Link href="mailto:example@email.com">
-                      <i className="far fa-envelope"></i> example@email.com
+                    <Link href="mailto:info@serenityseniorcareafh.com">
+                      <i className="far fa-envelope"></i>{" "}
+                      info@serenityseniorcareafh.com
                     </Link>
                   </li>
                   <li>
-                    <Link href="tel:+21236547898">
-                      <i class="far fa-phone-volume"></i> +2 123 654 7898
+                    <Link href="tel:+253-401-0437">
+                      <i class="far fa-phone-volume"></i> +253-401-0437
                     </Link>
                   </li>
                   <li>

@@ -142,7 +142,7 @@ const Footer = () => {
                       </div>
                       <div class="content">
                         <h6>Call Us</h6>
-                        <Link href="tel:+21236547898">+2 123 654 7898</Link>
+                        <Link href="tel:+21236547898">+2253-401-0437</Link>
                       </div>
                     </li>
                     <li>
@@ -151,13 +151,9 @@ const Footer = () => {
                       </div>
                       <div class="content">
                         <h6>Mail Us</h6>
-                        <Link href="/cdn-cgi/l/email-protection#076e69616847627f666a776b622964686a">
-                          <span
-                            class="__cf_email__"
-                            data-cfemail="5930373f36193c21383429353c773a3634"
-                          >
-                            [email&#160;protected]
-                          </span>
+                        <Link href="mailto:info@serenityseniorcareafh.com">
+                          <i className="far fa-envelope"></i>{" "}
+                          info@serenityseniorcareafh.com
                         </Link>
                       </div>
                     </li>
