@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import servicesData from "@/data/services.json";
 
 const Footer = () => {
   return (
@@ -54,72 +55,30 @@ const Footer = () => {
                         <i class="far fa-angle-double-right"></i>About Us
                       </Link>
                     </li>
-                    <li>
-                      <Link href="/blog">
-                        <i class="far fa-angle-double-right"></i>Update News
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/testimonial">
-                        <i class="far fa-angle-double-right"></i>Testimonials
-                      </Link>
-                    </li>
+                  
+                  
                     <li>
                       <Link href="/contact">
                         <i class="far fa-angle-double-right"></i>Contact Us
                       </Link>
                     </li>
-                    <li>
-                      <Link href="/terms">
-                        <i class="far fa-angle-double-right"></i>Terms Of
-                        Service
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="privacy">
-                        <i class="far fa-angle-double-right"></i>Privacy policy
-                      </Link>
-                    </li>
+                   
+                    
                   </ul>
                 </div>
               </div>
               <div class="col-6 col-lg-2">
                 <div class="footer-widget-box list">
                   <h4 class="footer-widget-title">Services</h4>
-                  <ul class="footer-list">
-                    <li>
-                      <Link href="/service">
-                        <i class="far fa-angle-double-right"></i>Assisted Living
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/service">
-                        <i class="far fa-angle-double-right"></i>Nursing Care
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/service">
-                        <i class="far fa-angle-double-right"></i>Medical &
-                        Health
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/service">
-                        <i class="far fa-angle-double-right"></i>Physical
-                        Assistance
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/service">
-                        <i class="far fa-angle-double-right"></i>Residential
-                        Care
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/service">
-                        <i class="far fa-angle-double-right"></i>Personal Care
-                      </Link>
-                    </li>
+                  <ul className="footer-list">
+                    {servicesData.map((service) => (
+                      <li key={service.slug}>
+                        <Link href={`/services/${service.slug}`}>
+                          <i className="far fa-angle-double-right"></i>{" "}
+                          {service.title}
+                        </Link>
+                      </li>
+                    ))}
                   </ul>
                 </div>
               </div>

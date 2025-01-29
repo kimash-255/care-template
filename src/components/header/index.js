@@ -151,14 +151,6 @@ const Header = () => {
                 </ul>
                 {/* <!-- nav-right --> */}
                 <div class="nav-right">
-                  <div class="search-btn">
-                    <button
-                      type="button"
-                      class="nav-right-link search-box-outer"
-                    >
-                      <i class="far fa-search"></i>
-                    </button>
-                  </div>
                   <div class="nav-btn">
                     <Link href="/contact" class="theme-btn">
                       Let Us Talk<i class="fas fa-arrow-right"></i>
