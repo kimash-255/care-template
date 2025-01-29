@@ -9,18 +9,18 @@ import Link from "next/link";
 const Hero = () => {
   const slides = [
     {
-      id: 1,
-      image: "/assets/img/hero/slider-1.jpg",
-      title: "Compassionate Elderly Care",
-      description:
-        "We provide a safe, loving, and supportive environment where seniors can enjoy their golden years with dignity and comfort.",
-    },
-    {
       id: 2,
       image: "/assets/img/hero/slider-2.jpg",
       title: "A Home Away From Home",
       description:
         "With professional caregivers, engaging activities, and personalized support, we ensure every resident feels valued and cared for.",
+    },
+    {
+      id: 1,
+      image: "/assets/img/hero/slider-4.jpg",
+      title: "Compassionate Elderly Care",
+      description:
+        "We provide a safe, loving, and supportive environment where seniors can enjoy their golden years with dignity and comfort.",
     },
     {
       id: 3,
