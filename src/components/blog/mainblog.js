@@ -1,11 +1,11 @@
 import Link from "next/link";
 import Image from "next/image";
-import blogData from "@/data/blog.json"; // Import the blog data
+import blogData from "@/data/blog.json"; // Import blog data
 
 const MainBlog = () => {
   return (
     <main className="main">
-      {/* <!-- breadcrumb --> */}
+      {/* Breadcrumb */}
       <div
         className="site-breadcrumb"
         style={{ background: "url(/assets/img/breadcrumb/01.jpg)" }}
@@ -20,9 +20,8 @@ const MainBlog = () => {
           </ul>
         </div>
       </div>
-      {/* <!-- breadcrumb end --> */}
 
-      {/* <!-- blog-area --> */}
+      {/* Blog Area */}
       <div className="blog-area py-100">
         <div className="container">
           <div className="row">
@@ -40,8 +39,9 @@ const MainBlog = () => {
               </div>
             </div>
           </div>
+
+          {/* Blog Posts */}
           <div className="row g-4">
-            {/* Map through the blog data */}
             {blogData.map((blog) => (
               <div key={blog.id} className="col-md-6 col-lg-4">
                 <div className="blog-item wow fadeInUp" data-wow-delay=".25s">
@@ -94,46 +94,8 @@ const MainBlog = () => {
               </div>
             ))}
           </div>
-          {/* <!-- pagination --> */}
-          <div className="pagination-area">
-            <div aria-label="Page navigation example">
-              <ul className="pagination">
-                <li className="page-item">
-                  <Link className="page-link" href="#" aria-label="Previous">
-                    <span aria-hidden="true">
-                      <i className="fas fa-arrow-left"></i>
-                    </span>
-                  </Link>
-                </li>
-                <li className="page-item active">
-                  <Link className="page-link" href="#">
-                    1
-                  </Link>
-                </li>
-                <li className="page-item">
-                  <Link className="page-link" href="#">
-                    2
-                  </Link>
-                </li>
-                <li className="page-item">
-                  <Link className="page-link" href="#">
-                    3
-                  </Link>
-                </li>
-                <li className="page-item">
-                  <Link className="page-link" href="#" aria-label="Next">
-                    <span aria-hidden="true">
-                      <i className="fas fa-arrow-right"></i>
-                    </span>
-                  </Link>
-                </li>
-              </ul>
-            </div>
-          </div>
-          {/* <!-- pagination end --> */}
         </div>
       </div>
-      {/* <!-- blog-area end --> */}
     </main>
   );
 };

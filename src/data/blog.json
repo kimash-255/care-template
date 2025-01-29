@@ -9,7 +9,8 @@
     "author": "Alicia Davis",
     "comments": "2.5k Comments",
     "title": "There are many variations of passages orem available.",
-    "slug": "there-are-many-variations-of-passages-orem-available"
+    "slug": "there-are-many-variations-of-passages-orem-available",
+    "content": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
   },
   {
     "id": 2,
@@ -21,7 +22,8 @@
     "author": "Alicia Davis",
     "comments": "1.2k Comments",
     "title": "Generator internet repeat tend word chunk necessary.",
-    "slug": "generator-internet-repeat-tend-word-chunk-necessary"
+    "slug": "generator-internet-repeat-tend-word-chunk-necessary",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
   },
   {
     "id": 3,
@@ -33,7 +35,8 @@
     "author": "Alicia Davis",
     "comments": "2.8k Comments",
     "title": "Survived only five centuries but also the leap into.",
-    "slug": "survived-only-five-centuries-but-also-the-leap-into"
+    "slug": "survived-only-five-centuries-but-also-the-leap-into",
+    "content": "The quick brown fox jumps over the lazy dog. This is just a placeholder content."
   },
   {
     "id": 4,
@@ -45,7 +48,8 @@
     "author": "John Doe",
     "comments": "3.1k Comments",
     "title": "Exploring the depth of web development technologies.",
-    "slug": "exploring-the-depth-of-web-development-technologies"
+    "slug": "exploring-the-depth-of-web-development-technologies",
+    "content": "We will delve into the exciting world of web development technologies and frameworks that make the web come to life."
   },
   {
     "id": 5,
@@ -57,7 +61,8 @@
     "author": "Jane Smith",
     "comments": "1.9k Comments",
     "title": "Why CSS frameworks matter in modern web design.",
-    "slug": "why-css-frameworks-matter-in-modern-web-design"
+    "slug": "why-css-frameworks-matter-in-modern-web-design",
+    "content": "CSS frameworks are essential for speeding up development and creating responsive, consistent, and scalable websites."
   },
   {
     "id": 6,
@@ -69,6 +74,7 @@
     "author": "Jane Smith",
     "comments": "1.9k Comments",
     "title": "Why CSS frameworks matter in modern web design.",
-    "slug": "why-css-frameworks-matter-in-modern-web-design"
+    "slug": "why-css-frameworks-matter-in-modern-web-design",
+    "content": "Here we explain the importance of using CSS frameworks in web design, from Bootstrap to Tailwind CSS, and how they improve your development process."
   }
 ]
