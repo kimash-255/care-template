@@ -93,7 +93,7 @@ const Header = () => {
                   class="offcanvas-brand"
                   id="offcanvasNavbarLabel"
                 >
-                  <img src="assets/img/logo/logo.png" alt="" />
+                  <img src="/assets/img/logo/logo.png" alt="" />
                 </Link>
                 <button
                   type="button"
