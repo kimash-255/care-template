@@ -20,7 +20,7 @@ const Hero = () => {
       image: "/assets/img/hero/slider-4.jpg",
       title: "Compassionate Elderly Care",
       description:
-        "We provide a safe, loving, and supportive environment where seniors can enjoy their golden years with dignity and comfort.",
+        "We provide a safe, loving, and supportive environment where seniors can enjoy their golden years with dignity and comfort in private environment with private bathrooms",
     },
     {
       id: 3,

@@ -21,9 +21,9 @@ const Feature = () => {
                 <div className="feature-content">
                   <h4>Compassionate Caregivers</h4>
                   <p>
-                    Our trained and experienced caregivers provide
-                    compassionate, 24/7 support to ensure comfort and well-being
-                    for every resident.
+                    Our qualified and experienced staff provide compassionate,
+                    24/7 support to ensure comfort and well-being for every
+                    resident.
                   </p>
                 </div>
               </div>

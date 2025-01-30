@@ -45,7 +45,7 @@ const Header = () => {
                   <li>
                     <Link href="tel:+(206) 712-0125">
                       <i className="far fa-phone-volume"></i> +(503)
-                      477-5855/+(206) 712-0125
+                      477-5855/+(206) 712-0125/+1 (206) 657-2640
                     </Link>
                   </li>
                 </ul>
