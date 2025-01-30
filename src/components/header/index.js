@@ -37,14 +37,15 @@ const Header = () => {
               <div className="header-top-list">
                 <ul>
                   <li>
-                    <Link href="mailto:info@serenityseniorcareafh.com">
+                    <Link href="mailto:benardhomecare@gmail.com">
                       <i className="far fa-envelope"></i>{" "}
-                      info@serenityseniorcareafh.com
+                      benardhomecare@gmail.com
                     </Link>
                   </li>
                   <li>
-                    <Link href="tel:+253-401-0437">
-                      <i className="far fa-phone-volume"></i> +253-401-0437
+                    <Link href="tel:+(206) 712-0125">
+                      <i className="far fa-phone-volume"></i> +(503)
+                      477-5855/+(206) 712-0125
                     </Link>
                   </li>
                   <li>

@@ -90,7 +90,7 @@ const Footer = () => {
                       </div>
                       <div class="content">
                         <h6>Our Address</h6>
-                        <p>25/AB Milford Road, New York, USA</p>
+                        <p>2406 Se130th avenue ,Portland,97233 Oregon</p>
                       </div>
                     </li>
                     <li>
@@ -99,7 +99,9 @@ const Footer = () => {
                       </div>
                       <div class="content">
                         <h6>Call Us</h6>
-                        <Link href="tel:+21236547898">+2253-401-0437</Link>
+                        <Link href="tel:+(206) 712-0125">
+                          +(503) 477-5855/+(206) 712-0125
+                        </Link>
                       </div>
                     </li>
                     <li>
@@ -108,9 +110,9 @@ const Footer = () => {
                       </div>
                       <div class="content">
                         <h6>Mail Us</h6>
-                        <Link href="mailto:info@serenityseniorcareafh.com">
+                        <Link href="mailto:benardhomecare@gmail.com">
                           <i className="far fa-envelope"></i>{" "}
-                          info@serenityseniorcareafh.com
+                          benardhomecare@gmail.com
                         </Link>
                       </div>
                     </li>

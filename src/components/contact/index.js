@@ -33,7 +33,7 @@ const MainContact = () => {
                   </div>
                   <div className="content">
                     <h5>Office Address</h5>
-                    <p>25/B Milford, New York, USA</p>
+                    <p>2406 Se130th avenue ,Portland,97233 Oregon</p>
                   </div>
                 </div>
               </div>
@@ -45,7 +45,9 @@ const MainContact = () => {
                   <div className="content">
                     <h5>Call Us</h5>
                     <p>
-                      <a href="tel:+253-401-0437">+253-401-0437</a>
+                      <Link href="tel:+(206) 712-0125">
+                        (503) 477-5855/+(206) 712-0125
+                      </Link>
                     </p>{" "}
                     {/* Updated phone number */}
                   </div>
@@ -59,8 +61,8 @@ const MainContact = () => {
                   <div className="content">
                     <h5>Email Us</h5>
                     <p>
-                      <Link href="mailto:info@serenityseniorcareafh.com">
-                        info@serenityseniorcareafh.com
+                      <Link href="mailto:benardhomecare@gmail.com">
+                        benardhomecare@gmail.com
                       </Link>{" "}
                       {/* Updated email */}
                     </p>
@@ -178,7 +180,7 @@ const MainContact = () => {
       {/* <!-- map --> */}
       <div className="contact-map">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96708.34194156103!2d-74.03927096447748!3d40.759040329405195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4a01c8df6fb3cb8!2sSolomon%20R.%20Guggenheim%20Museum!5e0!3m2!1sen!2sbd!4v1619410634508!5m2!1sen!2s"
+          src="https://g.co/kgs/6jJKe8m"
           style={{ border: 0 }}
           allowFullScreen=""
           loading="lazy"
