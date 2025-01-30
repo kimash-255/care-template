@@ -53,6 +53,33 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <Head>
+        <title>Destiny Care Home</title>
+        <meta
+          name="description"
+          content="Providing the best care and support at Destiny Care Home."
+        />
+        <meta
+          name="keywords"
+          content="care home, elderly care, assisted living, Destiny Care Home"
+        />
+        <meta name="author" content="Destiny Care Home" />
+        <meta name="theme-color" content="#ffffff" />
+
+        {/* Favicon */}
+        <link rel="icon" href="/assets/logo/logo.png" />
+
+        {/* Open Graph Meta Tags (for link sharing previews) */}
+        <meta property="og:title" content="Destiny Care Home" />
+        <meta
+          property="og:description"
+          content="Providing the best care and support at Destiny Care Home."
+        />
+        <meta property="og:image" content="/assets//img/logo/logo.png" />
+        <meta property="og:image:alt" content="Destiny Care Home Logo" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://.com/" />
+
+        {/* Viewport Settings */}
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta
           name="viewport"
