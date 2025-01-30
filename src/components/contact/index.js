@@ -69,17 +69,6 @@ const MainContact = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-md-3">
-                <div className="contact-info">
-                  <div className="icon">
-                    <i className="fal fa-alarm-clock"></i>
-                  </div>
-                  <div className="content">
-                    <h5>Open Time</h5>
-                    <p>Mon - Sat (10.00AM - 05.30PM)</p>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
           <div className="contact-form-wrap">
