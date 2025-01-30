@@ -136,7 +136,7 @@ const Footer = () => {
             </div>
             <div class="col-md-6 align-self-center">
               {/* <ul class="footer-social">
-                <li> akslsl
+                <li>
                   <Link href="#">
                     <i class="fab fa-facebook-f"></i>
                   </Link>
