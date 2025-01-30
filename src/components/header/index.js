@@ -48,12 +48,6 @@ const Header = () => {
                       477-5855/+(206) 712-0125
                     </Link>
                   </li>
-                  <li>
-                    <Link href="#">
-                      <i className="far fa-alarm-clock"></i> Sun - Fri (08AM -
-                      10PM)
-                    </Link>
-                  </li>
                 </ul>
               </div>
             </div>
