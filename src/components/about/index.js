@@ -62,8 +62,8 @@ const HomeAbout = () => {
                       <div className="content">
                         <h6>Our Expert Nurses</h6>
                         <p>
-                          Providing top-tier care with experience and
-                          dedication.
+                          Providing top-tier care with experience and dedication
+                          by qualified staff.
                         </p>
                       </div>
                     </div>
