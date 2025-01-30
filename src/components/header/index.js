@@ -1,17 +1,40 @@
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import servicesData from "@/data/services.json";
+
 const Header = () => {
   const [isHidden, setHidden] = useState(false);
+  const [isSticky, setSticky] = useState(false);
+
+  // Function to handle scroll event
+  const handleScroll = () => {
+    if (window.scrollY > 50) {
+      // Add a threshold for when to stick the navbar
+      setSticky(true);
+    } else {
+      setSticky(false);
+    }
+  };
+
+  // Set up scroll event listener
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    // Clean up the event listener on component unmount
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <header class="header">
+    <header className="header">
       {/* <!-- header top --> */}
-      <div class="header-top">
-        <div class="container">
-          <div class="header-top-wrap">
-            <div class="header-top-left">
-              <div class="header-top-list">
+      <div className="header-top">
+        <div className="container">
+          <div className="header-top-wrap">
+            <div className="header-top-left">
+              <div className="header-top-list">
                 <ul>
                   <li>
                     <Link href="mailto:info@serenityseniorcareafh.com">
@@ -21,33 +44,20 @@ const Header = () => {
                   </li>
                   <li>
                     <Link href="tel:+253-401-0437">
-                      <i class="far fa-phone-volume"></i> +253-401-0437
+                      <i className="far fa-phone-volume"></i> +253-401-0437
                     </Link>
                   </li>
                   <li>
                     <Link href="#">
-                      <i class="far fa-alarm-clock"></i> Sun - Fri (08AM - 10PM)
+                      <i className="far fa-alarm-clock"></i> Sun - Fri (08AM -
+                      10PM)
                     </Link>
                   </li>
                 </ul>
               </div>
             </div>
-            <div class="header-top-right">
-              <div class="header-top-social">
-                <span>Follow Us: </span>
-                <Link href="#">
-                  <i class="fab fa-facebook"></i>
-                </Link>
-                <Link href="#">
-                  <i class="fab fa-x-twitter"></i>
-                </Link>
-                <Link href="#">
-                  <i class="fab fa-instagram"></i>
-                </Link>
-                <Link href="#">
-                  <i class="fab fa-linkedin"></i>
-                </Link>
-              </div>
+            <div className="header-top-right">
+              {/* Social media icons can be added here */}
             </div>
           </div>
         </div>
@@ -55,26 +65,30 @@ const Header = () => {
       {/* <!-- header top end --> */}
 
       {/* <!-- navbar --> */}
-      <div class="main-navigation">
-        <nav class="navbar navbar-expand-lg">
-          <div class="container position-relative">
-            <Link class="navbar-brand" href="/">
+      <div className="main-navigation">
+        <nav
+          className={`navbar navbar-expand-lg ${isSticky ? "fixed-top" : ""}`}
+        >
+          <div className="container position-relative">
+            <Link className="navbar-brand" href="/">
               <img
                 src="/assets/img/logo/logo.png"
                 alt="logo"
-                class="h-12 w-auto max-w-[300px]"
+                className="h-12 w-auto max-w-[300px]"
               />
             </Link>
-            <div class="mobile-menu-right">
-              <div class="mobile-menu-btn">
-                <button type="button" class="nav-right-link search-box-outer">
-                  <i class="far fa-search"></i>
+            <div className="mobile-menu-right">
+              <div className="mobile-menu-btn">
+                <button
+                  type="button"
+                  className="nav-right-link search-box-outer"
+                >
+                  <i className="far fa-search"></i>
                 </button>
-                /
               </div>
               <button
                 onClick={() => setHidden(true)}
-                class="navbar-toggler"
+                className="navbar-toggler"
                 type="button"
                 data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasNavbar"
@@ -87,15 +101,15 @@ const Header = () => {
               </button>
             </div>
             <div
-              class={`offcanvas offcanvas-start ${isHidden ? "show" : ""}`}
-              tabindex="-1"
+              className={`offcanvas offcanvas-start ${isHidden ? "show" : ""}`}
+              tabIndex="-1"
               id="offcanvasNavbar"
               aria-labelledby="offcanvasNavbarLabel"
             >
-              <div class="offcanvas-header">
+              <div className="offcanvas-header">
                 <Link
                   href="/"
-                  class="offcanvas-brand"
+                  className="offcanvas-brand"
                   id="offcanvasNavbarLabel"
                 >
                   <img src="/assets/img/logo/logo.png" alt="" />
@@ -103,25 +117,25 @@ const Header = () => {
                 <button
                   type="button"
                   onClick={() => setHidden(false)}
-                  class="btn-close"
+                  className="btn-close"
                   data-bs-dismiss="offcanvas"
                   aria-label="Close"
                 >
-                  <i class="far fa-xmark"></i>
+                  <i className="far fa-xmark"></i>
                 </button>
               </div>
-              <div class="offcanvas-body gap-x-4">
+              <div className="offcanvas-body gap-x-4">
                 <ul
                   onClick={() => setHidden(false)}
-                  class="navbar-nav justify-center flex-grow-1"
+                  className="navbar-nav justify-center flex-grow-1"
                 >
-                  <li class="nav-item dropdown">
-                    <Link className="nav-link  " href="/">
+                  <li className="nav-item dropdown">
+                    <Link className="nav-link" href="/">
                       Home
                     </Link>
                   </li>
-                  <li class="nav-item">
-                    <Link class="nav-link" href="/about">
+                  <li className="nav-item">
+                    <Link className="nav-link" href="/about">
                       About
                     </Link>
                   </li>
@@ -143,17 +157,17 @@ const Header = () => {
                     </ul>
                   </li>
 
-                  <li class="nav-item">
-                    <Link class="nav-link" href="/contact">
+                  <li className="nav-item">
+                    <Link className="nav-link" href="/contact">
                       Contact
                     </Link>
                   </li>
                 </ul>
                 {/* <!-- nav-right --> */}
-                <div class="nav-right">
-                  <div class="nav-btn">
-                    <Link href="/contact" class="theme-btn">
-                      Let Us Talk<i class="fas fa-arrow-right"></i>
+                <div className="nav-right">
+                  <div className="nav-btn">
+                    <Link href="/contact" className="theme-btn">
+                      Consult Us <i className="fas fa-arrow-right"></i>
                     </Link>
                   </div>
                 </div>
@@ -166,4 +180,5 @@ const Header = () => {
     </header>
   );
 };
+
 export default Header;

@@ -12,10 +12,11 @@ const Choose = () => {
           <div className="col-lg-6">
             <div className="site-heading mb-0">
               <span className="site-title-tagline align-items-center justify-content-center">
-                <i className="far fa-house-chimney-heart"></i> Why Choose Us
+                <i className="far fa-house-chimney-heart"></i> Why Choose Our
+                Care Homes
               </span>
               <h2 className="site-title">
-                Trusted And Experienced Senior Care Provider
+                Trusted And Experienced Elderly Care Providers
               </h2>
             </div>
           </div>
@@ -28,13 +29,16 @@ const Choose = () => {
                   <div className="col-md-6">
                     <div className="choose-item text-center">
                       <div className="choose-item-icon d-flex align-items-center justify-content-center">
-                        <img src="/assets/img/icon/money.svg" alt="" />
+                        <img
+                          src="/assets/img/icon/money.svg"
+                          alt="Affordable"
+                        />
                       </div>
                       <div className="choose-item-info">
-                        <h4>Affordable Cost</h4>
+                        <h4>Affordable Care</h4>
                         <p>
-                          There are many variations words passage available
-                          majority.
+                          We provide affordable senior living options without
+                          compromising on quality.
                         </p>
                       </div>
                     </div>
@@ -42,13 +46,16 @@ const Choose = () => {
                   <div className="col-md-6">
                     <div className="choose-item text-center">
                       <div className="choose-item-icon d-flex align-items-center justify-content-center">
-                        <img src="/assets/img/icon/team.svg" alt="" />
+                        <img
+                          src="/assets/img/icon/team.svg"
+                          alt="Experienced Team"
+                        />
                       </div>
                       <div className="choose-item-info">
-                        <h4>Our Experienced Team</h4>
+                        <h4>Experienced Care Team</h4>
                         <p>
-                          There are many variations words passage available
-                          majority.
+                          Our dedicated team has years of experience in elderly
+                          care, providing comfort and support.
                         </p>
                       </div>
                     </div>
@@ -56,13 +63,16 @@ const Choose = () => {
                   <div className="col-md-6">
                     <div className="choose-item text-center">
                       <div className="choose-item-icon d-flex align-items-center justify-content-center">
-                        <img src="/assets/img/icon/care.svg" alt="" />
+                        <img
+                          src="/assets/img/icon/care.svg"
+                          alt="Quality Care"
+                        />
                       </div>
                       <div className="choose-item-info">
                         <h4>Quality Services</h4>
                         <p>
-                          There are many variations words passage available
-                          majority.
+                          We offer a range of services tailored to the needs of
+                          senior residents, ensuring their well-being.
                         </p>
                       </div>
                     </div>
@@ -70,13 +80,17 @@ const Choose = () => {
                   <div className="col-md-6">
                     <div className="choose-item text-center">
                       <div className="choose-item-icon d-flex align-items-center justify-content-center">
-                        <img src="/assets/img/icon/certified.svg" alt="" />
+                        <img
+                          src="/assets/img/icon/certified.svg"
+                          alt="Certified"
+                        />
                       </div>
                       <div className="choose-item-info">
-                        <h4>Certified Company</h4>
+                        <h4>Certified and Licensed</h4>
                         <p>
-                          There are many variations words passage available
-                          majority.
+                          We are fully certified and licensed to provide
+                          high-quality care in a safe and supportive
+                          environment.
                         </p>
                       </div>
                     </div>
@@ -87,7 +101,7 @@ const Choose = () => {
           </div>
           <div className="col-lg-6">
             <div className="choose-img wow fadeInRight" data-wow-delay=".25s">
-              <img src="/assets/img/choose/01.jpg" alt="" />
+              <img src="/assets/img/choose/01.jpg" alt="Elderly Care Home" />
             </div>
           </div>
         </div>

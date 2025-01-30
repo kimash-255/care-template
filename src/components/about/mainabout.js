@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Testimonial from "../testimonial";
 import Counter from "../counter";
+import HomeAbout from ".";
 
 const MainAbout = () => {
   return (
@@ -24,89 +25,7 @@ const MainAbout = () => {
       {/* <!-- breadcrumb end --> */}
 
       {/* <!-- about area --> */}
-      <div class="about-area py-100">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-lg-6">
-              <div class="about-left wow fadeInLeft" data-wow-delay=".25s">
-                <div class="about-img">
-                  <div class="row">
-                    <div class="col-6">
-                      <img
-                        class="img-1"
-                        src="/assets/img/about/01.jpg"
-                        alt=""
-                      />
-                      <div class="about-experience">
-                        <h5>
-                          5<span>+</span>
-                        </h5>
-                        <p>Years Of Experience</p>
-                      </div>
-                    </div>
-                    <div class="col-6">
-                      <div class="img-2">
-                        <img src="/assets/img/about/02.jpg" alt="" />
-                      </div>
-                      <div class="img-3">
-                        <img src="/assets/img/about/03.jpg" alt="" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <div class="about-right wow fadeInUp" data-wow-delay=".25s">
-                <div class="site-heading mb-3">
-                  <span class="site-title-tagline">
-                    <i class="far fa-house-chimney-heart"></i> About Us
-                  </span>
-                  <h2 class="site-title">
-                    We Are The Best and Expert For SeniorCare
-                  </h2>
-                </div>
-                <p class="about-text">
-                  By combining professionalism with care, we deliver unmatched
-                  support for seniors. Many senior care providers focus on
-                  general solutions, which don’t truly address unique needs. Our
-                  approach is personalized, ensuring every individual receives
-                  the attention they deserve.
-                </p>
-                <div class="about-content">
-                  <div class="row g-3">
-                    <div class="col-md-6">
-                      <div class="about-item">
-                        <div class="icon">
-                          <img src="/assets/img/icon/team.svg" alt="" />
-                        </div>
-                        <div class="content">
-                          <h6>Our Experts Nurse</h6>
-                          <p>Take a look at our up of the round shows</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="about-item">
-                        <div class="icon">
-                          <img src="/assets/img/icon/support-2.svg" alt="" />
-                        </div>
-                        <div class="content">
-                          <h6>24/7 Live Support</h6>
-                          <p>Take a look at our up of the round shows</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <Link href="/about" class="theme-btn">
-                  Discover More<i class="fas fa-arrow-right"></i>
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <HomeAbout />
       {/* <!-- about area end --> */}
 
       {/* <!-- counter area --> */}
@@ -114,7 +33,7 @@ const MainAbout = () => {
       {/* <!-- counter area end --> */}
 
       {/* <!-- team-area --> */}
-      <div class="team-area py-100">
+      {/* <div class="team-area py-100">
         <div class="container">
           <div class="row">
             <div class="col-lg-6 mx-auto">
@@ -268,76 +187,105 @@ const MainAbout = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       {/* <!-- team-area end --> */}
 
       {/* <!-- testimonial-area --> */}
       {/* <Testimonial /> */}
       {/* <!-- testimonial-area end --> */}
 
-      {/* <!-- skill-area --> */}
-      <div class="skill-area py-100">
-        <div class="container">
-          <div class="skill-wrap">
-            <div class="row g-4 align-items-center">
-              <div class="col-lg-6">
-                <div class="skill-content wow fadeInUp" data-wow-delay=".25s">
-                  <span class="site-title-tagline">
-                    <i class="far fa-house-chimney-heart"></i> Our Skills
+      <div className="skill-area py-100">
+        <div className="container">
+          <div className="skill-wrap">
+            <div className="row g-4 align-items-center">
+              <div className="col-lg-6">
+                <div
+                  className="skill-content wow fadeInUp"
+                  data-wow-delay=".25s"
+                >
+                  <span className="site-title-tagline">
+                    <i className="far fa-house-chimney-heart"></i> Our Expertise
                   </span>
-                  <h2 class="site-title">
-                    We Offers You Best Senior Care Services
+                  <h2 className="site-title">
+                    We Offer the Best Senior Care Services for Your Loved Ones
                   </h2>
-                  <p class="skill-text">
-                    There are many variations of passages of Lorem Ipsum
-                    available, but the majority have suffered alteration in some
-                    form, by injected humour, or randomised words which donot
-                    look even slightly believable.
+                  <p className="skill-text">
+                    Our team is dedicated to providing the highest quality care
+                    to seniors. We understand the needs of elderly residents and
+                    tailor our services to ensure their comfort, safety, and
+                    well-being.
                   </p>
-                  <div class="skill-progress">
-                    <div class="progress-item">
+                  <div className="skill-progress">
+                    <div className="progress-item">
                       <h5>
-                        Best Quality Service <span class="percent">85%</span>
+                        High-Quality Care <span className="percent">90%</span>
                       </h5>
-                      <div class="progress" data-value="85">
-                        <div class="progress-bar" role="progressbar"></div>
+                      <div
+                        className="progress"
+                        style={{ height: "10px", backgroundColor: "#e0e0e0" }}
+                      >
+                        <div
+                          className="progress-bar"
+                          role="progressbar"
+                          style={{ width: "90%", backgroundColor: "green" }}
+                        ></div>
                       </div>
                     </div>
-                    <div class="progress-item">
+                    <div className="progress-item">
                       <h5>
-                        Our Experience <span class="percent">90%</span>
+                        Experienced Care Team{" "}
+                        <span className="percent">95%</span>
                       </h5>
-                      <div class="progress" data-value="90">
-                        <div class="progress-bar" role="progressbar"></div>
+                      <div
+                        className="progress"
+                        style={{ height: "10px", backgroundColor: "#e0e0e0" }}
+                      >
+                        <div
+                          className="progress-bar"
+                          role="progressbar"
+                          style={{ width: "95%", backgroundColor: "green" }}
+                        ></div>
                       </div>
                     </div>
-                    <div class="progress-item">
+                    <div className="progress-item">
                       <h5>
-                        Senior Care <span class="percent">80%</span>
+                        Specialized Senior Care{" "}
+                        <span className="percent">85%</span>
                       </h5>
-                      <div class="progress" data-value="80">
-                        <div class="progress-bar" role="progressbar"></div>
+                      <div
+                        className="progress"
+                        style={{ height: "10px", backgroundColor: "#e0e0e0" }}
+                      >
+                        <div
+                          className="progress-bar"
+                          role="progressbar"
+                          style={{ width: "85%", backgroundColor: "green" }}
+                        ></div>
                       </div>
                     </div>
                   </div>
-                  <Link href="/contact" class="theme-btn mt-5">
-                    Learn More<i class="fas fa-arrow-right"></i>
+                  <Link href="/contact" className="theme-btn mt-5">
+                    Learn More<i className="fas fa-arrow-right"></i>
                   </Link>
                 </div>
               </div>
-              <div class="col-lg-6">
-                <div class="skill-img wow fadeInRight" data-wow-delay=".25s">
-                  <img src="/assets/img/skill/01.jpg" alt="thumb" />
+              <div className="col-lg-6">
+                <div
+                  className="skill-img wow fadeInRight"
+                  data-wow-delay=".25s"
+                >
+                  <img src="/assets/img/skill/01.jpg" alt="Elderly Care" />
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+
       {/* <!-- skill-area end --> */}
 
       {/* <!-- partner area --> */}
-      <div class="partner-area bg pt-40 pb-40">
+      {/* <div class="partner-area bg pt-40 pb-40">
         <div class="container">
           <div class="partner-wrapper partner-slider owl-carousel owl-theme">
             <img src="/assets/img/partner/01.png" alt="thumb" />
@@ -349,7 +297,7 @@ const MainAbout = () => {
             <img src="/assets/img/partner/03.png" alt="thumb" />
           </div>
         </div>
-      </div>
+      </div> */}
       {/* <!-- partner area end--> */}
     </main>
   );

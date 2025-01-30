@@ -127,12 +127,11 @@ const Footer = () => {
             <div class="col-md-6 align-self-center">
               <p class="copyright-text">
                 &copy; Copyright <span id="date"></span>
-                <Link href="#"> Destiny Care Homes LLC </Link> All Rights
-                Reserved.
+                <Link href="#"> Mslabdesigns </Link> All Rights Reserved.
               </p>
             </div>
             <div class="col-md-6 align-self-center">
-              <ul class="footer-social">
+              {/* <ul class="footer-social">
                 <li>
                   <Link href="#">
                     <i class="fab fa-facebook-f"></i>
@@ -153,7 +152,7 @@ const Footer = () => {
                     <i class="fab fa-youtube"></i>
                   </Link>
                 </li>
-              </ul>
+              </ul> */}
             </div>
           </div>
         </div>

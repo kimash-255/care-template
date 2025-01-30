@@ -5,7 +5,6 @@ Author          : LunarTemp
 Version         : 1.0
 ==============================================================*/
 
-
 /*=====================================================
 Table of contents
 =======================================================
@@ -76,47 +75,43 @@ Table of contents
 
 =======================================================*/
 
-
 /*====================
 1. Google fonts
 ======================*/
 
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&family=Roboto:wght@100;300;400;500;700;900&display=swap");
 
 /*====================
 2. Theme variables
 ======================*/
 
 :root {
-  --body-font: 'Roboto', sans-serif;
-  --heading-font: 'Ubuntu', sans-serif;
-  --theme-color: #FD6602;
-  --theme-color2: #00ADB8;
-  --theme-bg-light: #F6F6F6;
-  --theme-color-light: rgba(255, 122, 124, .1);
-  --body-text-color: #757F95;
+  --body-font: "Roboto", sans-serif;
+  --heading-font: "Ubuntu", sans-serif;
+  --theme-color: #fd6602;
+  --theme-color2: #00adb8;
+  --theme-bg-light: #f6f6f6;
+  --theme-color-light: rgba(255, 122, 124, 0.1);
+  --body-text-color: #757f95;
   --color-white: #ffffff;
-  --color-dark: #2C374B;
-  --color-green: #15D4C9;
-  --color-blue: #0049D0;
-  --color-skyblue: #00BFFF;
-  --color-yellow: #FBA707;
-  --color-gray: #ECECEC;
-  --color-red: #FD6602;
+  --color-dark: #2c374b;
+  --color-green: #15d4c9;
+  --color-blue: #0049d0;
+  --color-skyblue: #00bfff;
+  --color-yellow: #fba707;
+  --color-gray: #ececec;
+  --color-red: #fd6602;
   --box-shadow: 0 0 40px 5px rgb(0 0 0 / 5%);
   --box-shadow2: 0 0 15px rgba(0, 0, 0, 0.17);
-  --transition: all .5s ease-in-out;
-  --transition2: all .3s ease-in-out;
+  --transition: all 0.5s ease-in-out;
+  --transition2: all 0.3s ease-in-out;
   --border-info-color: rgba(0, 0, 0, 0.08);
   --border-info-color2: rgba(0, 0, 0, 0.05);
   --border-white-color: rgba(255, 255, 255, 0.08);
   --border-white-color2: rgba(255, 255, 255, 0.05);
-  --footer-bg: #2C374B;
-  --footer-text-color: #F5FAFF;
+  --footer-bg: #2c374b;
+  --footer-text-color: #f5faff;
 }
-
-
 
 /*====================
 3. General css
@@ -151,7 +146,7 @@ body {
 }
 
 a {
-  color:  var(--color-dark);
+  color: var(--color-dark);
   display: inline-block;
 }
 
@@ -187,7 +182,7 @@ h3,
 h4,
 h5,
 h6 {
-  color:  var(--color-dark);
+  color: var(--color-dark);
   margin: 0px;
   font-weight: 600;
   font-family: var(--heading-font);
@@ -269,9 +264,6 @@ label {
   opacity: 1;
 }
 
-
-
-
 /*===================
 4. Theme default css
 ======================*/
@@ -279,8 +271,6 @@ label {
 .bg {
   background: var(--theme-bg-light);
 }
-
-
 
 /*====================
 5. Margin & padding
@@ -534,9 +524,6 @@ label {
   margin: 120px 0;
 }
 
-
-
-
 /*====================
 6. Preloader
 ======================*/
@@ -591,9 +578,6 @@ label {
   }
 }
 
-
-
-
 /*====================
 7. Bs custom css
 ======================*/
@@ -603,12 +587,12 @@ label {
   margin-bottom: 20px;
 }
 
-.form-group .form-label{
+.form-group .form-label {
   color: var(--color-dark);
 }
 
 .form-group .form-control,
-.form-group .form-select{
+.form-group .form-select {
   padding: 14px 20px 14px 20px;
   border-radius: 15px;
   background-color: var(--color-white);
@@ -616,21 +600,21 @@ label {
   border-color: var(--border-info-color);
 }
 
-.form-group .form-control::placeholder{
+.form-group .form-control::placeholder {
   color: var(--body-text-color);
 }
 
 .form-group .form-control:focus,
-.form-group .form-select:focus{
+.form-group .form-select:focus {
   border-color: var(--theme-color2);
-  box-shadow: 0 0 0 .25rem rgba(56, 174, 185, .25)
+  box-shadow: 0 0 0 0.25rem rgba(56, 174, 185, 0.25);
 }
 
-.form-group .form-icon{
+.form-group .form-icon {
   position: relative;
 }
 
-.form-group .form-icon i{
+.form-group .form-icon i {
   position: absolute;
   top: 19px;
   left: 20px;
@@ -639,35 +623,33 @@ label {
 }
 
 .form-group .form-icon .form-control,
-.form-group .form-icon .form-select{
+.form-group .form-icon .form-select {
   padding-left: 50px;
 }
 
-.form-check{
+.form-check {
   margin-bottom: 20px;
 }
 
-.form-check .form-check-input{
+.form-check .form-check-input {
   border-radius: 6px;
   margin-top: 6.5px;
   border-color: var(--border-info-color);
 }
 
-.form-check .form-check-label{
+.form-check .form-check-label {
   color: var(--color-dark);
 }
 
-.form-check .form-check-input:checked{
+.form-check .form-check-input:checked {
   background-color: var(--theme-color2);
-  border-color: var(--theme-color2)
-}
-
-.form-check .form-check-input:focus{
   border-color: var(--theme-color2);
-  box-shadow: 0 0 0 .25rem rgba(56, 174, 185, .25)
 }
 
-
+.form-check .form-check-input:focus {
+  border-color: var(--theme-color2);
+  box-shadow: 0 0 0 0.25rem rgba(56, 174, 185, 0.25);
+}
 
 /*====================
 8. Container
@@ -683,13 +665,11 @@ label {
   }
 }
 
-
-
 /*====================
 9. Nice select css
 ======================*/
 
-.nice-select{
+.nice-select {
   width: 100%;
   height: 54px;
   line-height: 54px;
@@ -700,19 +680,19 @@ label {
   border-color: var(--border-info-color);
 }
 
-.nice-select::after{
+.nice-select::after {
   width: 9px;
   height: 9px;
   right: 20px;
-  margin-top: -6.5px
+  margin-top: -6.5px;
 }
 
-.nice-select:focus{
+.nice-select:focus {
   border-color: var(--theme-color2);
-  box-shadow: 0 0 0 .25rem rgba(56, 174, 185, .25)
+  box-shadow: 0 0 0 0.25rem rgba(56, 174, 185, 0.25);
 }
 
-.nice-select .list{
+.nice-select .list {
   width: 100%;
   border: none;
   border-radius: 15px;
@@ -728,11 +708,9 @@ label {
   color: var(--theme-color);
 }
 
-.form-icon .nice-select{
+.form-icon .nice-select {
   padding-left: 50px;
 }
-
-
 
 /*===================
 10. Play btn
@@ -783,8 +761,6 @@ label {
   }
 }
 
-
-
 /*====================
 11. Site title css
 ======================*/
@@ -807,11 +783,11 @@ label {
   margin-bottom: 15px;
 }
 
-.site-title-tagline.light{
+.site-title-tagline.light {
   background: var(--color-white);
 }
 
-.site-title-tagline i{
+.site-title-tagline i {
   font-size: 16px;
   width: 30px;
   height: 30px;
@@ -831,12 +807,12 @@ label {
   margin-bottom: 0;
 }
 
-.site-title span{
+.site-title span {
   color: transparent;
   -webkit-text-stroke: 2px var(--theme-color);
 }
 
-.site-title.text-white span{
+.site-title.text-white span {
   -webkit-text-stroke: 2px var(--color-white);
 }
 
@@ -854,7 +830,7 @@ label {
 }
 
 .heading-divider:after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: -1px;
@@ -889,8 +865,6 @@ label {
     transform: translateX(-1px);
   }
 }
-
-
 
 /*====================
 12. Theme button
@@ -931,7 +905,7 @@ label {
   z-index: -1;
 }
 
-.theme-btn:hover{
+.theme-btn:hover {
   color: var(--color-white);
 }
 
@@ -941,14 +915,14 @@ label {
 }
 
 .theme-btn i,
-.theme-btn2 i{
+.theme-btn2 i {
   margin-left: 8px;
   transform: rotate(-40deg);
   transition: var(--transition2);
 }
 
 .theme-btn:hover i,
-.theme-btn2:hover i{
+.theme-btn2:hover i {
   transform: rotate(0deg);
 }
 
@@ -957,7 +931,7 @@ label {
   margin-right: 5px;
 }
 
-.theme-btn2{
+.theme-btn2 {
   background: var(--theme-color2);
   color: var(--color-white);
 }
@@ -966,11 +940,9 @@ label {
   background: var(--color-dark);
 }
 
-.theme-btn2:hover{
+.theme-btn2:hover {
   color: var(--color-white);
 }
-
-
 
 /*====================
 13. Header top css
@@ -982,7 +954,7 @@ label {
   position: relative;
 }
 
-.header-top::before{
+.header-top::before {
   content: "";
   position: absolute;
   top: 0;
@@ -1012,11 +984,11 @@ label {
   color: var(--color-white);
 }
 
-.header-top-list a:hover{
-  color: var(--theme-color)
+.header-top-list a:hover {
+  color: var(--theme-color);
 }
 
-.header-top-list a i{
+.header-top-list a i {
   color: var(--theme-color);
   margin-right: 5px;
 }
@@ -1028,15 +1000,15 @@ label {
   gap: 15px;
 }
 
-.header-top-right .header-top-list a:hover{
+.header-top-right .header-top-list a:hover {
   color: var(--color-dark);
 }
 
-.header-top-right .header-top-list i{
+.header-top-right .header-top-list i {
   color: var(--color-white);
 }
 
-.header-top-social span{
+.header-top-social span {
   color: var(--color-white);
 }
 
@@ -1052,11 +1024,11 @@ label {
   color: var(--color-dark);
 }
 
-.header-top-lang .top-lang{
+.header-top-lang .top-lang {
   color: var(--color-white);
 }
 
-.header-top-lang .dropdown-menu{
+.header-top-lang .dropdown-menu {
   min-width: 60px;
   border-radius: 15px;
   padding: 10px;
@@ -1064,12 +1036,12 @@ label {
   box-shadow: var(--box-shadow);
 }
 
-.header-top-lang .dropdown-item{
+.header-top-lang .dropdown-item {
   color: var(--color-dark);
   border-radius: 10px;
 }
 
-.header-top-lang .dropdown-item:hover{
+.header-top-lang .dropdown-item:hover {
   background: var(--theme-color);
   color: var(--color-white);
 }
@@ -1096,24 +1068,22 @@ label {
     gap: 0px;
   }
 
-  .header-top-list ul li{
+  .header-top-list ul li {
     margin-right: 10px;
   }
 
-  .header-top-list ul li:last-child{
+  .header-top-list ul li:last-child {
     display: none;
   }
 
-  .header-top-lang .dropdown-toggle::after{
+  .header-top-lang .dropdown-toggle::after {
     margin-top: 12px;
   }
 
-  .header-top-social span{
+  .header-top-social span {
     display: none;
   }
 }
-
-
 
 /*====================
 14. Navbar css
@@ -1171,7 +1141,7 @@ label {
   display: inline-block;
   margin-left: 5px;
   vertical-align: baseline;
-  font-family: 'Font Awesome 6 Pro';
+  font-family: "Font Awesome 6 Pro";
   content: "\f107";
   font-weight: 600;
   border: none;
@@ -1179,7 +1149,6 @@ label {
 }
 
 @media all and (min-width: 992px) {
-
   .navbar .nav-item .nav-link {
     margin-right: 22px;
     padding: 30px 0 30px 0;
@@ -1189,7 +1158,7 @@ label {
     text-transform: capitalize;
   }
 
-  .navbar.fixed-top .nav-item .nav-link{
+  .navbar.fixed-top .nav-item .nav-link {
     color: var(--color-dark);
   }
 
@@ -1256,7 +1225,7 @@ label {
   }
 
   .navbar .nav-item:hover .dropdown-menu {
-    transition: .3s;
+    transition: 0.3s;
     opacity: 1;
     visibility: visible;
     top: 100%;
@@ -1301,22 +1270,22 @@ label {
     color: var(--theme-color);
   }
 
-  .navbar.fixed-top .nav-right-link{
+  .navbar.fixed-top .nav-right-link {
     color: var(--color-dark);
   }
 
-  .navbar.fixed-top .nav-right-link:hover{
+  .navbar.fixed-top .nav-right-link:hover {
     color: var(--theme-color);
   }
 
-  .nav-right .call-wrap{
+  .nav-right .call-wrap {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     gap: 7px;
   }
 
-  .nav-right .call-wrap .icon{
+  .nav-right .call-wrap .icon {
     width: 45px;
     height: 45px;
     line-height: 46px;
@@ -1328,17 +1297,17 @@ label {
     margin-top: 5px;
   }
 
-  .nav-right .call-wrap .content span{
-   color: var(--theme-color);
-   font-weight: 500;
+  .nav-right .call-wrap .content span {
+    color: var(--theme-color);
+    font-weight: 500;
   }
 
-  .nav-right .call-wrap .content h6 a{
+  .nav-right .call-wrap .content h6 a {
     color: var(--color-dark);
     font-weight: 800;
   }
 
-  .nav-right .sidebar-btn span{
+  .nav-right .sidebar-btn span {
     display: block;
     width: 24px;
     border-bottom: 3px solid var(--color-dark);
@@ -1348,21 +1317,21 @@ label {
     transition: var(--transition);
   }
 
-  .nav-right .sidebar-btn span:first-child{
+  .nav-right .sidebar-btn span:first-child {
     width: 10px;
     margin-top: 0;
   }
 
-  .nav-right .sidebar-btn span:nth-child(3){
+  .nav-right .sidebar-btn span:nth-child(3) {
     width: 15px;
   }
 
   /* navbar light */
-  .navbar.light .nav-item .nav-link{
+  .navbar.light .nav-item .nav-link {
     color: var(--color-white);
   }
 
-  .navbar.light.fixed-top .nav-item .nav-link{
+  .navbar.light.fixed-top .nav-item .nav-link {
     color: var(--color-dark);
   }
 
@@ -1371,23 +1340,23 @@ label {
     color: var(--theme-color);
   }
 
-  .navbar.light .nav-right-link{
+  .navbar.light .nav-right-link {
     color: var(--color-white);
   }
 
-  .navbar.light.fixed-top .nav-right-link{
+  .navbar.light.fixed-top .nav-right-link {
     color: var(--color-dark);
   }
 
-  .navbar.light .nav-right-link:hover{
+  .navbar.light .nav-right-link:hover {
     color: var(--theme-color);
   }
 
-  .navbar.light .nav-right .sidebar-btn span{
+  .navbar.light .nav-right .sidebar-btn span {
     border-color: var(--color-white);
   }
 
-  .navbar.light.fixed-top .nav-right .sidebar-btn span{
+  .navbar.light.fixed-top .nav-right .sidebar-btn span {
     border-color: var(--color-dark);
   }
 }
@@ -1402,11 +1371,10 @@ label {
   }
 
   .nav-right .sidebar-btn,
-  .nav-right .call-wrap{
+  .nav-right .call-wrap {
     display: none;
   }
 }
-
 
 /* navbar mobile menu */
 .navbar .mobile-menu-right {
@@ -1423,11 +1391,11 @@ label {
     width: 130px;
   }
 
-  .navbar .offcanvas{
+  .navbar .offcanvas {
     width: 300px;
   }
 
-  .navbar .offcanvas-header .btn-close{
+  .navbar .offcanvas-header .btn-close {
     background: var(--color-red);
     width: 20px;
     height: 20px;
@@ -1440,12 +1408,12 @@ label {
     opacity: 1;
   }
 
-  .navbar .offcanvas-brand{
+  .navbar .offcanvas-brand {
     width: 150px;
   }
 
   .navbar .nav-item .nav-link {
-    color:  var(--color-dark);
+    color: var(--color-dark);
     font-weight: 700;
     margin-right: 0px;
     transition: var(--transition);
@@ -1474,7 +1442,7 @@ label {
     box-shadow: none;
   }
 
-  .navbar-toggler span{
+  .navbar-toggler span {
     display: block;
     width: 22px;
     border-bottom: 3px solid var(--color-dark);
@@ -1482,11 +1450,11 @@ label {
     margin-top: 5px;
   }
 
-  .navbar-toggler span:first-child{
+  .navbar-toggler span:first-child {
     margin-top: 0;
   }
 
-  .navbar-toggler span:nth-child(2){
+  .navbar-toggler span:nth-child(2) {
     width: 15px;
   }
 
@@ -1503,7 +1471,7 @@ label {
     color: var(--color-dark);
   }
 
-  .navbar .mobile-menu-right .nav-right-link:hover{
+  .navbar .mobile-menu-right .nav-right-link:hover {
     color: var(--theme-color);
   }
 
@@ -1512,11 +1480,11 @@ label {
   }
 
   /* navbar light */
-  .navbar.light .navbar-toggler span{
+  .navbar.light .navbar-toggler span {
     border-color: var(--color-white);
   }
 
-  .navbar.light.fixed-top .navbar-toggler span{
+  .navbar.light.fixed-top .navbar-toggler span {
     border-color: var(--color-dark);
   }
 
@@ -1528,12 +1496,10 @@ label {
     color: var(--color-dark);
   }
 
-  .navbar.light .mobile-menu-right .nav-right-link:hover{
+  .navbar.light .mobile-menu-right .nav-right-link:hover {
     color: var(--theme-color);
   }
 }
-
-
 
 /*==============================
 15. Navbar multi level dropdown
@@ -1560,7 +1526,7 @@ label {
   color: var(--color-white);
 }
 
-.navbar .nav-item .dropdown-submenu a:focus{
+.navbar .nav-item .dropdown-submenu a:focus {
   background: transparent;
 }
 
@@ -1578,8 +1544,8 @@ label {
 }
 
 @media all and (max-width: 991px) {
-  .navbar .nav-item .dropdown-menu .dropdown-item{
-    color: var(--color-dark)
+  .navbar .nav-item .dropdown-menu .dropdown-item {
+    color: var(--color-dark);
   }
 
   .navbar .nav-item .dropdown-submenu .dropdown-menu {
@@ -1600,45 +1566,43 @@ label {
   }
 }
 
-
-
 /*============================
 16. Navbar mega menu
 ==============================*/
 
-@media all and (min-width: 992px){
+@media all and (min-width: 992px) {
   .nav-item.mega-menu {
     position: static;
   }
-  
-  .navbar .nav-item.mega-menu .dropdown-menu{
+
+  .navbar .nav-item.mega-menu .dropdown-menu {
     width: 98.2%;
     left: 12px;
-  } 
+  }
 
-  .navbar .mega-menu .mega-content{
+  .navbar .mega-menu .mega-content {
     padding: 12px;
   }
 
-  .navbar .mega-menu .mega-menu-title{
+  .navbar .mega-menu .mega-menu-title {
     font-size: 17px;
     margin-bottom: 15px;
     color: var(--color-dark);
   }
 
-  .navbar .mega-menu-img img{
+  .navbar .mega-menu-img img {
     border-radius: 15px;
   }
 
-  .navbar .nav-item.mega-menu .dropdown-menu .dropdown-item{
+  .navbar .nav-item.mega-menu .dropdown-menu .dropdown-item {
     padding-left: 0;
   }
 
-  .navbar .nav-item.mega-menu .dropdown-menu .dropdown-item::before{
+  .navbar .nav-item.mega-menu .dropdown-menu .dropdown-item::before {
     left: 0;
   }
 
-  .navbar .nav-item.mega-menu .dropdown-menu .dropdown-item:hover{
+  .navbar .nav-item.mega-menu .dropdown-menu .dropdown-item:hover {
     padding-left: 15px;
   }
 
@@ -1647,26 +1611,22 @@ label {
     position: relative;
   }
 
-  .navbar .mega-menu.small .dropdown-menu{
+  .navbar .mega-menu.small .dropdown-menu {
     width: 340px;
     left: 50%;
     transform: translateX(-50%);
-  } 
+  }
 }
 
-
-@media all and (max-width: 991px){
-  .navbar .mega-menu-img{
+@media all and (max-width: 991px) {
+  .navbar .mega-menu-img {
     display: none;
   }
 
-  .navbar .mega-menu .mega-content h5{
+  .navbar .mega-menu .mega-content h5 {
     margin: 15px 0;
   }
 }
-
-
-
 
 /* ======================
 17. Search popup
@@ -1681,9 +1641,9 @@ label {
   z-index: 99999;
   margin-top: -540px;
   transform: translateY(-100%);
-  background-color: rgba(0, 0, 0, .95);
-  transition: all 1500ms cubic-bezier(0.860, 0.000, 0.070, 1.000);
-  transition-timing-function: cubic-bezier(0.860, 0.000, 0.070, 1.000);
+  background-color: rgba(0, 0, 0, 0.95);
+  transition: all 1500ms cubic-bezier(0.86, 0, 0.07, 1);
+  transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
 }
 
 .search-active .search-popup {
@@ -1721,11 +1681,11 @@ label {
   transition-delay: 1500ms;
 }
 
-.search-active .search-popup .close-search span{
+.search-active .search-popup .close-search span {
   transition: var(--transition);
 }
 
-.search-active .search-popup .close-search:hover span{
+.search-active .search-popup .close-search:hover span {
   transform: rotate(180deg);
 }
 
@@ -1768,7 +1728,7 @@ label {
   text-transform: capitalize;
 }
 
-.search-popup .form-control::placeholder{
+.search-popup .form-control::placeholder {
   color: var(--color-white);
   font-size: 40px;
 }
@@ -1789,21 +1749,19 @@ label {
   transition: all 500ms ease;
 }
 
-.search-popup .form-group button:hover{
+.search-popup .form-group button:hover {
   color: var(--theme-color);
 }
-
-
 
 /*====================
 18. Sidebar popup css 
 ======================*/
 
-.sidebar-popup{
+.sidebar-popup {
   padding: 20px;
 }
 
-.sidebar-popup .btn-close{
+.sidebar-popup .btn-close {
   background: var(--theme-color);
   width: 25px;
   height: 25px;
@@ -1817,47 +1775,47 @@ label {
   opacity: 1;
 }
 
-.sidebar-popup .btn-close:hover{
+.sidebar-popup .btn-close:hover {
   background: var(--color-red);
 }
 
-.sidebar-popup .btn-close i{
+.sidebar-popup .btn-close i {
   transition: var(--transition);
 }
 
-.sidebar-popup .btn-close:hover i{
+.sidebar-popup .btn-close:hover i {
   transform: rotate(180deg);
 }
 
-.sidebar-popup-logo img{
+.sidebar-popup-logo img {
   width: 180px;
 }
 
-.sidebar-popup-about{
+.sidebar-popup-about {
   margin-top: 10px;
 }
 
-.sidebar-popup-about h4{
+.sidebar-popup-about h4 {
   margin-bottom: 10px;
   font-weight: 700;
 }
 
-.sidebar-popup-contact{
+.sidebar-popup-contact {
   margin-top: 20px;
 }
 
-.sidebar-popup-contact h4{
+.sidebar-popup-contact h4 {
   margin-bottom: 15px;
   font-weight: 700;
 }
 
-.sidebar-popup-contact li{
+.sidebar-popup-contact li {
   display: flex;
   gap: 12px;
   margin-bottom: 15px;
 }
 
-.sidebar-popup-contact li .icon{
+.sidebar-popup-contact li .icon {
   width: 35px;
   height: 35px;
   line-height: 35px;
@@ -1867,20 +1825,20 @@ label {
   border-radius: 50px;
 }
 
-.sidebar-popup-contact li a:hover{
+.sidebar-popup-contact li a:hover {
   color: var(--theme-color);
 }
 
-.sidebar-popup-social{
+.sidebar-popup-social {
   margin-top: 25px;
 }
 
-.sidebar-popup-social h4{
+.sidebar-popup-social h4 {
   margin-bottom: 20px;
   font-weight: 700;
 }
 
-.sidebar-popup-social a{
+.sidebar-popup-social a {
   width: 40px;
   height: 40px;
   line-height: 40px;
@@ -1892,12 +1850,9 @@ label {
   box-shadow: var(--box-shadow);
 }
 
-.sidebar-popup-social a:hover{
+.sidebar-popup-social a:hover {
   background: var(--color-dark);
 }
-
-
-
 
 /*====================
 19. Main section css 
@@ -1906,8 +1861,6 @@ label {
 .main {
   margin-top: 0rem;
 }
-
-
 
 /*====================
 20. Hero css 
@@ -1933,7 +1886,11 @@ label {
   height: 100%;
   top: 0;
   left: -0.5px;
-  background: linear-gradient(to bottom right, rgba(55, 173, 184, 1) 5%, rgba(55, 173, 184, 0) 70%);
+  background: linear-gradient(
+    to bottom right,
+    rgba(55, 173, 184, 1) 5%,
+    rgba(55, 173, 184, 0) 70%
+  );
   z-index: -1;
 }
 
@@ -1956,7 +1913,7 @@ label {
   padding: 3px 10px 3px 3px;
 }
 
-.hero-single .hero-content .hero-sub-title  i{
+.hero-single .hero-content .hero-sub-title i {
   width: 27px;
   height: 27px;
   line-height: 25px;
@@ -1975,7 +1932,7 @@ label {
   text-transform: capitalize;
 }
 
-.hero-single .hero-content .hero-title span{
+.hero-single .hero-content .hero-title span {
   color: transparent;
   -webkit-text-stroke: 3px var(--color-white);
 }
@@ -2017,13 +1974,12 @@ label {
   }
 }
 
-
 /* hero-slider */
 .hero-slider .owl-nav {
   margin-top: 0px;
 }
 
-.hero-slider .owl-nav button i{
+.hero-slider .owl-nav button i {
   display: inline-block;
   height: 55px;
   width: 55px;
@@ -2037,7 +1993,7 @@ label {
   transition: var(--transition);
 }
 
-.hero-slider .owl-nav button:hover i{
+.hero-slider .owl-nav button:hover i {
   background: var(--theme-color);
   color: var(--color-white);
 }
@@ -2080,7 +2036,6 @@ label {
   background-color: var(--theme-color);
 }
 
-
 @media all and (max-width: 1199px) {
   .hero-slider .owl-nav .owl-prev,
   .hero-slider .owl-nav .owl-next {
@@ -2097,8 +2052,6 @@ label {
     right: 40px;
   }
 }
-
-
 
 /*====================
 21. Breadcrumb css
@@ -2164,8 +2117,8 @@ label {
 
 .site-breadcrumb .breadcrumb-menu li::before {
   position: absolute;
-  content: '\f101';
-  font-family: 'Font Awesome 6 Pro';
+  content: "\f101";
+  font-family: "Font Awesome 6 Pro";
   right: -21px;
   top: 1px;
   text-align: center;
@@ -2189,27 +2142,25 @@ label {
   color: var(--theme-color2);
 }
 
-
-
 /* ===================
 22. About css 
 ====================== */
 
-.about-left{
+.about-left {
   position: relative;
   margin-right: 30px;
 }
 
-.about-img img{
+.about-img img {
   border-radius: 50px;
 }
 
-.about-img .img-2{
+.about-img .img-2 {
   position: relative;
   margin-bottom: 20px;
 }
 
-.about-img .img-2::before{
+.about-img .img-2::before {
   content: "";
   position: absolute;
   inset: 15px;
@@ -2217,7 +2168,7 @@ label {
   border-radius: 50%;
 }
 
-.about-img .img-2 img{
+.about-img .img-2 img {
   border-radius: 50%;
 }
 
@@ -2226,7 +2177,7 @@ label {
   display: block;
 }
 
-.about-experience{
+.about-experience {
   background: var(--theme-color);
   padding: 14px 25px;
   border-radius: 100px;
@@ -2236,7 +2187,7 @@ label {
   position: relative;
 }
 
-.about-experience::before{
+.about-experience::before {
   content: "";
   position: absolute;
   inset: 5px;
@@ -2244,12 +2195,12 @@ label {
   border-radius: 100px;
 }
 
-.about-experience h5{
+.about-experience h5 {
   color: var(--color-white);
   font-size: 40px;
 }
 
-.about-experience p{
+.about-experience p {
   color: var(--color-white);
   font-weight: 600;
 }
@@ -2259,7 +2210,7 @@ label {
   margin-bottom: 35px;
 }
 
-.about-item{
+.about-item {
   display: flex;
   gap: 12px;
   border: 1px solid var(--border-info-color);
@@ -2267,7 +2218,7 @@ label {
   padding: 15px;
 }
 
-.about-item .icon{
+.about-item .icon {
   width: 65px;
   height: 65px;
   line-height: 60px;
@@ -2276,24 +2227,23 @@ label {
   border-radius: 50px;
 }
 
-.about-item .icon img{
+.about-item .icon img {
   width: 45px;
   filter: brightness(0) invert(1);
 }
 
-.about-item .content{
+.about-item .content {
   flex: 1;
 }
 
-.about-item .content h6{
+.about-item .content h6 {
   color: var(--color-dark);
   margin-bottom: 5px;
 }
 
-.about-text{
+.about-text {
   color: var(--body-text-color);
 }
-
 
 @media all and (max-width: 991px) {
   .about-right {
@@ -2306,43 +2256,41 @@ label {
     font-size: 30px;
   }
 
-  .about-left{
+  .about-left {
     margin-right: 0px;
   }
 
-  .about-img .img-2{
+  .about-img .img-2 {
     margin-top: 60px;
     margin-left: -10px;
   }
 
-  .about-img .img-3{
+  .about-img .img-3 {
     margin-left: -30px;
   }
 }
-
-
 
 /*====================
 23. Find css 
 ======================*/
 
-.find-form{
+.find-form {
   position: relative;
   background: var(--color-white);
   border-radius: 30px;
-  padding: 20px;  
+  padding: 20px;
   margin-top: -65px;
   box-shadow: var(--box-shadow);
   z-index: 2;
 }
 
-.find-form .title{
+.find-form .title {
   color: var(--color-dark);
   font-size: 20px;
   margin-bottom: 12px;
 }
 
-.find-form .theme-btn{
+.find-form .theme-btn {
   width: 100%;
   padding: 12px 10px;
   border-radius: 15px;
@@ -2350,45 +2298,43 @@ label {
 
 @media (min-width: 992px) {
   .find-form .form-group,
-  .find-form .nice-select{
+  .find-form .nice-select {
     margin-bottom: 0;
   }
 }
-
-
 
 /*====================
 24. Feature css 
 ======================*/
 
-.feature-area{
+.feature-area {
   position: relative;
 }
 
-.feature-item{
+.feature-item {
   background: var(--color-white);
   border-radius: 25px;
   padding: 20px;
   position: relative;
 }
 
-.feature-item.bg-1{
-  background: rgba(255, 122, 124, .1);
+.feature-item.bg-1 {
+  background: rgba(255, 122, 124, 0.1);
 }
 
-.feature-item.bg-2{
-  background: rgba(0, 173, 184, .1);
+.feature-item.bg-2 {
+  background: rgba(0, 173, 184, 0.1);
 }
 
-.feature-item.bg-3{
-  background: rgba(247, 185, 46, .1);
+.feature-item.bg-3 {
+  background: rgba(247, 185, 46, 0.1);
 }
 
-.feature-item.bg-4{
-  background: rgba(157, 30, 235, .1);
+.feature-item.bg-4 {
+  background: rgba(157, 30, 235, 0.1);
 }
 
-.feature-item .count{
+.feature-item .count {
   position: absolute;
   top: 20px;
   right: 20px;
@@ -2398,7 +2344,7 @@ label {
   color: var(--theme-color);
 }
 
-.feature-item .count::before{
+.feature-item .count::before {
   content: "";
   position: absolute;
   left: -100%;
@@ -2409,59 +2355,56 @@ label {
   border-radius: 50px;
 }
 
-.feature-icon{
+.feature-icon {
   position: relative;
   margin-bottom: 15px;
   z-index: 1;
 }
 
-.feature-icon::before{
+.feature-icon::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 48px;
   height: 48px;
-  background: rgba(255, 122, 124, .3);
+  background: rgba(255, 122, 124, 0.3);
   border-radius: 50px;
   z-index: -1;
 }
 
-.feature-icon img{
+.feature-icon img {
   width: 60px;
 }
 
-.feature-content{
+.feature-content {
   flex: 1;
 }
 
-.feature-content h4{
+.feature-content h4 {
   color: var(--color-dark);
 }
 
-.feature-content p{
+.feature-content p {
   color: var(--color-dark);
   margin-top: 10px;
 }
 
 /* feature-area2 */
-.feature-area2 .feature-item{
+.feature-area2 .feature-item {
   background: var(--color-white);
   box-shadow: var(--box-shadow);
 }
-
-
-
 
 /* ===================
 25. Service css 
 ====================== */
 
-.service-area{
+.service-area {
   position: relative;
 }
 
-.service-bg{
+.service-bg {
   position: absolute;
   width: 100%;
   height: 500px;
@@ -2470,7 +2413,7 @@ label {
   background-size: cover;
 }
 
-.service-bg::before{
+.service-bg::before {
   content: "";
   position: absolute;
   left: 0;
@@ -2478,10 +2421,10 @@ label {
   width: 100%;
   height: 100%;
   background: var(--color-dark);
-  opacity: .6;
+  opacity: 0.6;
 }
 
-.service-wrap{
+.service-wrap {
   position: relative;
   background: var(--color-white);
   border-radius: 40px;
@@ -2495,7 +2438,7 @@ label {
   gap: 20px;
 }
 
-.service-item .count{
+.service-item .count {
   position: absolute;
   bottom: 0px;
   left: 20px;
@@ -2503,10 +2446,10 @@ label {
   font-size: 70px;
   color: transparent;
   -webkit-text-stroke: 1px var(--color-dark);
-  opacity: .2;
+  opacity: 0.2;
 }
 
-.service-icon{
+.service-icon {
   width: 80px;
   height: 80px;
   line-height: 80px;
@@ -2518,39 +2461,39 @@ label {
   transition: var(--transition);
 }
 
-.service-item:hover .service-icon{
+.service-item:hover .service-icon {
   box-shadow: 0px 0px 0 var(--theme-color-light);
 }
 
-.service-icon img{
+.service-icon img {
   width: 50px;
   filter: brightness(0) invert(1);
 }
 
-.service-content{
+.service-content {
   flex: 1;
 }
 
-.service-content h4 a{
+.service-content h4 a {
   color: var(--color-dark);
 }
 
-.service-content h4 a:hover{
+.service-content h4 a:hover {
   color: var(--theme-color);
 }
 
-.service-content p{
+.service-content p {
   color: var(--body-text-color);
   margin-top: 5px;
   margin-bottom: 10px;
 }
 
-.service-content .theme-btn{
+.service-content .theme-btn {
   padding: 3px 15px;
 }
 
 /* service-area2 */
-.service-area2 .service-item{
+.service-area2 .service-item {
   display: block;
   background: var(--color-white);
   padding: 20px;
@@ -2558,39 +2501,38 @@ label {
   box-shadow: var(--box-shadow);
 }
 
-.service-area2 .service-img{
+.service-area2 .service-img {
   overflow: hidden;
   border-radius: 20px;
 }
 
-.service-area2 .service-img img{
+.service-area2 .service-img img {
   border-radius: 20px;
 }
 
-.service-area2 .service-item:hover .service-img img{
+.service-area2 .service-item:hover .service-img img {
   transform: scale(1.1);
 }
 
-.service-area2 .service-info{
+.service-area2 .service-info {
   display: flex;
   gap: 20px;
   margin-top: 25px;
 }
-
 
 /* service-slider */
 .service-slider .owl-nav {
   margin-top: 0px;
 }
 
-.service-slider .owl-nav button{
+.service-slider .owl-nav button {
   position: absolute;
   top: 50%;
   transform: translate(0, -50%);
   transition: var(--transition);
 }
 
-.service-slider .owl-nav button i{
+.service-slider .owl-nav button i {
   display: inline-block;
   height: 48px;
   width: 48px;
@@ -2604,10 +2546,10 @@ label {
   transition: var(--transition);
 }
 
-.service-slider .owl-nav button:hover i{
+.service-slider .owl-nav button:hover i {
   background: var(--theme-color);
   color: var(--color-white);
-} 
+}
 
 .service-slider .owl-nav .owl-prev {
   left: 0px;
@@ -2635,14 +2577,11 @@ label {
   }
 }
 
-
-
-
 /* ======================
 26. Service single
 ====================== */
 
-.service-sidebar .widget{
+.service-sidebar .widget {
   background: var(--color-white);
   padding: 30px;
   border-radius: 20px;
@@ -2650,13 +2589,13 @@ label {
   box-shadow: var(--box-shadow);
 }
 
-.service-sidebar .widget .title{
+.service-sidebar .widget .title {
   position: relative;
   padding-bottom: 10px;
   margin-bottom: 30px;
 }
 
-.service-sidebar .widget .title::before{
+.service-sidebar .widget .title::before {
   content: "";
   position: absolute;
   left: 0;
@@ -2667,7 +2606,7 @@ label {
   border-radius: 50px;
 }
 
-.service-sidebar .category a{
+.service-sidebar .category a {
   display: block;
   font-size: 16px;
   color: var(--color-dark);
@@ -2677,16 +2616,16 @@ label {
   border-bottom: 1px solid var(--border-info-color);
 }
 
-.service-sidebar .category a:hover{
+.service-sidebar .category a:hover {
   color: var(--theme-color);
   padding-left: 5px;
 }
 
-.service-sidebar .category a i{
+.service-sidebar .category a i {
   margin-right: 5px;
 }
 
-.service-sidebar .category a:last-child{
+.service-sidebar .category a:last-child {
   padding: 0;
   margin: 0;
   border-bottom: none;
@@ -2703,11 +2642,11 @@ label {
   transition: var(--transition);
 }
 
-.service-sidebar .service-download a:last-child{
+.service-sidebar .service-download a:last-child {
   margin-bottom: 0;
 }
 
-.service-sidebar .service-download a:hover{
+.service-sidebar .service-download a:hover {
   background: var(--theme-color);
   color: var(--color-white);
 }
@@ -2716,15 +2655,15 @@ label {
   margin-right: 10px;
 }
 
-.service-details img{
+.service-details img {
   border-radius: 30px;
 }
 
-.service-details .content h3{
+.service-details .content h3 {
   color: var(--color-dark);
 }
 
-.service-details .content .list li{
+.service-details .content .list li {
   font-weight: 500;
   color: var(--color-dark);
   margin-top: 5px;
@@ -2735,18 +2674,16 @@ label {
   margin-right: 10px;
 }
 
-
-
 /* ===================
 27. Skill css 
 ====================== */
 
-.skill-img{
+.skill-img {
   position: relative;
   text-align: right;
 }
 
-.skill-img::before{
+.skill-img::before {
   content: "";
   position: absolute;
   right: 50px;
@@ -2756,20 +2693,20 @@ label {
   background: var(--theme-color);
   border-radius: 50px;
   transform: rotate(5deg);
-  opacity: .2;
+  opacity: 0.2;
   z-index: -1;
 }
 
-.skill-img img{
+.skill-img img {
   width: 85%;
   border-radius: 50px;
 }
 
-.skill-text{
+.skill-text {
   margin-top: 10px;
 }
 
-.skill-progress{
+.skill-progress {
   margin-top: 25px;
 }
 
@@ -2802,18 +2739,16 @@ label {
 }
 
 @media all and (max-width: 767px) {
-  .skill-img::before{
+  .skill-img::before {
     right: 15px;
   }
 }
-
-
 
 /*====================
 28. Portfolio css 
 ======================*/
 
-.portfolio-area{
+.portfolio-area {
   position: relative;
 }
 
@@ -2821,12 +2756,12 @@ label {
   position: relative;
 }
 
-.portfolio-img img{
+.portfolio-img img {
   border-radius: 20px;
 }
 
 .portfolio-img::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0px;
   left: 0px;
@@ -2840,7 +2775,7 @@ label {
 }
 
 .portfolio-item:hover .portfolio-img::before {
-  opacity: .8;
+  opacity: 0.8;
   transform: scaleY(1);
 }
 
@@ -2863,7 +2798,7 @@ label {
   transition-delay: 0.3s;
 }
 
-.portfolio-link:hover{
+.portfolio-link:hover {
   color: var(--theme-color);
 }
 
@@ -2872,7 +2807,7 @@ label {
   opacity: 1;
 }
 
-.portfolio-content{
+.portfolio-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -2884,7 +2819,7 @@ label {
   line-height: 1;
 }
 
-.portfolio-subtitle{
+.portfolio-subtitle {
   color: var(--theme-color);
   font-size: 14px;
   font-weight: 500;
@@ -2893,16 +2828,16 @@ label {
   margin-bottom: 5px;
 }
 
-.portfolio-content h4 a{
+.portfolio-content h4 a {
   font-size: 20px;
   color: var(--color-dark);
 }
 
-.portfolio-content h4 a:hover{
+.portfolio-content h4 a:hover {
   color: var(--theme-color);
 }
 
-.portfolio-arrow{
+.portfolio-arrow {
   width: 45px;
   height: 45px;
   line-height: 45px;
@@ -2912,18 +2847,18 @@ label {
   border-radius: 50px;
 }
 
-.portfolio-arrow i{
+.portfolio-arrow i {
   color: var(--color-white);
   transform: rotate(-45deg);
   transition: var(--transition);
 }
 
-.portfolio-arrow:hover i{
+.portfolio-arrow:hover i {
   transform: rotate(0);
 }
 
 /* portfolio filter */
-.portfolio-area .filter-btn{
+.portfolio-area .filter-btn {
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -2931,7 +2866,7 @@ label {
   gap: 15px;
 }
 
-.portfolio-area .filter-btn li{
+.portfolio-area .filter-btn li {
   background: var(--theme-bg-light);
   color: var(--color-dark);
   border-radius: 10px;
@@ -2939,13 +2874,13 @@ label {
   cursor: pointer;
 }
 
-.portfolio-area .filter-btn li.active{
+.portfolio-area .filter-btn li.active {
   background: var(--theme-color);
   color: var(--color-white);
 }
 
 /* portfolio-slider */
-.portfolio-slider .portfolio-content{
+.portfolio-slider .portfolio-content {
   box-shadow: none;
 }
 
@@ -2953,7 +2888,7 @@ label {
   margin-top: 0px;
 }
 
-.portfolio-slider .owl-nav button{
+.portfolio-slider .owl-nav button {
   position: absolute;
   top: 50%;
   margin-top: -35px;
@@ -2961,7 +2896,7 @@ label {
   transition: var(--transition);
 }
 
-.portfolio-slider .owl-nav button i{
+.portfolio-slider .owl-nav button i {
   display: inline-block;
   height: 48px;
   width: 48px;
@@ -2975,10 +2910,10 @@ label {
   transition: var(--transition);
 }
 
-.portfolio-slider .owl-nav button:hover i{
+.portfolio-slider .owl-nav button:hover i {
   background: var(--theme-color);
   color: var(--color-white);
-} 
+}
 
 .portfolio-slider .owl-nav .owl-prev {
   left: 0px;
@@ -3007,19 +2942,17 @@ label {
 }
 
 @media all and (max-width: 991px) {
-  .portfolio-area .filter-btn{
+  .portfolio-area .filter-btn {
     justify-content: flex-start;
     margin-bottom: 40px;
   }
 }
 
-
-
 /* ======================
 29. Portfolio single
 ====================== */
 
-.portfolio-sidebar .widget{
+.portfolio-sidebar .widget {
   background: var(--color-white);
   padding: 30px;
   border-radius: 20px;
@@ -3027,13 +2960,13 @@ label {
   box-shadow: var(--box-shadow);
 }
 
-.portfolio-sidebar .widget .title{
+.portfolio-sidebar .widget .title {
   position: relative;
   padding-bottom: 10px;
   margin-bottom: 30px;
 }
 
-.portfolio-sidebar .widget .title::before{
+.portfolio-sidebar .widget .title::before {
   content: "";
   position: absolute;
   left: 0;
@@ -3070,7 +3003,7 @@ label {
   text-transform: none;
 }
 
-.portfolio-sidebar .project h4{
+.portfolio-sidebar .project h4 {
   color: var(--color-white);
   margin-bottom: 25px;
 }
@@ -3079,19 +3012,19 @@ label {
   color: var(--theme-color);
 }
 
-.portfolio-sidebar .project{
+.portfolio-sidebar .project {
   background: var(--theme-color);
 }
 
-.portfolio-details img{
+.portfolio-details img {
   border-radius: 30px;
 }
 
-.portfolio-details .content h3{
+.portfolio-details .content h3 {
   color: var(--color-dark);
 }
 
-.portfolio-details .content .list li{
+.portfolio-details .content .list li {
   font-weight: 500;
   color: var(--color-dark);
   margin-top: 5px;
@@ -3102,18 +3035,15 @@ label {
   margin-right: 10px;
 }
 
-
-
-
 /* ===================
 30. Pricing css 
 ====================== */
 
-.pricing-area{
+.pricing-area {
   position: relative;
 }
 
-.pricing-bg{
+.pricing-bg {
   width: 100%;
   height: 100%;
   background-image: url(../img/shape/02.png);
@@ -3130,16 +3060,16 @@ label {
   transition: var(--transition);
 }
 
-.pricing-item:hover{
+.pricing-item:hover {
   -webkit-transform: translateY(-10px);
   transform: translateY(-10px);
-} 
+}
 
-.pricing-header-wrap{
+.pricing-header-wrap {
   margin-bottom: 30px;
 }
 
-.pricing-header{
+.pricing-header {
   position: absolute;
   right: 30px;
   top: -15px;
@@ -3158,7 +3088,7 @@ label {
   color: var(--color-white);
 }
 
-.pricing-amount{
+.pricing-amount {
   margin-bottom: 45px;
 }
 
@@ -3175,7 +3105,7 @@ label {
   font-weight: 500;
 }
 
-.pricing-text{
+.pricing-text {
   color: var(--color-dark);
   text-transform: uppercase;
   font-size: 15px;
@@ -3200,15 +3130,15 @@ label {
   margin-right: 10px;
 }
 
-.pricing-feature li .not-include{
+.pricing-feature li .not-include {
   color: var(--body-text-color);
-} 
+}
 
-.pricing-item .theme-btn{
+.pricing-item .theme-btn {
   width: 100%;
 }
 
-.pricing-item.active{
+.pricing-item.active {
   outline: 3px solid var(--theme-color);
 }
 
@@ -3217,8 +3147,6 @@ label {
     font-size: 50px;
   }
 }
-
-
 
 /* ===================
 31. Counter css 
@@ -3229,13 +3157,13 @@ label {
   z-index: 1;
 }
 
-.counter-wrap{
+.counter-wrap {
   background: var(--color-dark);
   border-radius: 30px;
   padding: 15px;
 }
 
-.counter-negative{
+.counter-negative {
   margin-top: -70px;
 }
 
@@ -3261,11 +3189,11 @@ label {
   background: var(--color-white);
 }
 
-.counter-box .icon img{
+.counter-box .icon img {
   width: 50px;
 }
 
-.counter-box .info{
+.counter-box .info {
   display: flex;
   gap: 2px;
 }
@@ -3278,7 +3206,7 @@ label {
   font-weight: 900;
 }
 
-.counter-box .unit{
+.counter-box .unit {
   font-size: 25px;
   color: var(--theme-color);
   font-weight: 500;
@@ -3294,17 +3222,15 @@ label {
   text-transform: capitalize;
 }
 
-
-
 /* ===================
 32. Team css 
 ====================== */
 
-.team-area{
+.team-area {
   position: relative;
 }
 
-.team-item{
+.team-item {
   background: var(--color-white);
   border-radius: 20px;
   padding: 15px;
@@ -3312,7 +3238,7 @@ label {
   position: relative;
 }
 
-.team-item::before{
+.team-item::before {
   content: "";
   position: absolute;
   left: 50px;
@@ -3322,15 +3248,15 @@ label {
   border-radius: 50px;
 }
 
-.team-img{
+.team-img {
   position: relative;
 }
 
-.team-img img{
+.team-img img {
   border-radius: 20px;
 }
 
-.team-social-btn{
+.team-social-btn {
   position: absolute;
   right: -3px;
   bottom: 0;
@@ -3341,7 +3267,7 @@ label {
   padding: 8px;
 }
 
-.team-social-btn::before{
+.team-social-btn::before {
   content: "";
   position: absolute;
   left: -20px;
@@ -3353,7 +3279,7 @@ label {
   border-bottom-right-radius: 20px;
 }
 
-.team-social-btn::after{
+.team-social-btn::after {
   content: "";
   position: absolute;
   top: -20px;
@@ -3365,7 +3291,7 @@ label {
   border-bottom-right-radius: 20px;
 }
 
-.team-social-btn button{
+.team-social-btn button {
   width: 42px;
   height: 42px;
   line-height: 42px;
@@ -3377,7 +3303,7 @@ label {
   border: none;
 }
 
-.team-social{
+.team-social {
   position: absolute;
   right: 9px;
   bottom: 50px;
@@ -3399,78 +3325,76 @@ label {
 }
 
 .team-social a:hover {
- background: var(--theme-color2);
- color: var(--color-white);
+  background: var(--theme-color2);
+  color: var(--color-white);
 }
 
-.team-social-wrap:hover .team-social{
+.team-social-wrap:hover .team-social {
   opacity: 1;
   visibility: visible;
   bottom: 70px;
 }
 
-.team-content{
+.team-content {
   text-align: center;
   margin-top: 10px;
 }
 
-.team-content h4 a{
+.team-content h4 a {
   color: var(--color-dark);
   font-size: 20px;
 }
 
-.team-content h4 a:hover{
+.team-content h4 a:hover {
   color: var(--theme-color);
 }
 
-.team-content span{
+.team-content span {
   color: var(--theme-color);
   font-weight: 500;
 }
-
-
 
 /* ===================
 33. Team single css 
 ====================== */
 
-.team-single-wrap{
+.team-single-wrap {
   background: var(--theme-bg-light);
   border-radius: 20px;
   padding: 20px;
 }
 
-.team-single-img img{
+.team-single-img img {
   border-radius: 20px;
 }
 
-.team-single-content{
+.team-single-content {
   padding-left: 15px;
 }
 
-.team-single-name p{
+.team-single-name p {
   color: var(--theme-color2);
   font-weight: 500;
   font-size: 18px;
 }
 
-.team-single-info{
+.team-single-info {
   margin-top: 20px;
 }
 
-.team-single-info li{
+.team-single-info li {
   margin: 10px 0;
 }
 
-.team-single-info-left{
+.team-single-info-left {
   font-weight: 600;
 }
 
-.team-single-info-right{
+.team-single-info-right {
   margin-left: 10px;
 }
 
-.team-single-social a{
+.team-single-social a {
   height: 35px;
   width: 35px;
   line-height: 31px;
@@ -3481,17 +3405,17 @@ label {
   margin-right: 5px;
 }
 
-.team-single-social a:hover{
+.team-single-social a:hover {
   background: var(--theme-color);
   color: var(--color-white);
   border-color: var(--theme-color);
 }
 
-.team-single-overview{
+.team-single-overview {
   margin-top: 70px;
 }
 
-.team-single-overview-img img{
+.team-single-overview-img img {
   border-radius: 20px;
 }
 
@@ -3500,95 +3424,89 @@ label {
     margin-bottom: 20px;
   }
 
-  .team-single-overview-img{
+  .team-single-overview-img {
     margin-top: 20px;
   }
 }
-
-
 
 /* ===================
 34. Become-volunteer
 ====================== */
 
-.become-volunteer-wrap{
+.become-volunteer-wrap {
   background: var(--theme-bg-light);
   border-radius: 20px;
 }
 
-.become-volunteer-img img{
+.become-volunteer-img img {
   border-radius: 20px 0 0 20px;
 }
 
-.become-volunteer-form{
+.become-volunteer-form {
   padding: 20px;
 }
 
-.become-volunteer-form .header{
+.become-volunteer-form .header {
   margin-bottom: 20px;
 }
 
-.become-volunteer-form .header h2{
+.become-volunteer-form .header h2 {
   color: var(--color-dark);
   margin-bottom: 10px;
 }
 
 @media all and (max-width: 991px) {
-  .become-volunteer-img img{
+  .become-volunteer-img img {
     border-radius: 20px;
   }
 }
-
-
 
 /* ===================
 35. Living option css 
 ====================== */
 
-.living-option-item{
+.living-option-item {
   background: var(--color-white);
   padding: 20px;
   box-shadow: var(--box-shadow);
   border-radius: 20px;
 }
 
-.living-option-img{
+.living-option-img {
   overflow: hidden;
   border-radius: 20px;
 }
 
-.living-option-img img{
+.living-option-img img {
   border-radius: 20px;
 }
 
-.living-option-item:hover .living-option-img img{
+.living-option-item:hover .living-option-img img {
   transform: scale(1.1);
 }
 
-.living-option-content{
+.living-option-content {
   margin-top: 15px;
 }
 
-.living-option-content h4 a{
+.living-option-content h4 a {
   color: var(--color-dark);
   margin-bottom: 5px;
 }
 
-.living-option-content h4 a:hover{
+.living-option-content h4 a:hover {
   color: var(--theme-color);
 }
 
-.living-option-content .theme-btn{
+.living-option-content .theme-btn {
   margin-top: 15px;
 }
-
-
 
 /* ======================
 36. Living option single
 ====================== */
 
-.living-option-sidebar .widget{
+.living-option-sidebar .widget {
   background: var(--color-white);
   padding: 30px;
   border-radius: 20px;
@@ -3596,13 +3514,13 @@ label {
   box-shadow: var(--box-shadow);
 }
 
-.living-option-sidebar .widget .title{
+.living-option-sidebar .widget .title {
   position: relative;
   padding-bottom: 10px;
   margin-bottom: 30px;
 }
 
-.living-option-sidebar .widget .title::before{
+.living-option-sidebar .widget .title::before {
   content: "";
   position: absolute;
   left: 0;
@@ -3613,7 +3531,7 @@ label {
   border-radius: 50px;
 }
 
-.living-option-sidebar .category a{
+.living-option-sidebar .category a {
   display: block;
   font-size: 16px;
   color: var(--color-dark);
@@ -3623,30 +3541,30 @@ label {
   border-bottom: 1px solid var(--border-info-color);
 }
 
-.living-option-sidebar .category a:hover{
+.living-option-sidebar .category a:hover {
   color: var(--theme-color);
   padding-left: 5px;
 }
 
-.living-option-sidebar .category a i{
+.living-option-sidebar .category a i {
   margin-right: 5px;
 }
 
-.living-option-sidebar .category a:last-child{
+.living-option-sidebar .category a:last-child {
   padding-bottom: 0;
   margin-bottom: 0;
   border-bottom: none;
 }
 
-.living-option-details img{
+.living-option-details img {
   border-radius: 30px;
 }
 
-.living-option-details h3{
+.living-option-details h3 {
   color: var(--color-dark);
 }
 
-.living-option-single-list li{
+.living-option-single-list li {
   font-weight: 500;
   color: var(--color-dark);
   margin-top: 5px;
@@ -3657,56 +3575,52 @@ label {
   margin-right: 10px;
 }
 
-
-
 /* ===================
 37. Stories css 
 ====================== */
 
-.stories-item{
+.stories-item {
   background: var(--color-white);
   padding: 20px;
   box-shadow: var(--box-shadow);
   border-radius: 20px;
 }
 
-.stories-img{
+.stories-img {
   overflow: hidden;
   border-radius: 20px;
 }
 
-.stories-img img{
+.stories-img img {
   border-radius: 20px;
 }
 
-.stories-item:hover .stories-img img{
+.stories-item:hover .stories-img img {
   transform: scale(1.1);
 }
 
-.stories-content{
+.stories-content {
   margin-top: 15px;
 }
 
-.stories-content h4 a{
+.stories-content h4 a {
   color: var(--color-dark);
   margin-bottom: 5px;
 }
 
-.stories-content h4 a:hover{
+.stories-content h4 a:hover {
   color: var(--theme-color);
 }
 
-.stories-content .theme-btn{
+.stories-content .theme-btn {
   margin-top: 15px;
 }
-
-
 
 /* ======================
 38. Stories single
 ====================== */
 
-.stories-sidebar .widget{
+.stories-sidebar .widget {
   background: var(--color-white);
   padding: 30px;
   border-radius: 20px;
@@ -3714,13 +3628,13 @@ label {
   box-shadow: var(--box-shadow);
 }
 
-.stories-sidebar .widget .title{
+.stories-sidebar .widget .title {
   position: relative;
   padding-bottom: 10px;
   margin-bottom: 30px;
 }
 
-.stories-sidebar .widget .title::before{
+.stories-sidebar .widget .title::before {
   content: "";
   position: absolute;
   left: 0;
@@ -3731,7 +3645,7 @@ label {
   border-radius: 50px;
 }
 
-.stories-sidebar .category a{
+.stories-sidebar .category a {
   display: block;
   font-size: 16px;
   color: var(--color-dark);
@@ -3741,30 +3655,30 @@ label {
   border-bottom: 1px solid var(--border-info-color);
 }
 
-.stories-sidebar .category a:hover{
+.stories-sidebar .category a:hover {
   color: var(--theme-color);
   padding-left: 5px;
 }
 
-.stories-sidebar .category a i{
+.stories-sidebar .category a i {
   margin-right: 5px;
 }
 
-.stories-sidebar .category a:last-child{
+.stories-sidebar .category a:last-child {
   padding-bottom: 0;
   margin-bottom: 0;
   border-bottom: none;
 }
 
-.stories-details img{
+.stories-details img {
   border-radius: 30px;
 }
 
-.stories-details h3{
+.stories-details h3 {
   color: var(--color-dark);
 }
 
-.stories-single-list li{
+.stories-single-list li {
   font-weight: 500;
   color: var(--color-dark);
   margin-top: 5px;
@@ -3775,13 +3689,11 @@ label {
   margin-right: 10px;
 }
 
-
-
 /* ===================
 39. Video css 
 ====================== */
 
-.video-area{
+.video-area {
   position: relative;
 }
 
@@ -3798,7 +3710,7 @@ label {
 .video-content::before {
   content: "";
   position: absolute;
-  background: rgba(10, 33, 85, .2);
+  background: rgba(10, 33, 85, 0.2);
   width: 100%;
   height: 100%;
   left: 0;
@@ -3833,8 +3745,6 @@ label {
   }
 }
 
-
-
 /* ===================
 40. Donation css 
 ====================== */
@@ -3849,7 +3759,7 @@ label {
   position: relative;
 }
 
-.donation-item::before{
+.donation-item::before {
   content: "";
   position: absolute;
   left: 0;
@@ -3858,7 +3768,7 @@ label {
   height: 80%;
   background: var(--theme-color2);
   border-radius: 20px;
-  opacity: .1;
+  opacity: 0.1;
   z-index: -1;
 }
 
@@ -4002,12 +3912,11 @@ label {
   background: var(--theme-color);
 }
 
-
 /* ====================
 41. Donation single
 ==================== */
 
-.donation-sidebar .widget{
+.donation-sidebar .widget {
   background: var(--color-white);
   padding: 30px;
   border-radius: 20px;
@@ -4015,13 +3924,13 @@ label {
   box-shadow: var(--box-shadow);
 }
 
-.donation-sidebar .widget .title{
+.donation-sidebar .widget .title {
   position: relative;
   padding-bottom: 10px;
   margin-bottom: 30px;
 }
 
-.donation-sidebar .widget .title::before{
+.donation-sidebar .widget .title::before {
   content: "";
   position: absolute;
   left: 0;
@@ -4032,7 +3941,7 @@ label {
   border-radius: 50px;
 }
 
-.donation-sidebar .category a{
+.donation-sidebar .category a {
   display: block;
   padding-bottom: 8px;
   margin-bottom: 8px;
@@ -4041,30 +3950,30 @@ label {
   font-weight: 500;
 }
 
-.donation-sidebar .category a i{
+.donation-sidebar .category a i {
   margin-right: 5px;
 }
 
-.donation-sidebar .category a:last-child{
+.donation-sidebar .category a:last-child {
   padding-bottom: 0;
   margin-bottom: 0;
   border-bottom: 0;
 }
 
-.donation-sidebar .category a:hover{
+.donation-sidebar .category a:hover {
   color: var(--theme-color);
   padding-left: 10px;
 }
 
-.donation-recent-item{
+.donation-recent-item {
   display: flex;
   gap: 15px;
   padding-bottom: 20px;
   margin-bottom: 20px;
-  border-bottom: 1px solid rgba(0, 0, 0, .05);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
-.donation-recent-item:last-child{
+.donation-recent-item:last-child {
   padding-bottom: 0;
   margin-bottom: 0;
   border-bottom: 0;
@@ -4077,20 +3986,20 @@ label {
   border-radius: 12px;
 }
 
-.donation-recent-item h5 a{
+.donation-recent-item h5 a {
   color: var(--color-dark);
 }
 
-.donation-recent-item h5 a:hover{
+.donation-recent-item h5 a:hover {
   color: var(--theme-color);
 }
 
-.donation-recent-item .theme-btn{
+.donation-recent-item .theme-btn {
   padding: 2px 10px;
   margin-top: 10px;
 }
 
-.donation-details-img{
+.donation-details-img {
   position: relative;
 }
 
@@ -4107,14 +4016,11 @@ label {
   margin-right: 10px;
 }
 
-
-
-
 /* ====================
 42. Donation form
 ==================== */
 
-.donation-form .widget{
+.donation-form .widget {
   background: var(--color-white);
   border-radius: 20px;
   padding: 30px;
@@ -4122,39 +4028,36 @@ label {
   margin-bottom: 25px;
 }
 
-.donation-form .widget .title{
+.donation-form .widget .title {
   margin-bottom: 20px;
 }
 
 /* quick donation */
-.quick-donation{
+.quick-donation {
   background: var(--theme-color2);
 }
 
-.quick-donation-form h3{
+.quick-donation-form h3 {
   color: var(--color-white);
   margin-bottom: 20px;
 }
 
-.quick-donation-form .theme-btn{
+.quick-donation-form .theme-btn {
   padding: 12px 20px;
   border-radius: 15px;
 }
-
-
-
 
 /* ===================
 43. Event css 
 ====================== */
 
-.event-bg{
+.event-bg {
   position: relative;
   background: var(--color-dark);
   z-index: 1;
 }
 
-.event-bg::before{
+.event-bg::before {
   content: "";
   position: absolute;
   left: 0;
@@ -4165,7 +4068,7 @@ label {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  opacity: .5;
+  opacity: 0.5;
   z-index: -1;
 }
 
@@ -4239,13 +4142,11 @@ label {
   }
 }
 
-
-
 /* ===================
 44. Event single css 
 ====================== */
 
-.event-sidebar .widget{
+.event-sidebar .widget {
   background: var(--color-white);
   padding: 30px;
   border-radius: 20px;
@@ -4253,13 +4154,13 @@ label {
   box-shadow: var(--box-shadow);
 }
 
-.event-sidebar .widget .title{
+.event-sidebar .widget .title {
   position: relative;
   padding-bottom: 10px;
   margin-bottom: 30px;
 }
 
-.event-sidebar .widget .title::before{
+.event-sidebar .widget .title::before {
   content: "";
   position: absolute;
   left: 0;
@@ -4270,30 +4171,30 @@ label {
   border-radius: 50px;
 }
 
-.event-single-info{
+.event-single-info {
   margin-top: 20px;
 }
 
-.event-single-item{
+.event-single-item {
   margin-top: 15px;
 }
 
-.event-single-item h5{
+.event-single-item h5 {
   color: var(--color-dark);
   font-size: 18px;
   margin-bottom: 5px;
 }
 
-.event-single-item p{
-  color: var(--body-text-color)
+.event-single-item p {
+  color: var(--body-text-color);
 }
 
-.event-single-item p i{
+.event-single-item p i {
   color: var(--theme-color);
   width: 20px;
 }
 
-.event-single-info .theme-btn{
+.event-single-info .theme-btn {
   margin-top: 25px;
 }
 
@@ -4326,19 +4227,17 @@ label {
   width: 100%;
 }
 
-
-
 /*====================
 45. Quote css 
 ======================*/
 
-.quote-area{
+.quote-area {
   position: relative;
   background: var(--theme-color2);
   z-index: 1;
 }
 
-.quote-area::before{
+.quote-area::before {
   content: "";
   position: absolute;
   left: 0;
@@ -4349,18 +4248,18 @@ label {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  opacity: .2;
+  opacity: 0.2;
   z-index: -1;
 }
 
-.quote-form{
+.quote-form {
   background: var(--color-white);
   border-radius: 20px;
   padding: 30px;
   position: relative;
 }
 
-.quote-form::before{
+.quote-form::before {
   content: "";
   position: absolute;
   right: -100px;
@@ -4371,47 +4270,45 @@ label {
   border-radius: 0 20px 20px 0;
 }
 
-.quote-header{
+.quote-header {
   border-bottom: 1px solid var(--border-info-color);
   padding-bottom: 20px;
   margin-bottom: 30px;
 }
 
-.quote-header p{
+.quote-header p {
   margin-top: 8px;
 }
 
-.quote-img{
+.quote-img {
   position: relative;
   z-index: 1;
 }
 
-.quote-img img{
+.quote-img img {
   border-radius: 20px;
   width: 100%;
 }
 
 @media all and (max-width: 991px) {
-  .quote-form::before{
+  .quote-form::before {
     display: none;
   }
 
-  .quote-img{
+  .quote-img {
     margin-top: 20px;
   }
 }
-
-
 
 /* ===================
 46. Cta css 
 ====================== */
 
-.cta-area{
+.cta-area {
   position: relative;
 }
 
-.cta-wrap{
+.cta-wrap {
   background: var(--theme-color2);
   width: 89%;
   padding: 30px 50px 35px 50px;
@@ -4419,9 +4316,9 @@ label {
   position: relative;
   overflow: hidden;
   z-index: 1;
-} 
+}
 
-.cta-wrap::before{
+.cta-wrap::before {
   content: "";
   position: absolute;
   left: 0;
@@ -4432,44 +4329,42 @@ label {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  opacity: .2;
+  opacity: 0.2;
   z-index: -1;
 }
 
-.cta-content{
+.cta-content {
   text-align: center;
 }
 
-.cta-content h1{
+.cta-content h1 {
   color: var(--color-white);
 }
 
-.cta-content h1 span{
+.cta-content h1 span {
   color: transparent;
   -webkit-text-stroke: 2px var(--color-white);
 }
 
-.cta-content p{
+.cta-content p {
   color: var(--color-white);
   margin-top: 10px;
   margin-bottom: 20px;
 }
 
-
-
 /* ===================
 47. Choose css 
 ====================== */
 
-.choose-area{
+.choose-area {
   position: relative;
 }
 
-.choose-content{
+.choose-content {
   margin-top: 30px;
 }
 
-.choose-item{
+.choose-item {
   background: var(--color-white);
   border: 1px solid var(--border-info-color);
   border-radius: 40px;
@@ -4477,7 +4372,7 @@ label {
   position: relative;
 }
 
-.choose-item .count{
+.choose-item .count {
   position: absolute;
   right: 25px;
   top: 25px;
@@ -4498,11 +4393,11 @@ label {
   border-radius: 50px;
 }
 
-.choose-item:last-child{
+.choose-item:last-child {
   margin-bottom: 0;
 }
 
-.choose-item-icon{
+.choose-item-icon {
   position: relative;
   width: 65px;
   height: 65px;
@@ -4514,45 +4409,42 @@ label {
   box-shadow: 5px 5px 0 var(--theme-color-light);
 }
 
-.choose-item-icon img{
+.choose-item-icon img {
   width: 38px;
   filter: brightness(0) invert(1);
 }
 
-.choose-item-info{
+.choose-item-info {
   flex: 1;
 }
 
-.choose-item-info h4{
+.choose-item-info h4 {
   color: var(--color-dark);
   margin-bottom: 8px;
   font-size: 20px;
   font-weight: 600;
 }
 
-.choose-item-info p{
+.choose-item-info p {
   color: var(--body-text-color);
 }
 
-.choose-img{
+.choose-img {
   position: relative;
   text-align: right;
   margin-top: 25px;
 }
 
-.choose-img img{
+.choose-img img {
   width: 83%;
   border-radius: 50px;
 }
 
 @media all and (max-width: 991px) {
-  .choose-img img{
+  .choose-img img {
     width: 100%;
   }
 }
-
-
-
 
 /*====================
 48. Testimonial css 
@@ -4562,12 +4454,12 @@ label {
   position: relative;
 }
 
-.testimonial-bg{
+.testimonial-bg {
   background: var(--color-dark);
   z-index: 1;
 }
 
-.testimonial-bg::before{
+.testimonial-bg::before {
   content: "";
   position: absolute;
   width: 40%;
@@ -4579,7 +4471,7 @@ label {
   z-index: -1;
 }
 
-.testimonial-bg::after{
+.testimonial-bg::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -4590,7 +4482,7 @@ label {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  opacity: .3;
+  opacity: 0.3;
   z-index: -1;
 }
 
@@ -4616,7 +4508,7 @@ label {
   color: var(--color-white);
 }
 
-.testimonial-quote p{
+.testimonial-quote p {
   position: relative;
   color: var(--color-dark);
   font-size: 18px;
@@ -4651,7 +4543,7 @@ label {
   color: var(--color-white);
 }
 
-.testimonial-area.bg .testimonial-author-info h4{
+.testimonial-area.bg .testimonial-author-info h4 {
   color: var(--color-dark);
 }
 
@@ -4660,7 +4552,7 @@ label {
   font-weight: 500;
 }
 
-.testimonial-quote-icon{
+.testimonial-quote-icon {
   position: absolute;
   right: 0;
   bottom: 0;
@@ -4674,22 +4566,22 @@ label {
   font-size: 35px;
 }
 
-.testimonial-shadow-icon{
+.testimonial-shadow-icon {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  opacity: .15;
+  opacity: 0.15;
 }
 
-.testimonial-shadow-icon img{
+.testimonial-shadow-icon img {
   width: 200px !important;
 }
 
 .testimonial-rate {
-  color: #FB9902;
+  color: #fb9902;
   margin-top: 15px;
-  border: 2px solid #FB9902;
+  border: 2px solid #fb9902;
   border-radius: 50px;
   padding: 0px 10px;
   width: fit-content;
@@ -4716,8 +4608,6 @@ label {
   width: 6px;
   height: 6px;
 }
-
-
 
 /* ========================
 49. Gallery css 
@@ -4761,7 +4651,7 @@ label {
 
 .gallery-content:hover::before {
   opacity: 0.9;
-  visibility: visible
+  visibility: visible;
 }
 
 .gallery-link {
@@ -4792,24 +4682,22 @@ label {
   transform: translate(-50%, -50%) scale(1);
 }
 
-
-
 /*====================
 50. Blog css 
 ======================*/
 
-.blog-area{
+.blog-area {
   position: relative;
 }
 
-.blog-item{
+.blog-item {
   padding: 0px 20px 20px 20px;
   transition: var(--transition);
   position: relative;
   z-index: 1;
 }
 
-.blog-item::before{
+.blog-item::before {
   content: "";
   position: absolute;
   left: 0;
@@ -4822,7 +4710,7 @@ label {
   z-index: -1;
 }
 
-.blog-item-img{
+.blog-item-img {
   position: relative;
 }
 
@@ -4830,7 +4718,7 @@ label {
   border-radius: 20px;
 }
 
-.blog-date{
+.blog-date {
   position: absolute;
   right: -20px;
   top: 10px;
@@ -4843,14 +4731,14 @@ label {
   box-shadow: var(--box-shadow);
 }
 
-.blog-date strong{
+.blog-date strong {
   font-size: 20px;
   font-weight: 800;
   margin-top: 4px;
   line-height: 1;
 }
 
-.blog-date span{
+.blog-date span {
   font-weight: 500;
 }
 
@@ -4879,7 +4767,7 @@ label {
   color: var(--theme-color);
 }
 
-.blog-item-meta a{
+.blog-item-meta a {
   color: var(--color-dark);
 }
 
@@ -4910,14 +4798,11 @@ label {
   margin-top: 10px;
 }
 
-
-
-
 /*========================
 51. Blog single css
 ==========================*/
 
-.blog-single{
+.blog-single {
   position: relative;
 }
 
@@ -4944,7 +4829,7 @@ label {
   gap: 20px;
 }
 
-.blog-single .blog-meta-left ul li{
+.blog-single .blog-meta-left ul li {
   color: var(--color-dark);
   font-weight: 500;
 }
@@ -4966,7 +4851,7 @@ label {
 /* blog single details */
 .blog-single .blog-details-title {
   font-size: 34px;
-  color:  var(--color-dark);
+  color: var(--color-dark);
   font-weight: 700;
 }
 
@@ -4982,7 +4867,7 @@ label {
   position: relative;
 }
 
-.blog-single .blockqoute .blockqoute-icon{
+.blog-single .blockqoute .blockqoute-icon {
   position: absolute;
   right: 20px;
   bottom: 5px;
@@ -5015,7 +4900,7 @@ label {
 }
 
 .blog-single .blog-details-tag h5 {
-  color:  var(--color-dark);
+  color: var(--color-dark);
 }
 
 .blog-single .blog-details-tag ul {
@@ -5026,7 +4911,7 @@ label {
 
 .blog-single .blog-details-tag ul a {
   background: var(--theme-bg-light);
-  color:  var(--color-dark);
+  color: var(--color-dark);
   padding: 5px 18px;
   border-radius: 50px;
   transition: var(--transition);
@@ -5043,7 +4928,7 @@ label {
   justify-content: start;
   align-items: center;
   background: var(--color-white);
-   box-shadow: var(--box-shadow);
+  box-shadow: var(--box-shadow);
   margin: 50px 0;
   padding: 20px;
   border-radius: 15px;
@@ -5134,11 +5019,11 @@ label {
 }
 
 .blog-single .blog-comment-content a:hover {
-  color:  var(--theme-color2);
+  color: var(--theme-color2);
 }
 
 .blog-single .blog-comment-content h5 {
-  color:  var(--color-dark);
+  color: var(--color-dark);
   font-weight: 700;
 }
 
@@ -5154,7 +5039,6 @@ label {
 .blog-single .blog-comment-form h3 {
   margin-bottom: 20px;
 }
-
 
 @media all and (max-width: 767px) {
   .blog-single .blog-meta {
@@ -5177,7 +5061,7 @@ label {
     padding: 25px;
   }
 
-  .blog-single .author-info{
+  .blog-single .author-info {
     margin-top: 25px;
   }
 
@@ -5191,7 +5075,7 @@ label {
     border-radius: 15px;
   }
 
-  .blog-single .blog-comment-item img{
+  .blog-single .blog-comment-item img {
     margin: 0 auto 20px auto;
   }
 
@@ -5199,8 +5083,6 @@ label {
     margin-left: 0px;
   }
 }
-
-
 
 /*==========================
 52. Blog sidebar widget css
@@ -5218,13 +5100,13 @@ label {
   margin-bottom: 30px;
   position: relative;
   font-size: 22px;
-  color:  var(--color-dark);
+  color: var(--color-dark);
   font-weight: 700;
 }
 
 .blog-sidebar .widget .widget-title::before {
   position: absolute;
-  content: '';
+  content: "";
   width: 15px;
   border-bottom: 3px solid var(--theme-color);
   bottom: 0;
@@ -5233,7 +5115,7 @@ label {
 
 .blog-sidebar .widget .widget-title::after {
   position: absolute;
-  content: '';
+  content: "";
   width: 30px;
   border-bottom: 3px solid var(--theme-color);
   bottom: 0;
@@ -5245,7 +5127,7 @@ label {
   padding-right: 50px;
 }
 
-.blog-sidebar .widget .search-form .form-group{
+.blog-sidebar .widget .search-form .form-group {
   position: relative;
 }
 
@@ -5348,7 +5230,7 @@ label {
 /* tag widget */
 .blog-sidebar .widget .tag-list a {
   background: var(--color-white);
-  color:  var(--color-dark);
+  color: var(--color-dark);
   padding: 5px 18px;
   margin-bottom: 10px;
   margin-right: 10px;
@@ -5361,9 +5243,6 @@ label {
   background-color: var(--theme-color);
   color: var(--color-white);
 }
-
-
-
 
 /*====================
 53. Pagination css 
@@ -5378,7 +5257,7 @@ label {
 
 .pagination .page-link {
   border: none;
-  background:  var(--theme-bg-light);
+  background: var(--theme-bg-light);
   color: var(--color-dark);
   font-weight: 500;
   margin: 0 10px;
@@ -5397,8 +5276,6 @@ label {
   color: var(--color-white);
 }
 
-
-
 /*====================
 54. Faq css 
 ======================*/
@@ -5416,17 +5293,17 @@ label {
   background: transparent;
   font-weight: 700;
   font-size: 20px;
-  color:  var(--color-dark);
+  color: var(--color-dark);
   box-shadow: none;
 }
 
-.faq-area .accordion-button::after{
+.faq-area .accordion-button::after {
   content: "\f107";
   background: none;
   color: var(--theme-color);
   font-size: 24px;
   font-weight: 500;
-  font-family: 'Font Awesome 6 pro';
+  font-family: "Font Awesome 6 pro";
   width: unset;
   height: unset;
   margin-right: 3px;
@@ -5439,7 +5316,7 @@ label {
   box-shadow: none;
 }
 
-.faq-area .accordion-button:not(.collapsed)::after{
+.faq-area .accordion-button:not(.collapsed)::after {
   content: "\f107";
   transform: rotate(-180deg);
 }
@@ -5460,7 +5337,7 @@ label {
   color: var(--color-white);
 }
 
-.faq-area .accordion-body{
+.faq-area .accordion-body {
   color: var(--color-dark);
   font-weight: 500;
 }
@@ -5474,9 +5351,6 @@ label {
     font-size: 16px;
   }
 }
-
-
-
 
 /*===================
 55. Contact us css 
@@ -5496,16 +5370,16 @@ label {
   position: relative;
   margin-bottom: 25px;
   border-radius: 30px;
-  background:var(--color-white);
+  background: var(--color-white);
   box-shadow: var(--box-shadow);
   transition: var(--transition);
 }
 
-.contact-info:hover{
-  transform: translateY(-8px)
+.contact-info:hover {
+  transform: translateY(-8px);
 }
 
-.contact-info .icon{
+.contact-info .icon {
   font-size: 35px;
   color: var(--color-white);
   width: 70px;
@@ -5520,21 +5394,21 @@ label {
   font-size: 20px;
   font-weight: 700;
   margin-bottom: 8px;
-  color:  var(--color-dark);
+  color: var(--color-dark);
 }
 
-.contact-info .content p{
+.contact-info .content p {
   color: var(--theme-color);
   font-weight: 500;
   font-size: 16px;
 }
 
-.contact-img img{
+.contact-img img {
   width: 100%;
   border-radius: 40px;
 }
 
-.contact-form-wrap{
+.contact-form-wrap {
   background: var(--color-white);
   box-shadow: var(--box-shadow);
   padding: 30px;
@@ -5552,28 +5426,28 @@ label {
   color: var(--color-dark);
 }
 
-.contact-form-header p{
+.contact-form-header p {
   color: var(--body-text-color);
 }
 
 .contact-form .form-message.success,
-.contact-form .form-message.error{
+.contact-form .form-message.error {
   margin-bottom: 20px;
   border-radius: 10px;
   padding: 10px 18px;
 }
 
-.contact-form .form-message.success{
-  color: #41BE7D;
-  background:rgba(65, 190, 125, .1);
+.contact-form .form-message.success {
+  color: #41be7d;
+  background: rgba(65, 190, 125, 0.1);
 }
 
-.contact-form .form-message.error{
-  color: #FF7F7F;
-  background:rgba(255, 127, 127, .1);
+.contact-form .form-message.error {
+  color: #ff7f7f;
+  background: rgba(255, 127, 127, 0.1);
 }
 
-.contact-form .form-message.error{
+.contact-form .form-message.error {
   color: var(--color-red);
 }
 
@@ -5585,8 +5459,6 @@ label {
   width: 100%;
   height: 450px;
 }
-
-
 
 /*====================
 56. Auth css 
@@ -5621,43 +5493,43 @@ label {
 }
 
 /* auth-group */
-.auth-group{
+.auth-group {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 25px;
 }
 
-.auth-group .form-check{
+.auth-group .form-check {
   margin-bottom: 0;
 }
 
-.auth-group .form-check-label{
+.auth-group .form-check-label {
   color: var(--color-dark);
   font-weight: 500;
 }
 
-.auth-group .auth-group-link{
+.auth-group .auth-group-link {
   color: var(--theme-color);
   font-weight: 500;
 }
 
-.auth-group .auth-group-link:hover{
+.auth-group .auth-group-link:hover {
   color: var(--color-red);
 }
 
 /* password-view */
-.auth-form .password-view{
+.auth-form .password-view {
   cursor: pointer;
 }
 
-.auth-form .password-view i{
+.auth-form .password-view i {
   left: unset;
   right: 20px;
   color: var(--body-text-color);
 }
 
-.auth-form .password-view.show i::before{
+.auth-form .password-view.show i::before {
   content: "\f06e";
 }
 
@@ -5666,7 +5538,7 @@ label {
   width: 100%;
 }
 
-.auth-form .theme-btn::before{
+.auth-form .theme-btn::before {
   width: 420px;
   height: 420px;
   transition: var(--transition2);
@@ -5688,7 +5560,7 @@ label {
 }
 
 .auth-form .auth-bottom a:hover {
-  color:  var(--color-red);
+  color: var(--color-red);
 }
 
 /* auth-social */
@@ -5721,7 +5593,7 @@ label {
 }
 
 .auth-form .auth-social-list a:hover {
-  background:  var(--color-red);
+  background: var(--color-red);
 }
 
 @media only screen and (max-width: 991px) {
@@ -5729,8 +5601,6 @@ label {
     padding: 40px 20px;
   }
 }
-
-
 
 /*====================
 57. Coming soon css 
@@ -5748,8 +5618,8 @@ label {
 
 .coming-soon:before {
   position: absolute;
-  content: '';
-  background: rgba(0, 0, 0, .7);
+  content: "";
+  background: rgba(0, 0, 0, 0.7);
   width: 100%;
   height: 100%;
   top: 0;
@@ -5757,35 +5627,35 @@ label {
   z-index: -1;
 }
 
-.coming-wrap{
+.coming-wrap {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 75vh;
 }
 
-.coming-content{
+.coming-content {
   text-align: center;
 }
 
-.coming-info h1{
+.coming-info h1 {
   color: var(--color-white);
   font-weight: 700;
   font-size: 50px;
 }
 
-.coming-info p{
+.coming-info p {
   font-size: 18px;
   color: var(--color-white);
   margin-top: 10px;
 }
 
-.coming-countdown-wrap{
+.coming-countdown-wrap {
   margin-top: 30px;
   margin-bottom: 30px;
 }
 
-.coming-countdown .time-wrap{
+.coming-countdown .time-wrap {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -5793,70 +5663,70 @@ label {
   gap: 18px;
 }
 
-.coming-countdown .time{
+.coming-countdown .time {
   background: var(--color-white);
   width: 125px;
   border-radius: 15px;
   padding: 14px 10px;
 }
 
-.coming-countdown .time span{
+.coming-countdown .time span {
   display: block;
 }
 
-.coming-countdown .time span:first-child{
+.coming-countdown .time span:first-child {
   color: var(--theme-color);
   font-weight: 700;
   font-size: 38px;
   line-height: 1;
 }
 
-.coming-countdown .time .unit{
+.coming-countdown .time .unit {
   color: var(--color-dark);
   font-weight: 500;
 }
 
-.coming-countdown .divider{
+.coming-countdown .divider {
   display: none;
 }
 
-.coming-newsletter-form{
+.coming-newsletter-form {
   margin-top: 50px;
   margin-bottom: 25px;
 }
 
-.coming-newsletter-form .form-group{
+.coming-newsletter-form .form-group {
   position: relative;
 }
 
-.coming-newsletter-form .form-control{
+.coming-newsletter-form .form-control {
   padding: 17px 150px 17px 20px;
   border-radius: 50px;
   border-color: transparent;
   color: var(--color-dark);
 }
 
-.coming-newsletter-form .form-control::placeholder{
+.coming-newsletter-form .form-control::placeholder {
   color: var(--color-dark);
 }
 
-.coming-newsletter-form .form-control:focus{
+.coming-newsletter-form .form-control:focus {
   border-color: var(--theme-color);
 }
 
-.coming-newsletter-form .theme-btn{
+.coming-newsletter-form .theme-btn {
   position: absolute;
   right: 5px;
   top: 6px;
   padding: 9px 15px;
 }
 
-.coming-social{
+.coming-social {
   margin-top: 40px;
   text-align: center;
 }
 
-.coming-social a{
+.coming-social a {
   display: inline-block;
   background: var(--theme-color);
   color: var(--color-white);
@@ -5866,21 +5736,19 @@ label {
   line-height: 42px;
   text-align: center;
   border-radius: 50px;
-  transition: .5s;
+  transition: 0.5s;
   box-shadow: var(--box-shadow2);
 }
 
-.coming-social a:hover{
+.coming-social a:hover {
   background: var(--theme-color2);
 }
 
 @media all and (max-width: 767px) {
-  .coming-info h1{
+  .coming-info h1 {
     font-size: 40px;
   }
 }
-
-
 
 /*====================
 58. Error css 
@@ -5898,7 +5766,7 @@ label {
 }
 
 .error-wrap h1 span {
-  color:  var(--color-dark);
+  color: var(--color-dark);
 }
 
 .error-wrap h2 {
@@ -5914,14 +5782,11 @@ label {
   margin-top: 30px;
 }
 
-
 @media all and (max-width: 767px) {
   .error-wrap h1 {
     font-size: 160px;
   }
 }
-
-
 
 /*====================
 59. Terms/privacy css 
@@ -5953,8 +5818,6 @@ label {
   margin-bottom: 16px;
 }
 
-
-
 /*====================
 60. Scroll top css
 ======================*/
@@ -5983,24 +5846,21 @@ label {
   z-index: 1;
 }
 
-#scroll-top:hover{
+#scroll-top:hover {
   transform: rotate(0);
 }
 
-#scroll-top.active{
+#scroll-top.active {
   opacity: 1;
   visibility: visible;
   bottom: 20px;
 }
-
 
 @media all and (min-width: 768px) and (max-width: 1199px) {
   #scroll-top.active {
     bottom: 100px;
   }
 }
-
-
 
 /*====================
 61. Footer css 
@@ -6012,7 +5872,7 @@ label {
   z-index: 1;
 }
 
-.footer-shape{
+.footer-shape {
   position: absolute;
   top: 0;
   left: 0;
@@ -6021,7 +5881,7 @@ label {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  opacity: .1;
+  opacity: 0.1;
   z-index: -1;
 }
 
@@ -6029,7 +5889,7 @@ label {
   position: relative;
 }
 
-.footer-widget-box.about-us{
+.footer-widget-box.about-us {
   margin-right: 50px;
 }
 
@@ -6053,7 +5913,7 @@ label {
   z-index: 1;
 }
 
-.footer-widget-title::before{
+.footer-widget-title::before {
   content: "";
   position: absolute;
   left: 0;
@@ -6067,7 +5927,7 @@ label {
 .footer-list {
   display: flex;
   flex-direction: column;
-  gap: .70rem;
+  gap: 0.7rem;
 }
 
 .footer-list li a {
@@ -6089,7 +5949,7 @@ label {
   color: var(--theme-color);
 }
 
-.footer-list li a:hover i{
+.footer-list li a:hover i {
   opacity: 1;
 }
 
@@ -6125,7 +5985,7 @@ label {
   margin-bottom: 12px;
 }
 
-.footer-contact .icon{
+.footer-contact .icon {
   width: 35px;
   height: 35px;
   line-height: 35px;
@@ -6134,29 +5994,29 @@ label {
   text-align: center;
 }
 
-.footer-contact .content{
+.footer-contact .content {
   flex: 1;
 }
 
-.footer-contact .content h6{
+.footer-contact .content h6 {
   color: var(--color-white);
   margin-bottom: 5px;
 }
 
-.footer-contact .content a{
+.footer-contact .content a {
   color: var(--color-white);
 }
 
-.footer-newsletter h6{
+.footer-newsletter h6 {
   color: var(--color-white);
   margin-bottom: 20px;
 }
 
-.footer-newsletter .newsletter-form .form-group{
+.footer-newsletter .newsletter-form .form-group {
   position: relative;
 }
 
-.footer-newsletter .newsletter-form .form-icon > i{
+.footer-newsletter .newsletter-form .form-icon > i {
   top: 21px;
   left: 0;
   color: var(--theme-color);
@@ -6173,11 +6033,11 @@ label {
   outline: none;
 }
 
-.footer-newsletter .newsletter-form .form-control:focus{
+.footer-newsletter .newsletter-form .form-control:focus {
   border-bottom-color: var(--theme-color);
 }
 
-.footer-newsletter .newsletter-form .form-control::placeholder{
+.footer-newsletter .newsletter-form .form-control::placeholder {
   color: var(--color-white);
 }
 
@@ -6193,11 +6053,11 @@ label {
   color: var(--theme-color);
 }
 
-.footer-newsletter .newsletter-form .theme-btn::before{
+.footer-newsletter .newsletter-form .theme-btn::before {
   background: var(--color-white);
 }
 
-.footer-newsletter .newsletter-form .theme-btn span{
+.footer-newsletter .newsletter-form .theme-btn span {
   margin-right: 0;
   margin-left: 5px;
 }
@@ -6239,13 +6099,12 @@ label {
   font-weight: 500;
 }
 
-
 @media all and (max-width: 1199px) {
   .footer-widget-box {
     margin-bottom: 50px;
   }
 
-  .footer-list li a{
+  .footer-list li a {
     font-size: 14px;
   }
 }
@@ -6255,7 +6114,7 @@ label {
     padding-bottom: 0px;
   }
 
-  .footer-list li a{
+  .footer-list li a {
     font-size: 16px;
   }
 
@@ -6282,84 +6141,82 @@ label {
   }
 }
 
-
 /* footer light */
-.footer-area.light{
+.footer-area.light {
   background: var(--theme-bg-light);
 }
 
-.footer-area.light .footer-widget-title{
+.footer-area.light .footer-widget-title {
   color: var(--color-dark);
   font-weight: 800;
 }
 
-.footer-area.light .footer-widget-box p{
+.footer-area.light .footer-widget-box p {
   color: var(--body-text-color);
 }
 
-.footer-area.light .footer-newsletter h6{
+.footer-area.light .footer-newsletter h6 {
   color: var(--color-dark);
   font-weight: 700;
 }
 
-.footer-area.light .newsletter-form .form-control{
+.footer-area.light .newsletter-form .form-control {
   color: var(--color-dark);
   border-bottom-color: var(--body-text-color);
 }
 
-.footer-area.light .newsletter-form .form-control::placeholder{
+.footer-area.light .newsletter-form .form-control::placeholder {
   color: var(--body-text-color);
 }
 
-.footer-area.light .newsletter-form .form-control:focus{
+.footer-area.light .newsletter-form .form-control:focus {
   border-bottom-color: var(--theme-color);
 }
 
-.footer-area.light .footer-list li a{
+.footer-area.light .footer-list li a {
   color: var(--body-text-color);
 }
 
-.footer-area.light .footer-list li a:hover{
+.footer-area.light .footer-list li a:hover {
   color: var(--theme-color);
 }
 
-.footer-area.light .footer-contact .content h6{
+.footer-area.light .footer-contact .content h6 {
   color: var(--color-dark);
   font-weight: 700;
 }
 
-.footer-area.light .footer-contact .content a{
+.footer-area.light .footer-contact .content a {
   color: var(--body-text-color);
 }
 
-.footer-area.light .footer-social li a i{
+.footer-area.light .footer-social li a i {
   background: var(--color-dark);
   color: var(--color-white);
 }
 
-.footer-area.light .footer-social li a i:hover{
+.footer-area.light .footer-social li a i:hover {
   background: var(--theme-color);
 }
 
-.footer-area.light .copyright{
+.footer-area.light .copyright {
   border-top-color: var(--border-info-color);
 }
 
-.footer-area.light .copyright .copyright-text{
+.footer-area.light .copyright .copyright-text {
   color: var(--body-text-color);
 }
-
 
 /*====================
 62. Home-2 css 
 ======================*/
 
-.home-2 .header{
+.home-2 .header {
   position: relative;
   background: var(--color-dark);
 }
 
-.home-2 .header::before{
+.home-2 .header::before {
   content: "";
   position: absolute;
   right: 30px;
@@ -6370,15 +6227,15 @@ label {
   clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
 }
 
-.home-2 .header-top{
+.home-2 .header-top {
   background: transparent;
 }
 
-.home-2 .header-top::before{
+.home-2 .header-top::before {
   display: none;
 }
 
-.home-2 .navbar::before{
+.home-2 .navbar::before {
   content: "";
   position: absolute;
   left: 0;
@@ -6388,34 +6245,34 @@ label {
   background: var(--color-white);
 }
 
-.home-2 .hero-section{
+.home-2 .hero-section {
   margin-top: -3rem;
 }
 
-.home-2 .hero-single{
+.home-2 .hero-single {
   padding-top: 160px;
   padding-bottom: 120px;
 }
 
-.home-2 .hero-single .hero-content .hero-sub-title{
+.home-2 .hero-single .hero-content .hero-sub-title {
   background: none;
   border-bottom: 2px solid var(--color-white);
   border-radius: 0;
   padding-right: 0;
 }
 
-.home-2 .hero-single .hero-content .hero-sub-title i{
+.home-2 .hero-single .hero-content .hero-sub-title i {
   background: none;
   border-radius: 0;
   color: var(--color-white);
   text-align: left;
 }
 
-.home-2 .footer-shape{
-  opacity: .3;
+.home-2 .footer-shape {
+  opacity: 0.3;
 }
 
-.home-2 .footer-newsletter .newsletter-form .form-control{
+.home-2 .footer-newsletter .newsletter-form .form-control {
   color: var(--color-dark);
   background: var(--color-white);
   border-radius: 15px;
@@ -6423,30 +6280,29 @@ label {
   padding-left: 38px;
 }
 
-.home-2 .footer-newsletter .newsletter-form .form-icon > i{
+.home-2 .footer-newsletter .newsletter-form .form-icon > i {
   left: 10px;
 }
 
-.home-2 .footer-newsletter .newsletter-form .form-control::placeholder{
+.home-2 .footer-newsletter .newsletter-form .form-control::placeholder {
   color: var(--body-text-color);
 }
 
-.home-2 .footer-newsletter .newsletter-form .theme-btn{
+.home-2 .footer-newsletter .newsletter-form .theme-btn {
   top: 8px;
   right: 5px;
 }
 
-.home-2 .footer-newsletter .newsletter-form .theme-btn::before{
+.home-2 .footer-newsletter .newsletter-form .theme-btn::before {
   background: var(--color-dark);
 }
 
-.home-2 .footer-newsletter .newsletter-form .theme-btn:hover{
+.home-2 .footer-newsletter .newsletter-form .theme-btn:hover {
   color: var(--color-white);
 }
 
-
 @media all and (max-width: 1199px) {
-  .home-2 .navbar::before{
+  .home-2 .navbar::before {
     width: 100%;
   }
 
@@ -6457,55 +6313,53 @@ label {
 }
 
 @media all and (max-width: 767px) {
-  .home-2 .header-top-list a i{
+  .home-2 .header-top-list a i {
     color: var(--color-white);
   }
 }
-
-
 
 /*====================
 63. Home-3 css 
 ======================*/
 
-.home-3 .header-top{
+.home-3 .header-top {
   position: relative;
 }
 
-.home-3 .main{
+.home-3 .main {
   margin-top: -6rem;
 }
 
-.home-3 .hero-single{
+.home-3 .hero-single {
   padding-top: 180px;
   padding-bottom: 120px;
   position: unset;
   z-index: unset;
 }
 
-.home-3 .hero-single::before{
+.home-3 .hero-single::before {
   display: none;
 }
 
-.home-3 .hero-single .hero-content .hero-title{
+.home-3 .hero-single .hero-content .hero-title {
   color: var(--color-dark);
 }
 
-.home-3 .hero-single .hero-content .hero-title span{
+.home-3 .hero-single .hero-content .hero-title span {
   color: var(--theme-color);
   -webkit-text-stroke: unset;
 }
 
-.home-3 .hero-single .hero-content p{
+.home-3 .hero-single .hero-content p {
   color: var(--color-dark);
 }
 
-.home-3 .hero-single .hero-img{
+.home-3 .hero-single .hero-img {
   text-align: right;
   position: relative;
 }
 
-.home-3 .hero-single .hero-img .play-btn{
+.home-3 .hero-single .hero-img .play-btn {
   width: 95px;
   height: 95px;
   top: 50%;
@@ -6514,19 +6368,15 @@ label {
   margin-left: -50px;
 }
 
-.home-3 .hero-single .hero-img img{
+.home-3 .hero-single .hero-img img {
   width: 80%;
   border-radius: 40px;
 }
 
 @media all and (max-width: 991px) {
-  .home-3 .hero-single .hero-img{
+  .home-3 .hero-single .hero-img {
     margin-top: 40px;
   }
 }
 
-
 /* ================= end ================== */
-
-
-

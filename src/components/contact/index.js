@@ -44,7 +44,10 @@ const MainContact = () => {
                   </div>
                   <div className="content">
                     <h5>Call Us</h5>
-                    <p>+2 123 4565 789</p>
+                    <p>
+                      <a href="tel:+253-401-0437">+253-401-0437</a>
+                    </p>{" "}
+                    {/* Updated phone number */}
                   </div>
                 </div>
               </div>
@@ -56,13 +59,10 @@ const MainContact = () => {
                   <div className="content">
                     <h5>Email Us</h5>
                     <p>
-                      <a
-                        href="/cdn-cgi/l/email-protection"
-                        className="__cf_email__"
-                        data-cfemail="a3cacdc5cce3c6dbc2ced3cfc68dc0ccce"
-                      >
-                        [email&#160;protected]
-                      </a>
+                      <Link href="mailto:info@serenityseniorcareafh.com">
+                        info@serenityseniorcareafh.com
+                      </Link>{" "}
+                      {/* Updated email */}
                     </p>
                   </div>
                 </div>
@@ -87,10 +87,11 @@ const MainContact = () => {
                   <div className="contact-form-header">
                     <h2>Get In Touch</h2>
                     <p>
-                      It is a long established fact that a reader will be
-                      distracted by the readable content of a page randomised
-                      words which donot look even slightly when looking at its
-                      layout.
+                      At Serenity Senior Care, we understand the importance of
+                      providing your loved ones with compassionate care. We are
+                      here to answer any questions you may have about our
+                      services or facilities. Feel free to reach out, and a
+                      member of our team will respond promptly.
                     </p>
                   </div>
                   <div className="form-message"></div>
@@ -162,7 +163,10 @@ const MainContact = () => {
               </div>
               <div className="col-lg-5">
                 <div className="contact-img">
-                  <img src="/assets/img/contact/01.jpg" alt="" />
+                  <img
+                    src="/assets/img/contact/01.jpg"
+                    alt="Serenity Senior Care"
+                  />
                 </div>
               </div>
             </div>
@@ -184,4 +188,5 @@ const MainContact = () => {
     </main>
   );
 };
+
 export default MainContact;
