@@ -89,7 +89,7 @@ const MainContact = () => {
                   <div className="contact-form-header">
                     <h2>Get In Touch</h2>
                     <p>
-                      At Serenity Senior Care, we understand the importance of
+                      At Destiny Care Home LLC, we understand the importance of
                       providing your loved ones with compassionate care. We are
                       here to answer any questions you may have about our
                       services or facilities. Feel free to reach out, and a
@@ -167,7 +167,7 @@ const MainContact = () => {
                 <div className="contact-img">
                   <img
                     src="/assets/img/contact/01.jpg"
-                    alt="Serenity Senior Care"
+                    alt="Destiny Care Home LLC"
                   />
                 </div>
               </div>
