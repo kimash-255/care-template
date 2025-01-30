@@ -20,9 +20,10 @@ const Footer = () => {
                     <img src="/assets/img/logo/logo.png" alt="" />
                   </Link>
                   <p class="mb-4">
-                    We are many variations of passages available but the
-                    majority have suffered alteration some form by injected
-                    humour words believable.
+                    Our care home provides a comfortable and supportive
+                    environment, where residents receive personalized care and
+                    attention, ensuring their well-being and dignity are
+                    maintained at all times.
                   </p>
                   <div class="footer-newsletter">
                     <h6>Subscribe Our Newsletter</h6>
@@ -55,15 +56,12 @@ const Footer = () => {
                         <i class="far fa-angle-double-right"></i>About Us
                       </Link>
                     </li>
-                  
-                  
+
                     <li>
                       <Link href="/contact">
                         <i class="far fa-angle-double-right"></i>Contact Us
                       </Link>
                     </li>
-                   
-                    
                   </ul>
                 </div>
               </div>
@@ -129,7 +127,8 @@ const Footer = () => {
             <div class="col-md-6 align-self-center">
               <p class="copyright-text">
                 &copy; Copyright <span id="date"></span>
-                <Link href="#"> SenoCare </Link> All Rights Reserved.
+                <Link href="#"> Destiny Care Homes LLC </Link> All Rights
+                Reserved.
               </p>
             </div>
             <div class="col-md-6 align-self-center">

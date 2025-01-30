@@ -24,8 +24,8 @@ const Home = () => {
       <HomeAbout />
       <Counter />
       <HomeService />
-      <Cta />
       <Choose />
+      <Cta />
       {/* <Pricing /> */}
       <Video />
       {/* <Gallery /> */}

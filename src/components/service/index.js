@@ -13,7 +13,7 @@ const HomeService = () => {
         <div className="row">
           <div className="col-lg-8 mx-auto">
             <div className="site-heading text-center">
-              <span className="site-title-tagline">
+              <span className="site-title-tagline  align-items-center justify-content-center">
                 <i className="far fa-house-chimney-heart"></i>Our Services
               </span>
               <h2 className="site-title">
@@ -28,12 +28,12 @@ const HomeService = () => {
           {topServices.map((service, index) => (
             <div className="col-md-6 col-lg-4" key={service.slug}>
               <div
-                className="service-item wow fadeInUp"
+                className="service-item wow fadeInUp text-center"
                 data-wow-delay={`${0.25 * (index + 1)}s`}
               >
-                <span className="count">
+                {/* <span className="count">
                   {String(index + 1).padStart(2, "0")}
-                </span>
+                </span> */}
                 {/* Service Image */}
                 <div className="service-img">
                   <img
@@ -47,7 +47,7 @@ const HomeService = () => {
                 </div>
                 {/* Service Info */}
                 <div className="service-info">
-                  <div className="service-icon">
+                  <div className="service-icon d-flex align-items-center justify-content-center">
                     <img
                       src={`/assets/img/icon/${
                         [

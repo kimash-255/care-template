@@ -68,14 +68,6 @@ const ServiceDetailsPage = () => {
                         ))}
                       </div>
                     </div>
-                    <div className="widget">
-                      <h4 className="title">Download</h4>
-                      <div className="service-download">
-                        <Link href={service.brochure} target="_blank">
-                          <i className="far fa-file-pdf"></i> Download Brochure
-                        </Link>
-                      </div>
-                    </div>
                   </div>
                 </div>
 

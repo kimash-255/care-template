@@ -10,9 +10,9 @@ const Cta = () => {
             <div class="cta-content">
               <h1>We Are The Best Senior Care Agency With Love</h1>
               <p>
-                It is a long established fact that a reader will be distracted
-                by the readable content of a page when looking at its desktop
-                publishing and web page editors now layout.
+                It is a well-known fact that seniors thrive in a supportive
+                environment where compassionate care and meaningful engagement
+                enhance their quality of life.
               </p>
               <Link href="/contact" class="theme-btn">
                 Contact Now<i class="fas fa-arrow-right"></i>

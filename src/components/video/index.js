@@ -1,25 +1,30 @@
-import Link from "next/link";
 import Image from "next/image";
 
 const Video = () => {
   return (
-    <div className="video-area">
+    <div
+      className="video-area"
+      style={{
+        marginTop: "70px",
+        marginBottom: "50px",
+      }}
+    >
       <div className="container">
         <div className="row align-items-center">
           <div className="col-lg-5">
             <div className="video-info wow fadeInUp" data-wow-delay=".25s">
               <div className="site-heading mb-0">
                 <span className="site-title-tagline">
-                  <i className="far fa-house-chimney-heart"></i>Latest Video
+                  <i className="far fa-house-chimney-heart"></i>Our Care Home
                 </span>
                 <h2 className="site-title">
-                  Making The Best Impression On Your Old Age
+                  Providing the Best Care for Your Loved Ones
                 </h2>
                 <p>
-                  There are many variations of passages of Lorem Ipsum available
-                  but the majority have suffered alteration in some form by
-                  injected humour or randomised word look even slightly
-                  believable.
+                  Our care home offers a warm and welcoming environment where
+                  seniors receive personalized support, companionship, and
+                  professional care to enhance their well-being and quality of
+                  life.
                 </p>
               </div>
               <a href="contact.html" className="theme-btn mt-30">
@@ -35,15 +40,10 @@ const Video = () => {
                 backgroundImage: "url('assets/img/video/01.jpg')",
                 backgroundSize: "cover",
                 backgroundPosition: "center",
+                height: "400px",
+                borderRadius: "10px",
               }}
-            >
-              <Link
-                className="play-btn popup-youtube"
-                href="https://www.youtube.com/watch?v=ckHzmP1evNU"
-              >
-                <i className="fas fa-play"></i>
-              </Link>
-            </div>
+            ></div>
           </div>
         </div>
       </div>

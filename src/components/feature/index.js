@@ -9,7 +9,7 @@ const Feature = () => {
             {/* Dedicated Team */}
             <div className="col-md-6 col-lg-3">
               <div className="feature-item wow fadeInUp" data-wow-delay=".25s">
-                <span className="count">01</span>
+                {/* <span className="count">01</span> */}
                 <div className="feature-icon">
                   <Image
                     src="/assets/img/icon/nurse.svg"
@@ -32,7 +32,7 @@ const Feature = () => {
             {/* Trusted Facility */}
             <div className="col-md-6 col-lg-3">
               <div className="feature-item wow fadeInUp" data-wow-delay=".50s">
-                <span className="count">02</span>
+                {/* <span className="count">02</span> */}
                 <div className="feature-icon">
                   <Image
                     src="/assets/img/icon/institute.svg"
@@ -55,7 +55,7 @@ const Feature = () => {
             {/* Affordable Care */}
             <div className="col-md-6 col-lg-3">
               <div className="feature-item wow fadeInUp" data-wow-delay=".75s">
-                <span className="count">03</span>
+                {/* <span className="count">03</span> */}
                 <div className="feature-icon">
                   <Image
                     src="/assets/img/icon/money.svg"
@@ -78,7 +78,7 @@ const Feature = () => {
             {/* Emergency Support */}
             <div className="col-md-6 col-lg-3">
               <div className="feature-item wow fadeInUp" data-wow-delay="1s">
-                <span className="count">04</span>
+                {/* <span className="count">04</span> */}
                 <div className="feature-icon">
                   <Image
                     src="/assets/img/icon/support.svg"

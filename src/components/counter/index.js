@@ -1,4 +1,5 @@
 import Image from "next/image";
+import CountUp from "react-countup";
 
 const Counter = () => {
   return (
@@ -7,8 +8,8 @@ const Counter = () => {
         <div className="container">
           <div className="row g-4">
             <div className="col-lg-3 col-sm-6">
-              <div className="counter-box">
-                <div className="icon">
+              <div className="counter-box text-center">
+                <div className="icon flex justify-center items-center h-16 mb-4">
                   <Image
                     src="/assets/img/icon/senior-care.svg"
                     alt="Elderly Care"
@@ -17,13 +18,8 @@ const Counter = () => {
                   />
                 </div>
                 <div>
-                  <span
-                    className="counter"
-                    data-count="+"
-                    data-to="50"
-                    data-speed="3000"
-                  >
-                    50
+                  <span className="counter">
+                    <CountUp start={0} end={50} duration={5} />
                   </span>
                   <h6 className="title">Elderly Cared For</h6>
                 </div>
@@ -31,8 +27,8 @@ const Counter = () => {
             </div>
 
             <div className="col-lg-3 col-sm-6">
-              <div className="counter-box">
-                <div className="icon">
+              <div className="counter-box text-center">
+                <div className="icon flex justify-center items-center h-16 mb-4">
                   <Image
                     src="/assets/img/icon/happy.svg"
                     alt="Happy Residents"
@@ -41,13 +37,8 @@ const Counter = () => {
                   />
                 </div>
                 <div>
-                  <span
-                    className="counter"
-                    data-count="+"
-                    data-to="98"
-                    data-speed="3000"
-                  >
-                    98%
+                  <span className="counter">
+                    <CountUp start={0} end={98} duration={5} />%
                   </span>
                   <h6 className="title">Resident Satisfaction</h6>
                 </div>
@@ -55,8 +46,8 @@ const Counter = () => {
             </div>
 
             <div className="col-lg-3 col-sm-6">
-              <div className="counter-box">
-                <div className="icon">
+              <div className="counter-box text-center">
+                <div className="icon flex justify-center items-center h-16 mb-4">
                   <Image
                     src="/assets/img/icon/volunteer.svg"
                     alt="Dedicated Staff"
@@ -65,13 +56,8 @@ const Counter = () => {
                   />
                 </div>
                 <div>
-                  <span
-                    className="counter"
-                    data-count="+"
-                    data-to="10"
-                    data-speed="3000"
-                  >
-                    10
+                  <span className="counter">
+                    <CountUp start={0} end={10} duration={5} />
                   </span>
                   <h6 className="title">Dedicated Caregivers</h6>
                 </div>
@@ -79,8 +65,8 @@ const Counter = () => {
             </div>
 
             <div className="col-lg-3 col-sm-6">
-              <div className="counter-box">
-                <div className="icon">
+              <div className="counter-box text-center">
+                <div className="icon flex justify-center items-center h-16 mb-4">
                   <Image
                     src="/assets/img/icon/award.svg"
                     alt="Awards Won"
@@ -89,13 +75,8 @@ const Counter = () => {
                   />
                 </div>
                 <div>
-                  <span
-                    className="counter"
-                    data-count="+"
-                    data-to="15"
-                    data-speed="3000"
-                  >
-                    15
+                  <span className="counter">
+                    <CountUp start={0} end={15} duration={5} />
                   </span>
                   <h6 className="title">Awards for Excellence</h6>
                 </div>

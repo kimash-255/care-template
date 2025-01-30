@@ -38,7 +38,7 @@ const MainAbout = () => {
                       />
                       <div class="about-experience">
                         <h5>
-                          30<span>+</span>
+                          5<span>+</span>
                         </h5>
                         <p>Years Of Experience</p>
                       </div>
