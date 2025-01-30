@@ -126,8 +126,12 @@ const Footer = () => {
           <div class="row">
             <div class="col-md-6 align-self-center">
               <p class="copyright-text">
-                &copy; Copyright <span id="date"></span>
-                <Link href="#"> Mslabdesigns </Link> All Rights Reserved.
+                &copy; Designed By <span id="date"></span>
+                <Link href="/https://mslabdesigns.com/">
+                  {" "}
+                  Mslabdesigns{" "}
+                </Link>{" "}
+                All Rights Reserved.
               </p>
             </div>
             <div class="col-md-6 align-self-center">
