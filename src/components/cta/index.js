@@ -3,19 +3,19 @@ import Link from "next/link";
 
 const Cta = () => {
   return (
-    <div class="cta-area">
-      <div class="container">
-        <div class="cta-wrap rounded-5 w-100">
-          <div class="col-lg-7 mx-auto">
-            <div class="cta-content">
-              <h1>We Are The Best Senior Care Agency With Love</h1>
+    <div className="cta-area">
+      <div className="container">
+        <div className="cta-wrap rounded-5 w-100">
+          <div className="col-lg-7 mx-auto">
+            <div className="cta-content text-center">
+              <h1>The Best Senior Care Adult Family Home</h1>
               <p>
-                It is a well-known fact that seniors thrive in a supportive
-                environment where compassionate care and meaningful engagement
-                enhance their quality of life.
+                Our warm and compassionate environment ensures seniors thrive
+                with the highest level of care, dignity, and meaningful
+                engagement.
               </p>
-              <Link href="/contact" class="theme-btn">
-                Contact Now<i class="fas fa-arrow-right"></i>
+              <Link href="/contact" className="theme-btn">
+                Contact Now <i className="fas fa-arrow-right"></i>
               </Link>
             </div>
           </div>
@@ -24,4 +24,5 @@ const Cta = () => {
     </div>
   );
 };
+
 export default Cta;

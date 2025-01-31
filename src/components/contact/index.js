@@ -169,12 +169,15 @@ const MainContact = () => {
       {/* <!-- map --> */}
       <div className="contact-map">
         <iframe
-          src="https://g.co/kgs/6jJKe8m"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1957.5063844428234!2d-122.53669234518993!3d45.51778494177956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5495d762f2d3d87d%3A0x7203d536c1d3b808!2s2406%20SE%20130th%20Ave%2C%20Portland%2C%20OR%2097233%2C%20USA!5e0!3m2!1sen!2sus!4v1674321234924!5m2!1sen!2sus"
+          width="100%"
+          height="400"
           style={{ border: 0 }}
           allowFullScreen=""
           loading="lazy"
         ></iframe>
       </div>
+
       {/* <!-- map end --> */}
     </main>
   );

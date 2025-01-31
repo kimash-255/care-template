@@ -56,6 +56,14 @@ const Hero = () => {
                 <div className="row align-items-center">
                   <div className="col-md-12 col-lg-6">
                     <div className="hero-content">
+                      {/* Added Destiny Care Home Name */}
+                      <h2 className="text-white font-bold text-3xl">
+                        Destiny Care Home
+                      </h2>
+                      {/* Added Motto */}
+                      <h6 className="text-yellow-300 italic mt-2">
+                        Where Care Meets Comfort
+                      </h6>
                       <h6 className="hero-sub-title">
                         <i className="far fa-house-chimney-heart"></i> Best
                         Elderly Care
