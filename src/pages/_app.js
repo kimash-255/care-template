@@ -66,7 +66,10 @@ export default function App({ Component, pageProps }) {
         <meta name="theme-color" content="#ffffff" />
 
         {/* Favicon */}
-        <link rel="icon" href="/assets/logo/logo.png" />
+        <link
+          rel="icon"
+          href="https://www.destinycarehome.org/assets/logo/logo.png"
+        />
 
         {/* Open Graph Meta Tags (for link sharing previews) */}
         <meta property="og:title" content="Destiny Care Home" />
@@ -77,7 +80,7 @@ export default function App({ Component, pageProps }) {
         <meta property="og:image" content="/assets//img/logo/logo.png" />
         <meta property="og:image:alt" content="Destiny Care Home Logo" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://.com/" />
+        <meta property="og:url" content="https://www.destinycarehome.org/" />
 
         {/* Viewport Settings */}
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
