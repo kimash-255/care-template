@@ -25,7 +25,7 @@ const Hero = () => {
     {
       id: 3,
       image: "/assets/img/hero/slider-3.jpg",
-      title: "Quality Care, Every Step of the Way",
+      title: "Quality Care Every Step of the Way",
       description:
         "From daily assistance to medical support, our experienced team is dedicated to enhancing the well-being of every senior in our care.",
     },
@@ -45,36 +45,46 @@ const Hero = () => {
         {slides.map((slide) => (
           <SwiperSlide key={slide.id}>
             <div
-              className="hero-single"
+              className="hero-single relative"
               style={{
                 backgroundImage: `url(${slide.image})`,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
               }}
             >
-              <div className="container">
+              {/* Darker overlay */}
+              <div className="absolute inset-0 bg-black opacity-50"></div>
+
+              <div className="container relative z-10">
                 <div className="row align-items-center">
                   <div className="col-md-12 col-lg-6">
-                    <div className="hero-content">
-                      {/* Added Destiny Care Home Name */}
-                      <h2 className="text-white font-bold text-3xl">
+                    <div className="hero-content px-4 py-8 lg:py-16 lg:px-12 text-white">
+                      {/* Destiny Care Home Name */}
+                      <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white">
                         Destiny Care Home
                       </h2>
-                      {/* Added Motto */}
-                      <h6 className="text-yellow-300 italic mt-2">
-                        Where Care Meets Comfort
+                      {/* Motto */}
+                      <h6 className="hero-sub-title mt-4 text-base md:text-lg lg:text-xl  italic">
+                        <i className="far fa-house-chimney-heart"></i> Where
+                        Care Meets Comfort
                       </h6>
-                      <h6 className="hero-sub-title">
-                        <i className="far fa-house-chimney-heart"></i> Best
-                        Elderly Care
-                      </h6>
-                      <h1 className="hero-title">{slide.title}</h1>
-                      <p>{slide.description}</p>
-                      <div className="hero-btn">
-                        <Link href="/about" className="theme-btn">
+                      <h1 className="hero-title text-l md:text-3l lg:text-3l font-bold mt-4">
+                        {slide.title}
+                      </h1>
+                      <p className="mt-2 text-sm md:text-lg lg:text-xl ">
+                        {slide.description}
+                      </p>
+                      <div className="hero-btn mt-6 flex gap-4">
+                        <Link
+                          href="/about"
+                          className="theme-btn px-6 py-3 text-sm md:text-base"
+                        >
                           Learn More <i className="fas fa-arrow-right"></i>
                         </Link>
-                        <Link href="/contact" className="theme-btn2">
+                        <Link
+                          href="/contact"
+                          className="theme-btn2 px-6 py-3 text-sm md:text-base"
+                        >
                           Contact Us <i className="fas fa-arrow-right"></i>
                         </Link>
                       </div>

@@ -109,11 +109,21 @@ const Footer = () => {
                       <div class="icon">
                         <i class="far fa-envelope"></i>
                       </div>
-                      <div class="content">
+                      <div className="content">
                         <h6>Mail Us</h6>
-                        <Link href="mailto:benardhomecare@gmail.com">
+                        <Link href="mailto:info@destinycarehome.org">
                           <i className="far fa-envelope"></i>{" "}
-                          benardhomecare@gmail.com
+                          info@destinycarehome.org
+                        </Link>
+                        <br />
+                        <Link href="mailto:james@destinycarehome.org">
+                          <i className="far fa-envelope"></i>{" "}
+                          james@destinycarehome.org
+                        </Link>
+                        <br />
+                        <Link href="mailto:benard@destinycarehome.org">
+                          <i className="far fa-envelope"></i>{" "}
+                          benard@destinycarehome.org
                         </Link>
                       </div>
                     </li>

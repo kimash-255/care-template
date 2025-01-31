@@ -48,8 +48,7 @@ const MainContact = () => {
                       <Link href="tel:+(206) 712-0125">
                         +(503) 477-5855/+(206) 712-0125/+1 (206) 657-2640
                       </Link>
-                    </p>{" "}
-                    {/* Updated phone number */}
+                    </p>
                   </div>
                 </div>
               </div>
@@ -61,10 +60,17 @@ const MainContact = () => {
                   <div className="content">
                     <h5>Email Us</h5>
                     <p>
-                      <Link href="mailto:benardhomecare@gmail.com">
-                        benardhomecare@gmail.com
-                      </Link>{" "}
-                      {/* Updated email */}
+                      <Link href="mailto:info@destinycarehome.org">
+                        info@destinycarehome.org
+                      </Link>
+                      ,
+                      <Link href="mailto:james@destinycarehome.org">
+                        james@destinycarehome.org
+                      </Link>
+                      ,
+                      <Link href="mailto:benard@destinycarehome.org">
+                        benard@destinycarehome.org
+                      </Link>
                     </p>
                   </div>
                 </div>
