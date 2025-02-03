@@ -7,7 +7,7 @@ const GalleryPage = () => {
   return (
     <>
       <Head>
-        <title>Our Services | Destiny Care Home</title>
+        <title>Our Gallery | Destiny Care Home</title>
         <meta
           name="description"
           content="Discover the range of elderly care services offered by Destiny Care Home."
