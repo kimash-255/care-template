@@ -153,6 +153,11 @@ const Header = () => {
                   </li>
 
                   <li className="nav-item">
+                    <Link className="nav-link" href="/gallery">
+                      Our Gallery
+                    </Link>
+                  </li>
+                  <li className="nav-item">
                     <Link className="nav-link" href="/contact">
                       Contact
                     </Link>

@@ -3,147 +3,63 @@ import Image from "next/image";
 
 const Gallery = () => {
   return (
-    <div class="gallery-area py-100">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 mx-auto">
+    <div className="gallery-area py-100">
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-6 mx-auto">
             <div
-              class="site-heading text-center wow fadeInDown"
+              className="site-heading text-center wow fadeInDown"
               data-wow-delay=".25s"
             >
-              <span class="site-title-tagline">
-                <i class="far fa-house-chimney-heart"></i>our Gallery
+              <span className="site-title-tagline">
+                <i className="far fa-house-chimney-heart"></i>our Gallery
               </span>
-              <h2 class="site-title">
+              <h2 className="site-title">
                 Let Us Check Our Photo <span>Gallery</span>
               </h2>
             </div>
           </div>
         </div>
-        <div class="row g-4 popup-gallery">
-          <div class="col-md-3">
-            <div class="gallery-item wow fadeInUp" data-wow-delay=".25s">
-              <div class="gallery-img">
-                <img src="/assets/img/gallery/01.jpg" alt="" />
-              </div>
-              <div class="gallery-content">
-                <Link
-                  class="popup-img gallery-link"
-                  href="/assets/img/gallery/01.jpg"
-                >
-                  <i class="fal fa-plus"></i>
-                </Link>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="gallery-item wow fadeInUp" data-wow-delay=".50s">
-              <div class="gallery-img">
-                <img src="/assets/img/gallery/02.jpg" alt="" />
-              </div>
-              <div class="gallery-content">
-                <Link
-                  class="popup-img gallery-link"
-                  href="/assets/img/gallery/02.jpg"
-                >
-                  <i class="fal fa-plus"></i>
-                </Link>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="gallery-item wow fadeInUp" data-wow-delay=".75s">
-              <div class="gallery-img">
-                <img src="/assets/img/gallery/03.jpg" alt="" />
-              </div>
-              <div class="gallery-content">
-                <Link
-                  class="popup-img gallery-link"
-                  href="/assets/img/gallery/03.jpg"
-                >
-                  <i class="fal fa-plus"></i>
-                </Link>
+        <div className="row g-4 popup-gallery">
+          {[
+            "11.jpg",
+            "12.jpg",
+            "13.jpg",
+            "14.jpg",
+            "15.jpg",
+            "16.jpg",
+            "17.jpg",
+            "18.jpg",
+          ].map((img, index) => (
+            <div className="col-md-3" key={img}>
+              <div
+                className="gallery-item wow fadeInUp"
+                data-wow-delay={`${0.25 * (index + 1)}s`}
+              >
+                <div className="gallery-img w-100 h-60">
+                  <Image
+                    src={`/assets/img/gallery/${img}`}
+                    alt={`Gallery Image ${index + 1}`}
+                    layout="fill"
+                    objectFit="cover"
+                    className="rounded"
+                  />
+                </div>
+                <div className="gallery-content">
+                  <Link
+                    className="popup-img gallery-link"
+                    href={`/assets/img/gallery/${img}`}
+                  >
+                    <i className="fal fa-plus"></i>
+                  </Link>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-md-3">
-            <div class="gallery-item wow fadeInUp" data-wow-delay="1s">
-              <div class="gallery-img">
-                <img src="/assets/img/gallery/04.jpg" alt="" />
-              </div>
-              <div class="gallery-content">
-                <Link
-                  class="popup-img gallery-link"
-                  href="assets/img/gallery/04.jpg"
-                >
-                  <i class="fal fa-plus"></i>
-                </Link>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="gallery-item wow fadeInUp" data-wow-delay=".25s">
-              <div class="gallery-img">
-                <img src="/assets/img/gallery/05.jpg" alt="" />
-              </div>
-              <div class="gallery-content">
-                <Link
-                  class="popup-img gallery-link"
-                  href="assets/img/gallery/05.jpg"
-                >
-                  <i class="fal fa-plus"></i>
-                </Link>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="gallery-item wow fadeInUp" data-wow-delay=".50s">
-              <div class="gallery-img">
-                <img src="assets/img/gallery/06.jpg" alt="" />
-              </div>
-              <div class="gallery-content">
-                <Link
-                  class="popup-img gallery-link"
-                  href="/assets/img/gallery/06.jpg"
-                >
-                  <i class="fal fa-plus"></i>
-                </Link>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="gallery-item wow fadeInUp" data-wow-delay=".75s">
-              <div class="gallery-img">
-                <img src="/assets/img/gallery/07.jpg" alt="" />
-              </div>
-              <div class="gallery-content">
-                <Link
-                  class="popup-img gallery-link"
-                  href="/assets/img/gallery/07.jpg"
-                >
-                  <i class="fal fa-plus"></i>
-                </Link>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="gallery-item wow fadeInUp" data-wow-delay="1s">
-              <div class="gallery-img">
-                <img src="/assets/img/gallery/08.jpg" alt="" />
-              </div>
-              <div class="gallery-content">
-                <Link
-                  class="popup-img gallery-link"
-                  href="/assets/img/gallery/08.jpg"
-                >
-                  <i class="fal fa-plus"></i>
-                </Link>
-              </div>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </div>
   );
 };
+
 export default Gallery;
