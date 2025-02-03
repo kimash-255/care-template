@@ -11,7 +11,7 @@ const Hero = () => {
     {
       id: 2,
       image: "/assets/img/hero/slider-2.jpg",
-      title: "A Home Away From Home",
+      title: "Best Adult Care In Portland",
       description:
         "With professional caregivers, engaging activities, and personalized support, we ensure every resident feels valued and cared for.",
     },
