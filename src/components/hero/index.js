@@ -18,7 +18,7 @@ const Hero = () => {
     {
       id: 1,
       image: "/assets/img/hero/slider-4.jpg",
-      title: "Compassionate Elderly Care",
+      title: "Compassionate Adult Care",
       description:
         "We provide a safe, loving, and supportive environment where seniors can enjoy their golden years with dignity and comfort in private environment with private bathrooms.",
     },
@@ -61,7 +61,7 @@ const Hero = () => {
                     <div className="hero-content px-4 py-8 lg:py-16 lg:px-12 text-white">
                       {/* Destiny Care Home Name */}
                       <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white">
-                        Destiny Care Home
+                        Adult Care Home
                       </h2>
                       {/* Motto */}
                       <h6 className="hero-sub-title mt-4 text-base md:text-lg lg:text-xl  italic">

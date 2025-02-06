@@ -24,12 +24,16 @@ const Gallery = () => {
           {[
             "11.jpg",
             "12.jpg",
-            "13.jpg",
+            "23.jpg",
             "14.jpg",
             "15.jpg",
             "16.jpg",
             "17.jpg",
             "18.jpg",
+            "19.jpg",
+            "20.jpg",
+            "21.jpg",
+            "22.jpg",
           ].map((img, index) => (
             <div className="col-md-3" key={img}>
               <div
