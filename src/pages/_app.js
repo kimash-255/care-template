@@ -77,7 +77,10 @@ export default function App({ Component, pageProps }) {
           property="og:description"
           content="Providing the best care and support at Destiny Care Home."
         />
-        <meta property="og:image" content="https://www.destinycarehome.org/assets/img/service/01.jpg" />
+        <meta
+          property="og:image"
+          content="https://www.destinycarehome.org/assets/img/service/01.jpg"
+        />
         <meta property="og:image:alt" content="Destiny Care Home Logo" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.destinycarehome.org/" />

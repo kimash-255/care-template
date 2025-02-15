@@ -5,6 +5,20 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
+
+
+        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16873820746"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag()
+          {dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'AW-16873820746');
+        </script>
+
+        <script>
+          gtag('event', 'conversion', {'send_to': 'AW-16873820746/0oHaCJOG4Z0aEMkio4-','value': 1.0,'currency': 'USD','transaction_id': ''});
+        </script>
         {/* General metadata */}
         <meta charSet="UTF-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
