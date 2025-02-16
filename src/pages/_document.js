@@ -1,24 +1,36 @@
 import { Html, Head, Main, NextScript } from "next/document";
 import Link from "next/link";
+import Script from "next/script";
 
 export default function Document() {
   return (
     <Html lang="en">
       <Head>
-
-
-        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16873820746"></script>
-        <script>
+        {/* Global Site Tag (gtag.js) - Google Ads */}
+        <Script
+          async
+          src={`https://www.googletagmanager.com/gtag/js?id=AW-16873820746`}
+        />
+        <Script id="google-analytics">
+          {`
           window.dataLayer = window.dataLayer || [];
-          function gtag()
-          {dataLayer.push(arguments);}
+          function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
           gtag('config', 'AW-16873820746');
-        </script>
+        `}
+        </Script>
 
-        <script>
-          gtag('event', 'conversion', {'send_to': 'AW-16873820746/0oHaCJOG4Z0aEMkio4-','value': 1.0,'currency': 'USD','transaction_id': ''});
-        </script>
+        {/* Conversion Tracking */}
+        <Script id="google-conversion-tracking">
+          {`
+          gtag('event', 'conversion', {
+            'send_to': 'AW-16873820746/0oHaCJOG4Z0aEMkio4-',
+            'value': 1.0,
+            'currency': 'USD',
+            'transaction_id': ''
+          });
+        `}
+        </Script>
         {/* General metadata */}
         <meta charSet="UTF-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
